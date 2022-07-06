@@ -1,0 +1,326 @@
+focus_tree = {
+	id = jowish_focus
+
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = JOW
+		}
+	}
+
+
+########################################
+
+#poop Crisis
+
+########################################
+
+focus = {
+	id = jow_adress_poopy_crisis
+	icon = GFX_goal_generic_construction
+	x = 14
+	y = 0
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_begin_cleanup
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_adress_poopy_crisis }
+	x = 14
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_purge_minorities
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_begin_cleanup }
+	mutually_exclusive = { focus = jow_slavery }
+	x = 13
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_slavery
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_begin_cleanup }
+	mutually_exclusive = { focus = jow_purge_minorities }
+	x = 15
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_final_push
+	icon = GFX_goal_generic_construction
+	prerequisite = {
+			focus = jow_purge_minorities
+	 		focus = jow_slavery
+	 }
+
+
+	x = 14
+	y = 3
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+}
+
+
+focus = {
+	id = jow_squeaky_clean
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_final_push }
+
+	x = 14
+	y = 4
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+######################
+
+#jow general
+
+######################
+
+
+focus = {
+	id = jow_kasmir_crisis
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_begin_cleanup }
+
+	x = 18
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_bulwark_of_aryanism
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_begin_cleanup }
+
+	x = 20
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+focus = {
+	id = jow_anti_indian_act
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_kasmir_crisis }
+
+	x = 17
+	y = 3
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_speech_india
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_kasmir_crisis }
+
+	x = 19
+	y = 3
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_remilitarize
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_kasmir_crisis }
+
+	x = 21
+	y = 3
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+focus = {
+	id = jow_occupy_kashmir
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_anti_indian_act }
+	prerequisite = { focus = jow_speech_india }
+	prerequisite = { focus = jow_remilitarize }
+
+
+	x = 19
+	y = 4
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+
+
+
+
+#####################################
+
+#left politics (alcoholism)
+
+#####################################
+
+focus = {
+	id = jow_go_buy_a_six_pack_of_beer
+	icon = GFX_goal_generic_construction
+	mutually_exclusive = { focus = jow_jowism }
+	prerequisite = { focus = jow_squeaky_clean }
+
+
+	x = 5
+	y = 5
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+
+
+#####################################
+
+#right politics
+
+#####################################
+
+focus = {
+	id = jow_jowism
+	icon = GFX_goal_generic_construction
+	mutually_exclusive = { focus = jow_go_buy_a_six_pack_of_beer }
+	prerequisite = { focus = jow_squeaky_clean }
+
+
+	x = 23
+	y = 5
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+}

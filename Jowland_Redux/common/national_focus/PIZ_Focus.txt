@@ -1,0 +1,37 @@
+focus_tree = {
+	id = pizza_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = PIZ
+		}
+	}
+
+
+
+  focus = {
+		id = PIZ_new_empire
+		icon = GFX_goal_generic_major_alliance
+		#text = extra_tech_slot
+		#prerequisite = { ideas = squeaky_clean }
+
+		available = {
+
+		}
+		x = 10
+		y = 0
+		#relative_position_id = ITA_industrial_effort_2
+		cost = 1
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}

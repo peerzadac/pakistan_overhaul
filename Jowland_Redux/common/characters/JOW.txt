@@ -1,0 +1,30 @@
+characters={
+	JOW_jowzow={
+		name="Donk Jowzow"
+		portraits={
+			civilian={
+				large="gfx/leaders/JOW/JOW_Neu.dds"
+			}
+		}
+		country_leader={
+			ideology=jowist
+			expire="1965.1.1.1"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

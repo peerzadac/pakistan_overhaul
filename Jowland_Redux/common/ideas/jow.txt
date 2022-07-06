@@ -1,0 +1,596 @@
+ideas = {
+
+
+
+country = {
+		poopy = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+				conscription = -0.1
+				consumer_goods_factor = 0.70
+				production_speed_industrial_complex_factor = -0.7
+				production_speed_arms_factory_factor = -0.7
+				conversion_cost_civ_to_mil_factor = 0.7
+				conversion_cost_mil_to_civ_factor = 0.7
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.80
+				lend_lease_tension = 0.80
+				send_volunteers_tension = 0.80
+				guarantee_tension = 0.75
+
+			}
+
+		}
+
+	}
+country = {
+		rise = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_raj_marginalized_muslim_community_happy
+
+			modifier = {
+
+			Jowism_drift = 0.50
+
+			}
+
+		}
+
+	}
+country = {
+		rise2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_raj_marginalized_muslim_community_angry
+
+			removal_cost = -1
+
+			modifier = {
+
+			Jowism_drift = 1.00
+
+			}
+
+		}
+
+	}
+country = {
+		kashmir = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = the_war_to_end_all_wars
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+
+
+			}
+
+		}
+
+	}
+country = {
+		begin_cleanup = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = strategic_bombing_focus
+
+			modifier = {
+
+				consumer_goods_factor = -0.20
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+
+
+			}
+
+		}
+
+	}
+country = {
+		almost_done = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = strategic_bombing_focus
+
+
+			modifier = {
+
+				consumer_goods_factor = -0.40
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_arms_factory_factor = 0.4
+				conversion_cost_civ_to_mil_factor = -0.4
+				conversion_cost_mil_to_civ_factor = -0.4
+
+
+			}
+
+		}
+
+	}
+country = {
+		squeaky_clean = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = sisu
+
+			modifier = {
+
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+				justify_war_goal_time = -0.40
+
+			}
+
+		}
+
+	}
+country = {
+		increased_nationalism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = vittoria_mutilata
+
+			modifier = {
+				stability_factor = 0.10
+
+
+			}
+
+		}
+
+	}
+country = {
+		blum = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_leon_blum
+
+			modifier = {
+				stability_factor = 1.00
+				conscription = 0.25
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.50
+				production_speed_arms_factory_factor = 0.50
+				conversion_cost_civ_to_mil_factor = -100
+				conversion_cost_mil_to_civ_factor = -100
+
+
+			}
+
+		}
+
+	}
+country = {
+		jo_w = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				stability_factor = 0.30
+				conscription = 0.05
+				consumer_goods_factor = -0.10
+
+			}
+
+		}
+
+	}
+country = {
+		jow_speed = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			modifier = {
+				army_speed_factor = 3.00
+				terrain_penalty_reduction = 1.00
+				training_time_factor = -0.50
+				land_reinforce_rate = 2.00
+				cavalry_attack_factor = 0.5
+
+
+
+
+			}
+
+		}
+
+	}
+country = {
+		bigbrain = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.03
+			}
+
+		}
+
+	}
+country = {
+		bigbrain2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.04
+			}
+
+		}
+
+	}
+country = {
+		jug_greece = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = vittoria_mutilata
+
+			modifier = {
+
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+
+
+
+			}
+
+		}
+
+	}
+country = {
+		stab = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_raj_marginalized_muslim_community_happy
+
+			modifier = {
+
+			stability_factor = 0.25
+
+			}
+
+		}
+
+	}
+country = {
+		jugsjow = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_raj_marginalized_muslim_community_angry
+
+			removal_cost = -1
+
+			modifier = {
+
+			Jowism_drift = 1.00
+
+			}
+
+		}
+
+	}
+country = {
+		biz1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+
+				consumer_goods_factor = -0.05
+
+			}
+
+		}
+
+	}
+country = {
+		biz2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+			}
+
+		}
+
+	}
+country = {
+		biz3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.30
+				production_speed_arms_factory_factor = 0.30
+			}
+
+		}
+
+	}
+country = {
+		jug_national = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+
+				consumer_goods_factor = -0.20
+				conscription = 0.10
+				stability_factor = 0.25
+
+			}
+
+		}
+
+	}
+
+country = {
+		ige_unrecognized = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			 always = yes
+			}
+
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+
+			modifier = {
+			drift_defence_factor = -1
+			#can_create_factions = no
+			political_power_gain = -0.2
+			}
+		}
+	}
+
+country = {
+		ige_recognized ={
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+			political_power_gain = 1.5
+		  #can_create_factions = yes
+			stability_factor = 0.10
+			war_support_factor = 0.1
+			join_faction_tension = -1
+			lend_lease_tension = -1
+			send_volunteers_tension = -1
+			#create_faction_tension = -1
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

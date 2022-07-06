@@ -1,0 +1,21 @@
+focus = {
+  id = JOW_
+
+  icon = GFX_goal_generic_production2
+  prerequisite = { focus = }
+  x =
+  y =
+  relative_position_id =
+
+  cost =
+
+
+  available = {
+
+  }
+
+
+  completion_reward = {
+
+  }
+}
