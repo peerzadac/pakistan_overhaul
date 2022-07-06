@@ -1,0 +1,7 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_blackpeople"
+		texturefile = "gfx/event_pictures/blackpeople.dds"
+	}
+}

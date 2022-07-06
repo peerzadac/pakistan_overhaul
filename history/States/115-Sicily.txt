@@ -2,11 +2,14 @@
 state={
 	id=115
 	name="STATE_115"
-	manpower = 3836571
+	manpower = 10000000
 	
-	state_category = city
+	state_category = megalopolis
+	resources={
+		oil= # was: 8
+	}
 	history={
-		owner = ITA
+		owner = IRS
 		victory_points = {
 			10074 20 
 		}
@@ -14,24 +17,24 @@ state={
 			4159 10 
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			air_base = 10
-			dockyard = 1
+			infrastructure = 5
+			industrial_complex = 25
+			air_base = 5
+			dockyard = 0
 			10074 = {
-				naval_base = 2
+				naval_base = 10
 			}
 			7059 = {
-				naval_base = 5
+				naval_base = 10
 			}
 			4159 = {
-				naval_base = 8
+				naval_base = 10
 			}
 			4014 = {
-				naval_base = 3
+				naval_base = 10
 			}
 		}
-		add_core_of = ITA
+		add_core_of = IRS
 	}
 
 	provinces={

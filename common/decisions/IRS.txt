@@ -1,0 +1,151 @@
+uprising = {
+    Riots_in_points_of_entry = {
+
+		icon = generic_prepare_civil_war
+
+        allowed = {
+			always = yes
+		}
+
+		available = {
+            has_manpower > 10000000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+            set_state_owner = 736
+            set_state_owner = 162
+            set_state_owner = 156
+		}
+
+		ai_will_do = {
+			
+			}
+		}
+
+        Unite_the_Homeland = {
+
+		icon = generic_prepare_civil_war
+
+        allowed = {
+			always = yes
+		}
+
+		available = {
+            has_manpower > 50000000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+            set_state_owner = 451
+            set_state_owner = 450
+            set_state_owner = 661
+            set_state_owner = 662
+            set_state_owner = 663
+            set_state_owner = 449
+            set_state_owner = 665
+            set_state_owner = 448
+            set_state_owner = 513
+            set_state_owner = 460
+            set_state_owner = 459
+		}
+
+		ai_will_do = {
+			
+			}
+		}
+
+        Encircle_the_capital = {
+
+		icon = generic_prepare_civil_war
+
+        allowed = {
+			always = yes
+		}
+
+		available = {
+            has_manpower > 100000000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+            set_state_owner = 159
+            set_state_owner = 161
+            set_state_owner = 157
+            set_state_owner = 117
+            set_state_owner = 158
+            set_state_owner = 160
+		}
+
+		ai_will_do = {
+			
+			}
+		}
+
+        The_italian_question = {
+
+		icon = generic_prepare_civil_war
+
+        allowed = {
+			always = yes
+		}
+
+		available = {
+            has_manpower > 200000000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			country_event = immigrant.1
+		}
+
+		ai_will_do = {
+			
+			}
+		}
+
+	}

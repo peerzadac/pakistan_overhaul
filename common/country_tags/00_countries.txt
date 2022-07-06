@@ -1,3 +1,4 @@
+IRS = "countries/Immigrant_Ridden_Sicily.txt"
 JOW = "countries/Jowland.txt"
 CWI = "countries/Cwimboland.txt"
 JUN = "countries/Junchticuland.txt"

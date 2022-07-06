@@ -1,0 +1,645 @@
+﻿focus_tree = {
+	id = immigrant_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRS
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 2000}
+
+	focus = {
+		id = the_1936_riots
+		icon = GFX_goal_generic_major_war
+		x = 20
+		y = 0
+
+		cost = 10
+
+		available = {
+			#NOT = { is_in_faction_with = JAP }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+                ai_will_do = {
+		}
+	}
+
+	focus = {
+		id = immigration_policies
+		icon = GFX_goal_generic_major_war
+		x = -4
+		y = 1
+		relative_position_id = the_1936_riots
+
+		cost = 10
+		prerequisite = { focus = the_1936_riots }
+		available = {
+			#NOT = { is_in_faction_with = JAP }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = 1000000
+		}
+                ai_will_do = {
+		}
+	}
+
+	focus = {
+	id = tribal_heritage
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = immigration_policies }
+	relative_position_id = the_1936_riots
+	x = -7
+	y = 2
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+
+	focus = {
+	id = conspiracies
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = immigration_policies }
+	relative_position_id = the_1936_riots
+	x = 1
+	y = 2
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = swarthmother1
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = tribal_heritage }
+	relative_position_id = tribal_heritage
+	x = -1
+	y = 1
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = populationgain
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = tribal_heritage }
+	relative_position_id = tribal_heritage
+	x = 1
+	y = 1
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = populationgain2
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = populationgain }
+	relative_position_id = tribal_heritage
+	x = 1
+	y = 2
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = populationgain3
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = populationgain2 }
+	relative_position_id = tribal_heritage
+	x = 1
+	y = 3
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = tribaltrading
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = swarthmother1 }
+	relative_position_id = tribal_heritage
+	x = -1
+	y = 2
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = tribaloil
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = tribaltrading }
+	relative_position_id = tribal_heritage
+	x = -1
+	y = 3
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = racewarend
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = populationgain3 }
+	mutually_exclusive = {focus = demandgibralter}
+	relative_position_id = tribal_heritage
+	x = 2
+	y = 4
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = researchelixer
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = populationgain3 }
+	prerequisite = { focus = tribaloil }
+	relative_position_id = tribal_heritage
+	x = 0
+	y = 5
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = demandgibralter
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = tribaloil }
+	relative_position_id = tribal_heritage
+	mutually_exclusive = {focus = racewarend}
+	x = -2
+	y = 4
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = demandmalaya
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = demandgibralter }
+	relative_position_id = tribal_heritage
+	x = -2
+	y = 5
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+
+	focus = {
+	id = fraudreports
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = conspiracies }
+	relative_position_id = conspiracies
+	x = -2
+	y = 1
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+
+	completion_reward = {
+
+	}
+
+
+	focus = {
+	id = distrustgov
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = fraudreports }
+	relative_position_id = conspiracies
+	x = -2
+	y = 2
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = rebelliousnature
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = distrustgov }
+	prerequisite = { focus = populationgain }
+	relative_position_id = conspiracies
+	x = -4
+	y = 3
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = minoritysupremacy
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = racewarend }
+	relative_position_id = tribal_heritage
+	x = 2
+	y = 5
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = mediocreelixerarmy
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = researchelixer }
+	relative_position_id = tribal_heritage
+	x = 0
+	y = 6
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = igniterebellion
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = rebelliousnature }
+	relative_position_id = conspiracies
+	x = -4
+	y = 4
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = kingunearthed
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = distrustgov}
+	relative_position_id = conspiracies
+	x = -2
+	y = 4
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = cementposition
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = kingunearthed}
+	relative_position_id = conspiracies
+	x = -3
+	y = 5
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = angry
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = kingunearthed}
+	relative_position_id = conspiracies
+	x = -1
+	y = 5
+	cost = 5
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = Tikilandclaims
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = angry focus = cementposition}
+	relative_position_id = conspiracies
+	x = -2
+	y = 6
+	cost = 5
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = SwarthyAlliance
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = minoritysupremacy  focus = Tikilandclaims}
+	mutually_exclusive = { focus = iberiandominance}
+	relative_position_id = conspiracies
+	x = -4
+	y = 7
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+	id = iberiandominance
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = Tikilandclaims }
+	prerequisite = {focus = minoritysupremacy}
+	mutually_exclusive = { focus = SwarthyAlliance}
+	relative_position_id = conspiracies
+	x = -2
+	y = 7
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+
+	}
+	focus = {
+		id = GangloandHellexpulsion
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = iberiandominance}
+		relative_position_id = conspiracies
+		x = -2
+		y = 8
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+
+		}
+	focus = {
+		id = pizzamenace
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = GangloandHellexpulsion}
+		relative_position_id = conspiracies
+		x = -2
+		y = 9
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+		}
+
+	focus = {
+		id = theUltimateenemy
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = pizzamenace}
+		relative_position_id = conspiracies
+		x = -2
+		y = 10
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Gangloalliance
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = SwarthyAlliance}
+		relative_position_id = conspiracies
+		x = -4
+		y = 8
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+		}
+
+		focus = {
+			id = Splithellforpizza
+			icon = GFX_goal_generic_construction
+			prerequisite = { focus = Gangloalliance}
+			relative_position_id = conspiracies
+			x = -4
+			y = 9
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+		
+			}
+			}
+
+			focus = {
+				id = coalition
+				icon = GFX_goal_generic_construction
+				prerequisite = { focus = Splithellforpizza}
+				relative_position_id = conspiracies
+				x = -4
+				y = 10
+				cost = 10
+				ai_will_do = {
+				}
+			
+				completion_reward = {
+			
+				}
+				}
+
+	focus = {
+		id = junchsicle
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = pizzamenace}
+		relative_position_id = conspiracies
+		x = 0
+		y = 10
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+		}
+
+		focus = {
+			id = Swarthmotherpleased
+			icon = GFX_goal_generic_construction
+			prerequisite = { focus = demandmalaya}
+			relative_position_id = tribal_heritage
+			x = -2
+			y = 6
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+		
+			}
+
+			}
+			focus = {
+				id = swarthmotherincitesblmriots
+				icon = GFX_goal_generic_construction
+				prerequisite = { focus = Swarthmotherpleased}
+				relative_position_id = tribal_heritage
+				x = -2
+				y = 7
+				cost = 10
+				ai_will_do = {
+				}
+			
+				completion_reward = {
+			
+				}
+				}	
+focus = {
+	id = swarthmotherforever
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = swarthmotherincitesblmriots}
+	relative_position_id = tribal_heritage
+	x = -2
+	y = 8
+	cost = 10
+	ai_will_do = {
+	}
+
+	completion_reward = {
+
+	}
+	}
+
+	focus = {
+		id = towardsthestars
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = swarthmotherforever }
+		prerequisite = { focus = coalition }
+		relative_position_id = tribal_heritage
+		x = -2
+		y = 11
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+	
+		}
+		}
+}		

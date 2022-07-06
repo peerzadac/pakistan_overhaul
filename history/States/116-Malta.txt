@@ -3,20 +3,17 @@ state=
 	id=116
 	name="STATE_116"
 	manpower = 241621
-	state_category = small_island
+	state_category = megalopolis
 	history= {
-		owner = ALB
-		add_core_of = ALB
+		owner = IRS
+		add_core_of = IRS
 		victory_points = {
 			12003 5
 		}
 		buildings = {
 			infrastructure = 2
 			air_base = 3
-			12003 = {
-				naval_base = 3
-				coastal_bunker = 1
-			}
+			industrial_complex = 25
 		}
 	}
 	provinces= { 12003 }

@@ -1,0 +1,25 @@
+add_namespace = immigrant
+
+country_event = {
+	id = immigrant.1
+	title = "Italian Forces Surrender In capital!"
+	desc = "The sheer amount of manpower that the immigrants have mustered has shown to be to great for the likes of the Italians, now we must decide what to do with them!"
+	picture = GFX_blackpeople
+	is_triggered_only = yes
+	option = { #puppet
+		name = "Maybe, we could use the White man's toys.."
+		ai_chance = {
+		} 
+		puppet = ITA
+		
+	}
+	option = { #annex
+		name = "Destroy the white man!"
+		ai_chance = { 
+		}
+		annex_country = {
+			target = ITA
+			transfer_troops = no
+		}	
+	}
+}

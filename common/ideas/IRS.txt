@@ -1,0 +1,165 @@
+
+ideas {
+	country = {
+		underdeveloped = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+        			political_power_gain = -2
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+
+			modifier = {
+				consumer_goods_factor = 1
+        			research_speed_factor = -1
+        			industrial_capacity_factory = -0.5
+		  	}
+	  	}
+	}
+  country = {
+		racewar = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				send_volunteers_tension = 1
+        weekly_manpower = 20000
+        command_power_gain = 5
+        justify_war_goal_time = 2
+		  }
+	  }
+	}
+  country = {
+		triballands = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				army_core_attack_factor = 0.5
+        army_core_defence_factor = 0.5
+        army_speed_factor = 0.05
+        army_defence_factor = 0.05
+        army_attack_factor = 0.05
+        experience_gain_army = 1
+		  }
+	  }
+	}
+  country = {
+		triballands2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				army_core_attack_factor = 1
+        army_core_defence_factor = 1
+        army_speed_factor = 0.15
+        army_defence_factor = 0.15
+        army_attack_factor = 0.15
+        experience_gain_army = 5
+		  }
+	  }
+	}
+  country = {
+		triballands3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				army_core_attack_factor = 2
+        army_core_defence_factor = 2
+        army_speed_factor = 0.3
+        army_defence_factor = 0.3
+        army_attack_factor = 0.3
+        breakthrough_factor = 0.5
+        experience_gain_army = 10
+        terrain_penalty_reduction = 0.5
+		  }
+	  }
+	}
+  country = {
+		sunpeople = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LAT_the_sun_shines_equally
+
+			modifier = {
+				heat_attrition_factor = -1
+		  }
+	  }
+	}
+}

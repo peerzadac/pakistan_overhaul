@@ -3,14 +3,14 @@ state={
 	id=458
 	name="STATE_458"
 	manpower = 1982940
-	state_category = town
+	state_category = megalopolis
 	resources={
-		steel=6 # was: 8
+		steel=30 # was: 8
 	}
 
 	history={
-		owner = ITA
-		add_core_of = ITA
+		owner = IRS
+		add_core_of = IRS
 		victory_points = {
 			11969 10
 		}
@@ -22,7 +22,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 25
 			air_base = 8
 			9994 = {
 				naval_base = 8
