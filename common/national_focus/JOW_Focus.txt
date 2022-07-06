@@ -23,7 +23,7 @@ focus_tree = {
 
 focus = {
 	id = jow_adress_poopy_crisis
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_little_entente
 	x = 14
 	y = 0
 	cost = 10
@@ -32,14 +32,14 @@ focus = {
 	}
 
 	completion_reward = {
-
+		add_political_power = 120
 	}
 
 }
 
 focus = {
 	id = jow_begin_cleanup
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_demand_sudetenland
 	prerequisite = { focus = jow_adress_poopy_crisis }
 	x = 14
 	y = 1
@@ -49,14 +49,17 @@ focus = {
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = poopy
+			add_idea = begin_cleanup
+		}
 	}
 
 }
 
 focus = {
 	id = jow_purge_minorities
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_attack_allies
 	prerequisite = { focus = jow_begin_cleanup }
 	mutually_exclusive = { focus = jow_slavery }
 	x = 13
@@ -74,7 +77,7 @@ focus = {
 
 focus = {
 	id = jow_slavery
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_military_academy
 	prerequisite = { focus = jow_begin_cleanup }
 	mutually_exclusive = { focus = jow_purge_minorities }
 	x = 15
@@ -92,7 +95,7 @@ focus = {
 
 focus = {
 	id = jow_final_push
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_monarchy_2
 	prerequisite = {
 			focus = jow_purge_minorities
 	 		focus = jow_slavery
@@ -107,14 +110,17 @@ focus = {
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = begin_cleanup
+			add_idea = almost_done
+		}
 	}
 }
 
 
 focus = {
 	id = jow_squeaky_clean
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_usa_reestablish_the_gold_standard
 	prerequisite = { focus = jow_final_push }
 
 	x = 14
@@ -125,7 +131,10 @@ focus = {
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = almost_done
+			add_idea = squeaky_clean
+		}
 	}
 
 }
@@ -139,7 +148,7 @@ focus = {
 
 focus = {
 	id = jow_kasmir_crisis
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = jow_begin_cleanup }
 
 	x = 18
@@ -157,7 +166,7 @@ focus = {
 
 focus = {
 	id = jow_bulwark_of_aryanism
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_AST_squander_bug
 	prerequisite = { focus = jow_begin_cleanup }
 
 	x = 20
@@ -177,7 +186,7 @@ focus = {
 
 focus = {
 	id = jow_anti_indian_act
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_attack_india
 	prerequisite = { focus = jow_kasmir_crisis }
 
 	x = 17
@@ -195,7 +204,7 @@ focus = {
 
 focus = {
 	id = jow_speech_india
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_support_the_left_right
 	prerequisite = { focus = jow_kasmir_crisis }
 
 	x = 19
@@ -213,7 +222,7 @@ focus = {
 
 focus = {
 	id = jow_remilitarize
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_BUL_condemn_macedonian_organizations
 	prerequisite = { focus = jow_kasmir_crisis }
 
 	x = 21
@@ -233,7 +242,7 @@ focus = {
 
 focus = {
 	id = jow_occupy_kashmir
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_RAJ_two_nation_theory
 	prerequisite = { focus = jow_anti_indian_act }
 	prerequisite = { focus = jow_speech_india }
 	prerequisite = { focus = jow_remilitarize }
@@ -296,7 +305,7 @@ focus = {
 
 focus = {
 	id = jow_jowism
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_jap_manchurian_project
 	mutually_exclusive = { focus = jow_go_buy_a_six_pack_of_beer }
 	prerequisite = { focus = jow_squeaky_clean }
 
@@ -317,7 +326,7 @@ focus = {
 
 focus = {
 	id = jow_right_wing
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_ger_reichskommisariats
 	mutually_exclusive = { focus = jow_left_wing }
 	prerequisite = { focus = jow_jowism }
 
@@ -339,7 +348,7 @@ focus = {
 
 focus = {
 	id = jow_2_yeal
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_ger_oppose_hitler
 	prerequisite = { focus = jow_right_wing }
 
 
@@ -358,7 +367,7 @@ focus = {
 
 focus = {
 	id = jow_destroy_india
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_RAJ_seek_help_from_germany
 	prerequisite = { focus = jow_2_yeal }
 
 
@@ -377,7 +386,7 @@ focus = {
 
 focus = {
 	id = jow_deal_china
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_major_alliance
 	prerequisite = { focus = jow_destroy_india }
 
 
@@ -396,7 +405,7 @@ focus = {
 
 focus = {
 	id = jow_afghani_raids
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = jow_2_yeal }
 
 
@@ -457,7 +466,7 @@ focus = {
 
 focus = {
 	id = jow_left_wing
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_the_giant_wakes
 	mutually_exclusive = { focus = jow_right_wing }
 	prerequisite = { focus = jow_jowism }
 
@@ -477,7 +486,7 @@ focus = {
 
 focus = {
 	id = jow_deal_india
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_molotov_ribbentrop_pact
 	prerequisite = { focus = jow_left_wing }
 
 
@@ -496,7 +505,7 @@ focus = {
 
 focus = {
 	id = jow_indochina
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_jap_strike_south
 	prerequisite = { focus = jow_deal_india }
 
 
@@ -515,7 +524,7 @@ focus = {
 
 focus = {
 	id = jow_shogun
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_jap_showa_restoration
 	prerequisite = { focus = jow_indochina }
 
 
@@ -534,7 +543,7 @@ focus = {
 
 focus = {
 	id = jow_america_deals
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = jow_shogun }
 
 	x = 27
@@ -552,7 +561,7 @@ focus = {
 
 focus = {
 	id = jow_colonize_india
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_RAJ_british_investors
 	prerequisite = { focus = jow_deal_india }
 
 
@@ -571,7 +580,7 @@ focus = {
 
 focus = {
 	id = jow_settle_taiwan
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_navy_battleship
 	prerequisite = { focus = jow_colonize_india }
 
 
@@ -590,7 +599,7 @@ focus = {
 
 focus = {
 	id = jow_deals_with_gpr
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_chi_cooperation_with_the_communists
 	prerequisite = { focus = jow_settle_taiwan }
 
 
@@ -609,7 +618,7 @@ focus = {
 
 focus = {
 	id = jow_placate_gpr
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = jow_deals_with_gpr }
 
 
@@ -628,7 +637,7 @@ focus = {
 
 focus = {
 	id = jow_satalite_gpr
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_chi_one_china_policy
 	prerequisite = { focus = jow_placate_gpr }
 
 
@@ -656,7 +665,7 @@ focus = {
 
 focus = {
 	id = jow_internationalism
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_support_democracy
 	prerequisite = {
 		 focus = jow_jowism 
 		 focus = jow_go_buy_a_six_pack_of_beer
@@ -677,7 +686,7 @@ focus = {
 
 focus = {
 	id = jow_jowish_alliance
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = jow_internationalism }
 
 	available = {
@@ -700,7 +709,7 @@ focus = {
 
 focus = {
 	id = jow_jow_world
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_army_doctrines
 	prerequisite = { focus = jow_jowish_alliance }
 
 	x = 16
@@ -718,7 +727,7 @@ focus = {
 
 focus = {
 	id = jow_junch_pact
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = jow_jowish_alliance }
 	prerequisite = { focus = jow_right_wing }
 	x = 18
@@ -736,7 +745,7 @@ focus = {
 
 focus = {
 	id = jow_hegemon
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_smiling_buddha
 	prerequisite = { focus = jow_israel_end 
 	focus = jow_satalite_gpr }
 	x = 23
@@ -752,6 +761,35 @@ focus = {
 
 }
 
+####################################
+
+#Industry
+
+###################################
+
+
+focus = {
+	id = jow_industry_foundation
+	icon = GFX_goal_generic_construction
+
+	available = {
+		has_idea = squeaky_clean
+	}
+
+
+
+	x = 30
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
 
 
 
