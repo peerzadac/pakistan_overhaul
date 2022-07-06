@@ -13,6 +13,7 @@ state={
 	}
 
 	history={
+		set_demilitarized_zone = yes
 		owner = CUR
 		buildings = {
 			infrastructure = 2

@@ -7,6 +7,7 @@ state={
 	state_category = enclave
 
 	history={
+		set_demilitarized_zone = yes
 		owner = CUR
 		add_core_of = CUR
 		buildings = {

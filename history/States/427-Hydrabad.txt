@@ -10,6 +10,7 @@ state={
 	}
 
 	history={
+		set_demilitarized_zone = yes
 		owner = CUR
 		victory_points = {
 			8087 1
