@@ -10,3 +10,4 @@ tags={
 }
 name="Jowland Redux"
 supported_version="1.11.9"
+C:\Users\junch\Documents\Paradox Interactive\Hearts of Iron IV\mod\Jowland Redux
