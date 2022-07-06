@@ -315,6 +315,442 @@ focus = {
 }
 
 
+focus = {
+	id = jow_right_wing
+	icon = GFX_goal_generic_construction
+	mutually_exclusive = { focus = jow_left_wing }
+	prerequisite = { focus = jow_jowism }
+
+
+	x = 20
+	y = 7
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+focus = {
+	id = jow_2_yeal
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_right_wing }
+
+
+	x = 20
+	y = 8
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_destroy_india
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_2_yeal }
+
+
+	x = 19
+	y = 9
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_deal_china
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_destroy_india }
+
+
+	x = 19
+	y = 10
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_afghani_raids
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_2_yeal }
+
+
+	x = 21
+	y = 9
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_mughal_end
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_afghani_raids }
+
+
+	x = 21
+	y = 10
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_israel_end
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_mughal_end }
+	prerequisite = { focus = jow_deal_china }
+
+	x = 20
+	y = 11
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+
+
+focus = {
+	id = jow_left_wing
+	icon = GFX_goal_generic_construction
+	mutually_exclusive = { focus = jow_right_wing }
+	prerequisite = { focus = jow_jowism }
+
+
+	x = 26
+	y = 7
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_deal_india
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_left_wing }
+
+
+	x = 26
+	y = 8
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_indochina
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_deal_india }
+
+
+	x = 27
+	y = 9
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_shogun
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_indochina }
+
+
+	x = 27
+	y = 10
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_america_deals
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_shogun }
+
+	x = 27
+	y = 11
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_colonize_india
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_deal_india }
+
+
+	x = 25
+	y = 9
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_settle_taiwan
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_colonize_india }
+
+
+	x = 25
+	y = 10
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_deals_with_gpr
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_settle_taiwan }
+
+
+	x = 25
+	y = 11
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_placate_gpr
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_deals_with_gpr }
+
+
+	x = 25
+	y = 12
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_satalite_gpr
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_placate_gpr }
+
+
+	x = 25
+	y = 13
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+##################################
+
+#mid
+
+##################################
+
+
+focus = {
+	id = jow_internationalism
+	icon = GFX_goal_generic_construction
+	prerequisite = {
+		 focus = jow_jowism 
+		 focus = jow_go_buy_a_six_pack_of_beer
+	}
+
+	x = 14
+	y = 6
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_jowish_alliance
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_internationalism }
+
+	available = {
+		has_government = jowism
+	}
+
+	x = 16
+	y = 7
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+focus = {
+	id = jow_jow_world
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_jowish_alliance }
+
+	x = 16
+	y = 8
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_junch_pact
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_jowish_alliance }
+	prerequisite = { focus = jow_right_wing }
+	x = 18
+	y = 8
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_hegemon
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = jow_israel_end 
+	focus = jow_satalite_gpr }
+	x = 23
+	y = 14
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
 
 
 
