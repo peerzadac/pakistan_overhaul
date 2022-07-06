@@ -9,7 +9,6 @@ GAMERLAND
 
 
 
-Remove jan 2 start
 Fix dmz + add
 Starting armies for all countries
 Stat adjustments post play testing
