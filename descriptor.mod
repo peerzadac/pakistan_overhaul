@@ -10,4 +10,3 @@ tags={
 }
 name="pakistan_overhaul"
 supported_version="1.11.9"
-path="C:\Users\tripl\OneDrive\Documents\Paradox Interactive\Hearts of Iron IV\mod\pakistan_overhaul\"
