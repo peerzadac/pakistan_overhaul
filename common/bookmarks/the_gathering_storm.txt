@@ -11,9 +11,25 @@ bookmarks = {
 			history = "JOW_GATHERING_STORM_DESC"
 			ideology = jowism
 			ideas = {
+
 			}
 			focuses = {
 
+			}
+		}
+
+    "IRS"={
+			history = "IRS_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+        underdeveloped
+        underdeveloped2
+        racewar
+			}
+			focuses = {
+        Splithellforpizza
+        racewarend
+        towardsthestars
 			}
 		}
 
