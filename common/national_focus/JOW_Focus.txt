@@ -791,6 +791,321 @@ focus = {
 
 }
 
+focus = {
+	id = jow_industry_expansion
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_foundation
+	}
+	x = 0
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_civ1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_expansion
+	}
+	x = -2
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_civ2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_civ1
+	}
+	x = -2
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_civ3
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_civ2
+	}
+	x = -2
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_infrastructure
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_civ1
+	}
+	x = -4
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_elixir1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_civ1
+	}
+	x = 0
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_elixir2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_elixir1
+	}
+	x = 0
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_mil1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_expansion
+	}
+	x = 3
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_mil2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_mil1
+	}
+	x = 3
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_artillery
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_mil1
+	}
+	x = 5
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_plane1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_mil1
+	}
+	x = 9
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+focus = {
+	id = jow_tanks1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_mil1
+	}
+	x = 7
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_tanks2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_tanks1
+	}
+	x = 7
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+focus = {
+	id = jow_mil3
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_mil2
+	}
+	x = 3
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

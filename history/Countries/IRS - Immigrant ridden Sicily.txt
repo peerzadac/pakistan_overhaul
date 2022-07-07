@@ -36,7 +36,8 @@ create_country_leader = {
 	picture = "swarthy.dds"
 	ideology = anarchist_communism
 	traits = {
-		{ representative_of_the_people } { stupid }
+		representative_of_the_people 
+		stupid 
 	}
 }
 
