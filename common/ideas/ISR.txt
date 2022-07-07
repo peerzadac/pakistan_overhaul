@@ -1,0 +1,19 @@
+ideas = {
+    country = {
+      jewish_subversion = {
+
+        allowed = {
+          always = no
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          stability_factor = 0.25
+          war_stability_factor = 0
+          war_support_factor = 0.3
+          compliance_growth_on_our_occupied_states = 1
+		}
+      }
+    }
+}

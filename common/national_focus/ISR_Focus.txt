@@ -1,0 +1,40 @@
+focus_tree = {
+	id = israeli_focus
+	continuous_focus_position = { x = 50 y = 2000 }
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = ISR
+		}
+	}
+
+	focus = {
+	#secure funds, dominate the US
+		id = convene_the_aipac
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 20
+		y = 0
+
+		cost = 10
+
+		available = {
+			#NOT = { is_in_faction_with = JAP }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+                ai_will_do = {
+		}
+	}
+}
