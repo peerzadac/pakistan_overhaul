@@ -1,4 +1,4 @@
-IRS = "countries/Immigrant_Ridden_Sicily.txt"
+
 JOW = "countries/Jowland.txt"
 CWI = "countries/Cwimboland.txt"
 JUN = "countries/Junchticuland.txt"
@@ -29,7 +29,7 @@ ROA = "countries/Road to 56 Iran.txt"
 CUR = "countries/Curry Sweatshop.txt"
 TRU = "countries/Trump's America.txt"
 ITA = "countries/Italy.txt"
-
+IRS = "countries/Immigrant_Ridden_Sicily.txt"
 NBR = "countries/New Brazil.txt"
 ETE = "countries/Ethecopeia.txt"
 BIG = "countries/Glorious Peoples Republic.txt"
