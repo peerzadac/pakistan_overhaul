@@ -1,0 +1,69 @@
+add_namespace = jow
+
+country_event = {
+	id = jow.1
+	title = "The Poop Crisis"
+	desc = "For almost a year our country has been filled to the brim with minorities, ruiing our day to day lives. It's time we put an end to these shenanigans!"
+	picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+		name = "White people have dreams too, y'know."
+	}
+}
+
+country_event = {
+	id = jow.2
+	title = "The Purge"
+	desc = "Now that we've gathered the minorites from major cities, we must decide their fates. We can either execute them, or send them away to other counrties."
+	picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #kill
+		name = "Slaughter them!"
+
+		add_manpower = -500000
+
+	}
+
+	option = { #send away
+		name = "Send them to a more accepting country."
+
+		add_manpower = -500000
+
+		hidden_effect = {
+			IRS = { country_event = { id = jow.3 days = 7 }
+		}
+		#IRS = { country_event = { id = jow.3 days = 7 }
+	}
+
+}
+}
+
+country_event = {
+	id = jow.3
+	title = "Minorities from Jowland"
+	desc = "Recently, Jowland has been cleansing their country of minorities, and have devided to send some our way. As the minority immigrant melting pot of the world, we shall gladly accept this new population!"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+		name = "Yippee!"
+
+		add_manpower = 500000 
+	}
+}
+
+news_event = {
+	id = jow.4
+	title = "Jowland Announces Official Expulsion of Minorities"
+	desc = "The people of Jowland have finally decided enough is enough, and will be cleansing their country of the lesser peoples."
+	major = yes  #makes even global
+	is_triggered_only = yes
+	option = {#okay
+		name = "An interesting developement."
+
+	}
+
+}
+

@@ -26,15 +26,21 @@ focus = {
 	icon = GFX_focus_generic_little_entente
 	x = 14
 	y = 0
-	cost = 10
+	cost = 5
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
 		add_political_power = 120
+
+		hidden_effect = {
+			JOW = { country_event = { id = jow.1 days = 3 }
+			news_event = { id = jow.4 }
+		}
 	}
 
+}
 }
 
 focus = {
@@ -70,9 +76,9 @@ focus = {
 	}
 
 	completion_reward = {
-
+		JOW = { country_event = { id = jow.2 }
 	}
-
+	}
 }
 
 focus = {
@@ -88,7 +94,28 @@ focus = {
 	}
 
 	completion_reward = {
-
+		445 = {
+			add_building_construction  = {
+				instant_build = yes
+				type = industrial_complex
+				level = 2
+			}
+		}
+		444 = {
+			add_building_construction  = {
+				instant_build = yes
+				type = industrial_complex
+				level = 2
+			}
+		}
+		443 = {
+			add_building_construction  = {
+				instant_build = yes
+				type = arms_factory
+				level = 3
+			}
+		}
+		add_manpower = -500000
 	}
 
 }
