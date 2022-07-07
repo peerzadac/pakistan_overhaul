@@ -15,7 +15,7 @@
 
 	focus = {
 		id = the_1936_riots
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_riot_of_37
 		x = 20
 		y = 0
 
@@ -42,7 +42,7 @@
 
 	focus = {
 		id = immigration_policies
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		x = -4
 		y = 1
 		relative_position_id = the_1936_riots
@@ -70,7 +70,7 @@
 
 	focus = {
 	id = tribal_heritage
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 	prerequisite = { focus = immigration_policies }
 	relative_position_id = the_1936_riots
 	x = -7
@@ -87,7 +87,7 @@
 
 	focus = {
 	id = conspiracies
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_spr_masters_of_our_own_fate
 	prerequisite = { focus = immigration_policies }
 	relative_position_id = the_1936_riots
 	x = 1
@@ -103,7 +103,7 @@
 
 	focus = {
 	id = swarthmother1
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_TUR_the_sun_language_theory
 	prerequisite = { focus = tribal_heritage }
 	relative_position_id = tribal_heritage
 	x = -1
@@ -119,7 +119,7 @@
 
 	focus = {
 	id = populationgain
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_SOV_mobilization_plan
 	prerequisite = { focus = tribal_heritage }
 	relative_position_id = tribal_heritage
 	x = 1
@@ -135,7 +135,7 @@
 
 	focus = {
 	id = populationgain2
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_SOV_builder_of_the_red_army
 	prerequisite = { focus = populationgain }
 	relative_position_id = tribal_heritage
 	x = 1
@@ -151,7 +151,7 @@
 
 	focus = {
 	id = populationgain3
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 	prerequisite = { focus = populationgain2 }
 	relative_position_id = tribal_heritage
 	x = 1
@@ -167,7 +167,7 @@
 
 	focus = {
 	id = tribaltrading
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_positive_trade_relations
 	prerequisite = { focus = swarthmother1 }
 	relative_position_id = tribal_heritage
 	x = -1
@@ -183,7 +183,7 @@
 
 	focus = {
 	id = tribaloil
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_oil_refinery
 	prerequisite = { focus = tribaltrading }
 	relative_position_id = tribal_heritage
 	x = -1
@@ -199,7 +199,7 @@
 
 	focus = {
 	id = racewarend
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_spr_class_war
 	prerequisite = { focus = populationgain3 }
 	mutually_exclusive = {focus = demandgibralter}
 	relative_position_id = tribal_heritage
@@ -216,7 +216,7 @@
 
 	focus = {
 	id = researchelixer
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_focus_fra_fascist_threat
 	prerequisite = { focus = populationgain3 }
 	prerequisite = { focus = tribaloil }
 	relative_position_id = tribal_heritage
@@ -233,7 +233,7 @@
 
 	focus = {
 	id = demandgibralter
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = tribaloil }
 	relative_position_id = tribal_heritage
 	mutually_exclusive = {focus = racewarend}
@@ -250,7 +250,7 @@
 
 	focus = {
 	id = demandmalaya
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_generic_strike_at_democracy3
 	prerequisite = { focus = demandgibralter }
 	relative_position_id = tribal_heritage
 	x = -2
@@ -267,7 +267,7 @@
 
 	focus = {
 	id = fraudreports
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
 	prerequisite = { focus = conspiracies }
 	relative_position_id = conspiracies
 	x = -2
@@ -289,7 +289,7 @@
 
 	focus = {
 	id = distrustgov
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_SOV_penal_battalions
 	prerequisite = { focus = fraudreports }
 	relative_position_id = conspiracies
 	x = -2
@@ -305,7 +305,7 @@
 
 	focus = {
 	id = rebelliousnature
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_eng_global_defense
 	prerequisite = { focus = distrustgov }
 	prerequisite = { focus = populationgain }
 	relative_position_id = conspiracies
@@ -322,7 +322,7 @@
 
 	focus = {
 	id = minoritysupremacy
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = racewarend }
 	relative_position_id = tribal_heritage
 	x = 2
@@ -338,7 +338,7 @@
 
 	focus = {
 	id = mediocreelixerarmy
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_POL_support_global_falangism
 	prerequisite = { focus = researchelixer }
 	relative_position_id = tribal_heritage
 	x = 0
@@ -354,7 +354,7 @@
 
 	focus = {
 	id = igniterebellion
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_focus_fra_revolution_utmost
 	prerequisite = { focus = rebelliousnature }
 	relative_position_id = conspiracies
 	x = -4
@@ -370,7 +370,7 @@
 
 	focus = {
 	id = kingunearthed
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_mex_arrest_general_cedillo
 	prerequisite = { focus = distrustgov}
 	relative_position_id = conspiracies
 	x = -2
@@ -386,7 +386,7 @@
 
 	focus = {
 	id = cementposition
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_POL_sanation_left
 	prerequisite = { focus = kingunearthed}
 	relative_position_id = conspiracies
 	x = -3
@@ -402,7 +402,7 @@
 
 	focus = {
 	id = angry
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_LAT_suspend_constitution_of_latvia
 	prerequisite = { focus = kingunearthed}
 	relative_position_id = conspiracies
 	x = -1
@@ -418,7 +418,7 @@
 
 	focus = {
 	id = Tikilandclaims
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_focus_fra_maquis
 	prerequisite = { focus = angry focus = cementposition}
 	relative_position_id = conspiracies
 	x = -2
@@ -434,7 +434,7 @@
 
 	focus = {
 	id = SwarthyAlliance
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_alliance
 	prerequisite = { focus = minoritysupremacy  focus = Tikilandclaims}
 	mutually_exclusive = { focus = iberiandominance}
 	relative_position_id = conspiracies
@@ -451,7 +451,7 @@
 
 	focus = {
 	id = iberiandominance
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_focus_fra_intervention_spain
 	prerequisite = { focus = Tikilandclaims }
 	prerequisite = {focus = minoritysupremacy}
 	mutually_exclusive = { focus = SwarthyAlliance}
@@ -469,7 +469,7 @@
 	}
 	focus = {
 		id = GangloandHellexpulsion
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_AST_squander_bug
 		prerequisite = { focus = iberiandominance}
 		relative_position_id = conspiracies
 		x = -2
@@ -485,7 +485,7 @@
 		}
 	focus = {
 		id = pizzamenace
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_attack_germany
 		prerequisite = { focus = GangloandHellexpulsion}
 		relative_position_id = conspiracies
 		x = -2
@@ -501,7 +501,7 @@
 
 	focus = {
 		id = theUltimateenemy
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		prerequisite = { focus = pizzamenace}
 		relative_position_id = conspiracies
 		x = -2
@@ -517,7 +517,7 @@
 
 	focus = {
 		id = Gangloalliance
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = SwarthyAlliance}
 		relative_position_id = conspiracies
 		x = -4
@@ -533,7 +533,7 @@
 
 		focus = {
 			id = Splithellforpizza
-			icon = GFX_goal_generic_construction
+			icon = GFX_focus_focus_fra_border
 			prerequisite = { focus = Gangloalliance}
 			relative_position_id = conspiracies
 			x = -4
@@ -549,7 +549,7 @@
 
 			focus = {
 				id = coalition
-				icon = GFX_goal_generic_construction
+				icon = GFX_focus_POL_complete_april_constitution
 				prerequisite = { focus = Splithellforpizza}
 				relative_position_id = conspiracies
 				x = -4
@@ -565,7 +565,7 @@
 
 	focus = {
 		id = junchsicle
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = pizzamenace}
 		relative_position_id = conspiracies
 		x = 0
@@ -581,7 +581,7 @@
 
 		focus = {
 			id = Swarthmotherpleased
-			icon = GFX_goal_generic_construction
+			icon = GFX_focus_generic_women_in_military
 			prerequisite = { focus = demandmalaya}
 			relative_position_id = tribal_heritage
 			x = -2
@@ -597,7 +597,7 @@
 			}
 			focus = {
 				id = swarthmotherincitesblmriots
-				icon = GFX_goal_generic_construction
+				icon = GFX_focus_generic_provoke_border_clashes
 				prerequisite = { focus = Swarthmotherpleased}
 				relative_position_id = tribal_heritage
 				x = -2
@@ -612,7 +612,7 @@
 				}	
 focus = {
 	id = swarthmotherforever
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_tfv_burn_the_royal_portraits
 	prerequisite = { focus = swarthmotherincitesblmriots}
 	relative_position_id = tribal_heritage
 	x = -2
@@ -628,7 +628,7 @@ focus = {
 
 	focus = {
 		id = towardsthestars
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		prerequisite = { focus = swarthmotherforever }
 		prerequisite = { focus = coalition }
 		relative_position_id = tribal_heritage

@@ -1,4 +1,18 @@
-uprising = {
+Formable_Nation = {
+	Form_Swarthopolis = {
+		allowed = {
+			always = yes
+		}
+		available = {
+            owns_state = 2
+		}
+		complete_effect = {
+			set_cosmetic_tag = SCA_UNIFIED	
+		}
+	}
+}
+
+Uprising = {
     Riots_in_points_of_entry = {
 
 		icon = generic_prepare_civil_war
