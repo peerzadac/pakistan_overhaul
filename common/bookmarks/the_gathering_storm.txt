@@ -11,12 +11,11 @@ bookmarks = {
 			history = "JOW_GATHERING_STORM_DESC"
 			ideology = jowism
 			ideas = {
-<<<<<<< HEAD
-=======
+
         poopy
         kashmir
         jow_speed
->>>>>>> dd811b2ccbd1707b55a084f57d7743b51fc5a30c
+
 
 			}
 			focuses = {
