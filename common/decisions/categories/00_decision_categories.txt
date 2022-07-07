@@ -2,7 +2,6 @@ Formable_Nation = {
 	icon = generic_political_actions
 	visible = {
 		original_tag = IRS
-		has_completed_focus = tribal_heritage
 	}
 }
 
