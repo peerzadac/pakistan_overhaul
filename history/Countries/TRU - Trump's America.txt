@@ -54,16 +54,16 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = alcoholism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-democratic = 0
+democratic = 60
 communism = 0
 fascism = 0
 neutrality = 0
-jowism = 50
-alcoholism = 50
+jowism = 20
+alcoholism = 20
 }

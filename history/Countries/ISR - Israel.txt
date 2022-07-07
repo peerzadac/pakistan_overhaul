@@ -60,8 +60,27 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-democratic = 80
-neutrality = 20
+democratic = 100
+neutrality = 0
 jowism = 0
 alcoholism = 0
+}
+
+#diplomacy
+if = {
+    limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+    set_autonomy = {
+	target = TRU
+	autonomous_state = autonomy_supervised_state
+	freedom_level = .90
+    }
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = jewish_research
 }

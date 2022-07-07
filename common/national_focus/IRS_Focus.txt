@@ -282,11 +282,6 @@
 	}
 
 
-	completion_reward = {
-
-	}
-
-
 	focus = {
 	id = distrustgov
 	icon = GFX_focus_SOV_penal_battalions
