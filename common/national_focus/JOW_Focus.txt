@@ -1035,6 +1035,9 @@ focus = {
 	prerequisite = {
 		focus = jow_mil1
 	}
+	prerequisite = {
+		focus = jow_planes2
+	}
 	x = 9
 	y = 3
 	
@@ -1115,24 +1118,220 @@ focus = {
 
 }
 
+focus = {
+	id = jow_army1
+	icon = GFX_goal_generic_construction
+	#relative_position_id = jow_industry_foundation 
+	#prerequisite = {
+	#	focus = jow_mil2
+	#}
+	x = 41
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
 
+	completion_reward = {
 
+	}
 
+}
 
+focus = {
+	id = jow_army2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_army1
+	}
+	x = 0
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
 
+	completion_reward = {
 
+	}
 
+}
 
+focus = {
+	id = jow_planes2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_army2
+	}
+	x = -2
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
 
+	completion_reward = {
 
+	}
 
+}
 
+focus = {
+	id = jow_army3
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_army2
+	}
+	x = 0
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
 
+	completion_reward = {
 
+	}
 
+}
 
+focus = {
+	id = jow_boat1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_army2
+	}
+	x = 2
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
 
+	completion_reward = {
 
+	}
+
+}
+
+focus = {
+	id = jow_boat2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_boat1
+	}
+	x = 2
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_boat3
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_boat2
+	}
+	x = 2
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_docks1
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_boat1
+	}
+	x = 4
+	y = 3
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_docks2
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_docks1
+	}
+	x = 4
+	y = 4
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
+
+focus = {
+	id = jow_camels
+	icon = GFX_goal_generic_construction
+	relative_position_id = jow_army1 
+	prerequisite = {
+		focus = jow_docks2
+		focus = jow_civ3
+		focus = jow_elixir2
+		focus = jow_mil3
+		focus = jow_tanks2
+		focus = jow_boat3
+	}
+	x = -6
+	y = 5
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+
+	}
+
+}
 
 
 
