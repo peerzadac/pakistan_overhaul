@@ -16,7 +16,7 @@ state=
 		}
 		add_core_of = GRO
 		add_core_of = GRO
-		start_resistance = CRO #Yugoslavia shouldn't resist occupation
+		#start_resistance = CRO #Yugoslavia shouldn't resist occupation
 	}
 	provinces={
 		3943
