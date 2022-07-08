@@ -7,7 +7,7 @@ Formable_Nation = {
             owns_state = 2
 		}
 		complete_effect = {
-			set_cosmetic_tag = SCA_UNIFIED	
+			set_cosmetic_tag = IRS_UNIFIED	
 		}
 	}
 }
@@ -23,10 +23,17 @@ Uprising = {
 
 		available = {
             has_manpower > 10000000
+			NOT = {
+				owns_state = 736
+				owns_state = 162
+				owns_state = 156
+			}
 		}
 
 		visible = {
-			always = yes
+			NOT = {
+				owns_state = 157
+			}
 		}
 
 		fire_only_once = yes
@@ -57,7 +64,7 @@ Uprising = {
 		}
 
 		available = {
-            has_manpower > 50000000
+            has_manpower > 50000000 
 		}
 
 		visible = {
@@ -101,6 +108,7 @@ Uprising = {
 
 		available = {
             has_manpower > 100000000
+			has_decision = Unite_the_Homeland
 		}
 
 		visible = {
@@ -139,6 +147,7 @@ Uprising = {
 
 		available = {
             has_manpower > 200000000
+			has_decision = Encircle_the_capital
 		}
 
 		visible = {

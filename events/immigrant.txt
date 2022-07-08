@@ -23,3 +23,29 @@ country_event = {
 		}	
 	}
 }
+
+country_event = {
+	id = immigrant.2
+	title = "The 1936 Riots"
+	desc = "The influx of immigrants is a very promising start to our newly represented city, how should we go about welcoming our new niggers?"
+	picture = GFX_1936
+	is_triggered_only = yes
+	option = { #Short term
+		name = "Brute force the ports!"
+		ai_chance = {
+		} 
+		set_state_owner = 736
+		set_state_owner = 162
+		set_state_owner = 156
+		
+	}
+	option = { #long term effect
+		name = "Send them home with goodies and make them tell their friends about us..."
+		ai_chance = { 
+		}
+		swap_ideas = { 
+			remove_idea = racewar
+			add_idea = racewar2
+		  }
+	}
+}

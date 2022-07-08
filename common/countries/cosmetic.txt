@@ -1,0 +1,4 @@
+IRS_UNIFIED = {
+    color = rgb { 128 64 0 }
+    color_ui = rgb { 128 64 0 }
+}

@@ -65,6 +65,29 @@ ideas = {
 		  }
 	  }
 	}
+	country = {
+		racewar2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				send_volunteers_tension = 1
+        weekly_manpower = 40000
+        command_power_gain = 5
+        justify_war_goal_time = 2
+		  }
+	  }
+	}
   country = {
 		triballands = {
 
