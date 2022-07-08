@@ -53,6 +53,11 @@ set_convoys = 20
 		dispersed_industry2 = 1
 	}
 }
+
+add_ideas = {
+	jewish_subversion
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

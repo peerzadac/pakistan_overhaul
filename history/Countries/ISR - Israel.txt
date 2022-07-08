@@ -73,12 +73,12 @@ if = {
 			has_dlc = "Together for Victory"
 			has_dlc = "Man the Guns"
 		}
-    set_autonomy = {
-	target = TRU
-	autonomous_state = autonomy_supervised_state
-	freedom_level = .90
-    }
-}
+	}
+    	set_autonomy = {
+			target = TRU
+			autonomous_state = autonomy_supervised_state
+		}
+	}
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
