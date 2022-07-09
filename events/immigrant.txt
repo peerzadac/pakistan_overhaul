@@ -11,7 +11,10 @@ country_event = {
 		ai_chance = {
 		} 
 		puppet = ITA
-		
+		swap_ideas = { 
+			remove_idea = underdeveloped
+			add_idea = unified2
+		  }
 	}
 	option = { #annex
 		name = "Destroy the white man!"
@@ -20,7 +23,11 @@ country_event = {
 		annex_country = {
 			target = ITA
 			transfer_troops = no
-		}	
+		}
+		swap_ideas = { 
+			remove_idea = underdeveloped
+			add_idea = unified
+		  }	
 	}
 }
 

@@ -3,11 +3,54 @@ Formable_Nation = {
 		allowed = {
 			always = yes
 		}
+		fire_only_once = yes
 		available = {
             owns_state = 2
 		}
 		complete_effect = {
 			set_cosmetic_tag = IRS_UNIFIED	
+		}
+	}
+
+	Form_Swarthvana_Approach = {
+		allowed = {
+			always = yes
+		}
+		fire_only_once = yes
+		available = {
+            owns_state = 789
+			owns_state = 19
+		}
+		complete_effect = {
+			set_cosmetic_tag = IRS_V
+		}
+	}
+
+	Form_Garden_of_Swarth = {
+		allowed = {
+			always = yes
+		}
+		fire_only_once = yes
+		available = {
+            owns_state = 64
+			owns_state = 126
+		}
+		complete_effect = {
+			set_cosmetic_tag = IRS_G
+		}
+	}
+
+	Form_Picklechin_Papacy = {
+		allowed = {
+			always = yes
+		}
+		fire_only_once = yes
+		available = {
+            owns_state = 219
+			owns_state = 47
+		}
+		complete_effect = {
+			set_cosmetic_tag = IRS_P
 		}
 	}
 }
@@ -48,6 +91,18 @@ Uprising = {
             set_state_owner = 736
             set_state_owner = 162
             set_state_owner = 156
+			hidden_effect = {
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			}
 		}
 
 		ai_will_do = {
@@ -58,20 +113,22 @@ Uprising = {
         Unite_the_Homeland = {
 
 		icon = generic_prepare_civil_war
+		
+		fire_only_once = yes
 
         allowed = {
 			always = yes
 		}
 
 		available = {
-            has_manpower > 50000000 
+            has_manpower > 50000000
+			owns_state = 156
 		}
 
 		visible = {
 			always = yes
 		}
 
-		fire_only_once = yes
 
 		modifier = {
 			
@@ -91,6 +148,58 @@ Uprising = {
             set_state_owner = 513
             set_state_owner = 460
             set_state_owner = 459
+			hidden_effect = {
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			}
 		}
 
 		ai_will_do = {
@@ -108,9 +217,8 @@ Uprising = {
 
 		available = {
             has_manpower > 100000000
-			has_decision = Unite_the_Homeland
+			owns_state = 460
 		}
-
 		visible = {
 			always = yes
 		}
@@ -130,6 +238,108 @@ Uprising = {
             set_state_owner = 117
             set_state_owner = 158
             set_state_owner = 160
+			hidden_effect = {
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			add_manpower = -1000000
+			}
 		}
 
 		ai_will_do = {
@@ -147,7 +357,7 @@ Uprising = {
 
 		available = {
             has_manpower > 200000000
-			has_decision = Encircle_the_capital
+			owns_state = 157
 		}
 
 		visible = {
@@ -164,11 +374,212 @@ Uprising = {
 
 		complete_effect = {
 			country_event = immigrant.1
+			hidden_effect = {
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000\
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+				add_manpower = -1000000
+			}
 		}
 
 		ai_will_do = {
 			
 			}
 		}
-
-	}
+}

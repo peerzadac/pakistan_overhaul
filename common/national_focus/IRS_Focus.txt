@@ -80,7 +80,7 @@
 	}
 
 	completion_reward = {
-
+		unlock_decision_category_tooltip = Uprising
 	}
 	}
 

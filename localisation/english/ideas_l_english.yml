@@ -6,7 +6,7 @@
   racewar:0 "Race war raging"
   racewar_desc:0 "Since this rapid influx of migrants, culture clashes are rampant in our territory"
   racewar2:0 "Race war raging"
-  racewar_desc:0 "Since this rapid influx of migrants, culture clashes are rampant in our territory" 
+  racewar2_desc:0 "Since this rapid influx of migrants, culture clashes are rampant in our territory" 
   triballands:0 "Tribal blessings begin"
   triballands_desc:0 "The taking of their holy site of sicily is the first step in recovering their home..."
   triballands2:0 "Swarth Mothers blessings"
@@ -19,6 +19,10 @@
   poopy_desc:0 "Following a minority invasion of Jowland, the streets have been filled to the brim with poop across the nation. We must fix this at once!"
   jow_speed:0 "The Winged Camels"
   jow_speed_desc:0 "Jowland employs advanced camelry among all troops, whether they be on foot or in vehicles, allowing extreme speeds the likes of which are matched by no other army."
+  unified:0 "Unified in Whole!"
+  unified_desc:0 "The Italian high command has been wiped out and now nothing stands in the way of us!"
+  unified2:0 "Italian Scum remains under us"
+  unified2_desc:0 "We have been merciful to the rest of the Italian high command and keep them under our reign, our populace is not too happy about this decision..."
 
 
 
