@@ -24,7 +24,6 @@ recruit_character = JOW_jowzow
 
 add_ideas = {
 	poopy
-	jow_speed
 }
 
 
