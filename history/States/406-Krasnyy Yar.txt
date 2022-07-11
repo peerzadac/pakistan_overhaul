@@ -7,11 +7,11 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = TAI
+		owner = NBR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TAI
+		add_core_of = NBR
  		victory_points = {
 			3618 1
 		}

@@ -6,14 +6,14 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = ROA
+		owner = MEC
 		victory_points = {
 			12413 1
 		}
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ROA
+		add_core_of = MEC
 	}
 
 	provinces={

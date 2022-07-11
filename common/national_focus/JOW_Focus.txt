@@ -797,7 +797,7 @@ focus = {
 
 focus = {
 	id = jow_industry_foundation
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_civ_factory
 
 	available = {
 		has_idea = squeaky_clean
@@ -820,7 +820,7 @@ focus = {
 
 focus = {
 	id = jow_industry_expansion
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_civilian
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_industry_foundation
@@ -841,7 +841,7 @@ focus = {
 
 focus = {
 	id = jow_civ1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_consumer_goods
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_industry_expansion
@@ -862,7 +862,7 @@ focus = {
 
 focus = {
 	id = jow_civ2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_consumer_goods
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_civ1
@@ -883,7 +883,7 @@ focus = {
 
 focus = {
 	id = jow_civ3
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_consumer_goods
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_civ2
@@ -904,7 +904,7 @@ focus = {
 
 focus = {
 	id = jow_infrastructure
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_infrastructure
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_civ1
@@ -925,7 +925,7 @@ focus = {
 
 focus = {
 	id = jow_elixir1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_oil_refinery
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_civ1
@@ -946,7 +946,7 @@ focus = {
 
 focus = {
 	id = jow_elixir2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_oil_refinery
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_elixir1
@@ -967,7 +967,7 @@ focus = {
 
 focus = {
 	id = jow_mil1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_mil_factory
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_industry_expansion
@@ -988,7 +988,7 @@ focus = {
 
 focus = {
 	id = jow_mil2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_mil_factory
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_mil1
@@ -1009,7 +1009,7 @@ focus = {
 
 focus = {
 	id = jow_artillery
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_army_artillery
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_mil1
@@ -1030,7 +1030,7 @@ focus = {
 
 focus = {
 	id = jow_plane1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_air_fighter
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_mil1
@@ -1055,7 +1055,7 @@ focus = {
 
 focus = {
 	id = jow_tanks1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_army_tanks
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_mil1
@@ -1076,7 +1076,7 @@ focus = {
 
 focus = {
 	id = jow_tanks2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_CAS
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_tanks1
@@ -1099,7 +1099,7 @@ focus = {
 
 focus = {
 	id = jow_mil3
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_mil_factory
 	relative_position_id = jow_industry_foundation 
 	prerequisite = {
 		focus = jow_mil2
@@ -1120,7 +1120,7 @@ focus = {
 
 focus = {
 	id = jow_army1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_axis_build_infantry
 	#relative_position_id = jow_industry_foundation 
 	#prerequisite = {
 	#	focus = jow_mil2
@@ -1145,7 +1145,7 @@ focus = {
 
 focus = {
 	id = jow_army2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_build_tank
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_army1
@@ -1166,7 +1166,7 @@ focus = {
 
 focus = {
 	id = jow_planes2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_air_fighter2
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_army2
@@ -1187,7 +1187,7 @@ focus = {
 
 focus = {
 	id = jow_army3
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_allies_build_infantry
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_army2
@@ -1208,7 +1208,7 @@ focus = {
 
 focus = {
 	id = jow_boat1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_navy_battleship
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_army2
@@ -1229,7 +1229,7 @@ focus = {
 
 focus = {
 	id = jow_boat2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_navy_anti_submarine
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_boat1
@@ -1250,7 +1250,7 @@ focus = {
 
 focus = {
 	id = jow_boat3
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_navy_carrier
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_boat2
@@ -1271,7 +1271,7 @@ focus = {
 
 focus = {
 	id = jow_docks1
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_naval_dockyard
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_boat1
@@ -1292,7 +1292,7 @@ focus = {
 
 focus = {
 	id = jow_docks2
-	icon = GFX_goal_generic_construction
+	icon = GFX_goal_generic_construct_naval_dockyard
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_docks1
@@ -1313,7 +1313,7 @@ focus = {
 
 focus = {
 	id = jow_camels
-	icon = GFX_goal_generic_construction
+	icon = GFX_focus_eng_organise_the_blackshirts
 	relative_position_id = jow_army1 
 	prerequisite = {
 		focus = jow_docks2
