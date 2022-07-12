@@ -35,7 +35,7 @@ focus = {
 		add_political_power = 120
 
 		hidden_effect = {
-			JOW = { country_event = { id = jow.1 days = 3 }
+			JOW = { country_event = { id = jow.1 }
 			news_event = { id = jow.4 }
 		}
 	}
@@ -95,6 +95,7 @@ focus = {
 
 	completion_reward = {
 		445 = {
+			add_extra_state_shared_building_slots = 2
 			add_building_construction  = {
 				instant_build = yes
 				type = industrial_complex
@@ -102,6 +103,7 @@ focus = {
 			}
 		}
 		444 = {
+			add_extra_state_shared_building_slots = 2
 			add_building_construction  = {
 				instant_build = yes
 				type = industrial_complex
@@ -109,6 +111,7 @@ focus = {
 			}
 		}
 		443 = {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction  = {
 				instant_build = yes
 				type = arms_factory
@@ -174,19 +177,19 @@ focus = {
 
 
 focus = {
-	id = jow_kasmir_crisis
+	id = jow_kasmir_crisis  
 	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = jow_begin_cleanup }
 
 	x = 18
 	y = 2
-	cost = 10
+	cost = 1
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
-
+		#add event that gives army xp and pp based on india's response to jow's speech
 	}
 
 }
@@ -198,7 +201,7 @@ focus = {
 
 	x = 20
 	y = 2
-	cost = 10
+	cost = 5
 	ai_will_do = {
 		factor = 12
 	}
@@ -218,13 +221,13 @@ focus = {
 
 	x = 17
 	y = 3
-	cost = 10
+	cost = 3
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
-
+		add_ideas = anti_indian_act
 	}
 
 }
@@ -236,13 +239,14 @@ focus = {
 
 	x = 19
 	y = 3
-	cost = 10
+	cost = 3
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
-
+		add_political_power = 120
+		#global event
 	}
 
 }
@@ -251,16 +255,27 @@ focus = {
 	id = jow_remilitarize
 	icon = GFX_focus_BUL_condemn_macedonian_organizations
 	prerequisite = { focus = jow_kasmir_crisis }
-
 	x = 21
 	y = 3
-	cost = 10
+	cost = 3
 	ai_will_do = {
 		factor = 12
 	}
 
-	completion_reward = {
 
+	completion_reward = {
+		custom_effect_tooltip = "Unlocks Remilitarization Focuses."
+		#unlockes remiiltarization tree.
+		army_experience = 50
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 1000
+		}
+		
 	}
 
 }
@@ -283,7 +298,8 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#add event for kashmir occupation. India will have no choice for now. Include world tension and some negative opinions perhaps.
+		custom_effect_tooltip = "Add event soon lol"
 	}
 
 }
@@ -345,7 +361,12 @@ focus = {
 	}
 
 	completion_reward = {
-
+		add_popularity = {
+			ideology = jowism
+			popularity = 0.10
+		}
+		add_ideas = absolute_jowism
+		
 	}
 
 }
@@ -360,13 +381,13 @@ focus = {
 
 	x = 20
 	y = 7
-	cost = 10
+	cost = 1
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
-
+		#add flavor event + hidden mtth state loss in iran 410 +core
 	}
 
 }
@@ -387,7 +408,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#idea for 2 years with justify war and attack and speed for  conquring and such
 	}
 
 }
@@ -396,7 +417,9 @@ focus = {
 	id = jow_destroy_india
 	icon = GFX_focus_RAJ_seek_help_from_germany
 	prerequisite = { focus = jow_2_yeal }
-
+	available = {
+		has_completed_focus = jow_occupy_kashmir
+	}
 
 	x = 19
 	y = 9
@@ -406,7 +429,9 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#give most states; give event with option to invade the rest
+		#states given 428 433 439 438 437 429 436 435 431 432 430 426 427
+		#other 425 424 321 423 329 423 422
 	}
 
 }
@@ -425,7 +450,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#event partition bhutan. 66% chance for normal, 20 % chance for china want extra, 14% you get all
 	}
 
 }
@@ -444,6 +469,7 @@ focus = {
 	}
 
 	completion_reward = {
+		#not sure yet, probably event chain so long as the state  410 event has already occured. will leads to occupations and resistance to occupation in iran until jowland takes over. have iran kicked out of faction
 
 	}
 
@@ -453,7 +479,9 @@ focus = {
 	id = jow_mughal_end
 	icon = GFX_goal_generic_construction
 	prerequisite = { focus = jow_afghani_raids }
-
+	available = {
+		ROA = { is_in_faction = no }
+	}
 
 	x = 21
 	y = 10
@@ -463,7 +491,10 @@ focus = {
 	}
 
 	completion_reward = {
-
+		create_wargoal = {
+			target = ROA
+			type = topple_government
+		}
 	}
 
 }
@@ -482,7 +513,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#consult christian for details later
 	}
 
 }
@@ -500,13 +531,13 @@ focus = {
 
 	x = 26
 	y = 7
-	cost = 10
+	cost = 1
 	ai_will_do = {
 		factor = 12
 	}
 
 	completion_reward = {
-
+				#add flavor event + hidden mtth state loss in iran 410 +core same as right wing
 	}
 
 }
@@ -544,7 +575,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#colonize indochina event with options: take or puppet, puppeting reaping more benefits as resouces are added to them through random events?
 	}
 
 }
@@ -563,7 +594,11 @@ focus = {
 	}
 
 	completion_reward = {
-
+		diplomatic_relation = {
+			country = TOT
+			relation = non_aggression_pact
+			active = yes
+		}
 	}
 
 }
@@ -581,7 +616,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#wait for christian
 	}
 
 }
@@ -590,7 +625,9 @@ focus = {
 	id = jow_colonize_india
 	icon = GFX_focus_RAJ_british_investors
 	prerequisite = { focus = jow_deal_india }
-
+	available = {
+		has_completed_focus = jow_occupy_kashmir
+	}
 
 	x = 25
 	y = 9
@@ -600,7 +637,9 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#event to colonize india; take states   
+		#compliant: 428 429 425 321 423 320. create satalite government seperate from t-90 titled Curry Sweatshop in state 426 that can be expanded with decisions.
+		#aggresive: all
 	}
 
 }
@@ -619,7 +658,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#event taiwan dispute, givess china taiwan and gives them heavy jow influence
 	}
 
 }
@@ -638,7 +677,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#huge trade buff with BIG
 	}
 
 }
@@ -657,7 +696,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#weakens gpr significantly to remove subject stronger than overlord penalties
 	}
 
 }
@@ -676,7 +715,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#event t puppet gpr
 	}
 
 }
@@ -706,7 +745,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#raise opinion of other major countries, lower world tension by 1
 	}
 
 }
@@ -728,7 +767,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		create_faction = "Jowish Aliiance"
 	}
 
 }
@@ -747,7 +786,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#idea with justify time down and impact on world tensio down
 	}
 
 }
@@ -765,10 +804,11 @@ focus = {
 	}
 
 	completion_reward = {
-
+			#event for junch for joining faction
+		}
 	}
 
-}
+
 
 focus = {
 	id = jow_hegemon
@@ -783,7 +823,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		#evetn deailing jow's conqeust; core all of india and give war goals on many
 	}
 
 }
@@ -813,10 +853,54 @@ focus = {
 	}
 
 	completion_reward = {
-
+	
+		445 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+			}
+		}
+		444 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 4
+			instant_build = yes
+			}
+		}
+		443 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+		}
 	}
 
 }
+
+focus = {
+	id = jow_brian1
+	icon = GFX_goal_generic_construct_civilian
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_foundation
+	}
+	x = 6
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+		add_research_slot = 1
+	}
+
+}
+
+
 
 focus = {
 	id = jow_industry_expansion
@@ -826,6 +910,92 @@ focus = {
 		focus = jow_industry_foundation
 	}
 	x = 0
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			} 
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			} 
+		}
+
+}
+}
+
+
+focus = {
+	id = jow_brian
+	icon = GFX_goal_generic_construct_civilian
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_brian1
+	}
+	available = {
+		num_of_civilian_factories > 30
+	}
+	x = 6
+	y = 2
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = {
+		add_research_slot = 1
+	}
+
+}
+
+focus = {
+	id = jow_bonus1
+	icon = GFX_goal_generic_construct_civilian
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_foundation
+	}
+	x = 2
+	y = 1
+	
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+
+	completion_reward = { 
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2				
+			category = industry
+		}
+	}
+
+}
+
+focus = {
+	id = jow_bonus2
+	icon = GFX_goal_generic_construct_civilian
+	relative_position_id = jow_industry_foundation 
+	prerequisite = {
+		focus = jow_industry_foundation
+	}
+	x = 4
 	y = 1
 	
 	cost = 10
@@ -1129,7 +1299,7 @@ focus = {
 	y = 1
 	
 	available = {
-		has_idea = squeaky_clean
+		has_completed_focus = jow_remilitarize
 	}
 
 	cost = 10
