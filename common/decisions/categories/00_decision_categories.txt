@@ -1,3 +1,13 @@
+USA_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = IRS
+	}
+
+	scripted_gui = usa_congress_decision_ui	
+
+	priority = 85
+}
 Formable_Nation = {
 	icon = generic_political_actions
 	visible = {

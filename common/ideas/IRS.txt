@@ -170,66 +170,6 @@ ideas = {
 		  	}
 	  	}
 	}
-	country = {
-		warxp = {
-
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_purge
-
-			modifier = {
-				experience_gain_army = 1
-		  }
-	  }
-	}
-	country = {
-	  warxp = {
-
-		allowed = {
-			always = yes
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_purge
-
-		modifier = {
-			experience_gain_army = 5
-	  }
-  }
-}
-country = {
-  warxp = {
-
-	allowed = {
-		always = yes
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	picture = generic_purge
-
-	modifier = {
-		experience_gain_army = 10
-  		}
-	}
-}
   country = {
 		racewar = {
 
@@ -367,6 +307,32 @@ country = {
 
 			modifier = {
 				heat_attrition_factor = -1
+		  }
+	  }
+	}
+
+	country = {
+		niggas = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LAT_the_sun_shines_equally
+
+			modifier = {
+				send_volunteers_tension = 0
+				send_volunteer_size = 10
+				send_volunteer_divisions_required = 0
+				set_rule = {
+					can_send_volunteers = yes
+				}
 		  }
 	  }
 	}

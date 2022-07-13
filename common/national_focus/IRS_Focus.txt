@@ -62,7 +62,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_manpower = 1000000
+			add_ideas = niggas
+			set_rule = {
+				can_send_volunteers = yes
+			}
 		}
                 ai_will_do = {
 		}
