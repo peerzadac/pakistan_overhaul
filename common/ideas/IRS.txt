@@ -73,12 +73,13 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = prc_low_popular_support3
+			picture = prc_low_popular_support
 
 			modifier = {
 				consumer_goods_factor = 1
         			research_speed_factor = -1
         			industrial_capacity_factory = -1
+					production_speed_buildings_factor = -1
 		  	}
 	  	}
 	}
@@ -95,12 +96,13 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = prc_low_popular_support3
+			picture = prc_low_popular_support2
 
 			modifier = {
 				consumer_goods_factor = 0.80
         			research_speed_factor = -0.625
         			industrial_capacity_factory = -0.625
+					production_speed_buildings_factor = -0.625
 		  	}
 	  	}
 	}
@@ -123,6 +125,7 @@ ideas = {
 				consumer_goods_factor = 0.60
         			research_speed_factor = -0.25
         			industrial_capacity_factory = -0.25
+					production_speed_buildings_factor = -0.25
 		  	}
 	  	}
 	}
@@ -139,12 +142,13 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = prc_low_popular_support3
+			picture = jap_supremacy_of_technology
 
 			modifier = {
 				consumer_goods_factor = 0.40
         			research_speed_factor = 0.125
         			industrial_capacity_factory = 0.12
+					production_speed_buildings_factor = 0.5
 		  	}
 	  	}
 	}
@@ -161,13 +165,14 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = prc_low_popular_support3
+			picture = jap_supremacy_of_will
 
 			modifier = {
 				consumer_goods_factor = -0.1
         			research_speed_factor = 0.5
         			industrial_capacity_factory = 0.5
-		  	}
+					production_speed_buildings_factor = 1
+					}
 	  	}
 	}
   country = {
@@ -186,10 +191,9 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				send_volunteers_tension = 1
-        weekly_manpower = 20000
-        command_power_gain = 5
-        justify_war_goal_time = 2
+        		stability_weekly = -0.05
+				war_support_weekly = -0.06
+        		justify_war_goal_time = 5
 		  }
 	  }
 	}
@@ -209,10 +213,70 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				send_volunteers_tension = 1
-        weekly_manpower = 40000
-        command_power_gain = 5
-        justify_war_goal_time = 2
+				stability_weekly = -0.05
+				war_support_weekly = -0.06
+        		justify_war_goal_time = 5
+				weekly_manpower = 50000
+		  }
+	  }
+	}
+	country = {
+		populationboom = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption
+
+			modifier = {
+				weekly_manpower = 50000
+		  }
+	  }
+	}
+	country = {
+		populationboom2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption2
+
+			modifier = {
+				weekly_manpower = 100000
+		  }
+	  }
+	}
+	country = {
+		populationboom3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption3
+
+			modifier = {
+				weekly_manpower = 150000 
 		  }
 	  }
 	}
@@ -324,15 +388,37 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = LAT_the_sun_shines_equally
+			picture = por_colonial_army
 
 			modifier = {
-				send_volunteers_tension = 0
+				send_volunteers_tension = -1
 				send_volunteer_size = 10
-				send_volunteer_divisions_required = 0
+				send_volunteer_divisions_required = -1
 				set_rule = {
 					can_send_volunteers = yes
 				}
+		  }
+	  }
+	}
+
+	country = {
+		black_trading = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				trade_opinion_factor = 1
+				min_export = -1
 		  }
 	  }
 	}

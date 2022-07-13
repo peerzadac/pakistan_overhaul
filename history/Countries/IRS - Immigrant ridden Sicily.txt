@@ -6,8 +6,8 @@ set_technology = {
 }
 
 
-set_convoys = 0
-
+set_convoys = 21
+set_research_slots = 3
 add_ideas = {
 	underdeveloped
 	underdeveloped2
@@ -37,7 +37,7 @@ create_country_leader = {
 	ideology = anarchist_communism
 	traits = {
 		representative_of_the_people 
-		stupid 
+		stupid1
 	}
 }
 

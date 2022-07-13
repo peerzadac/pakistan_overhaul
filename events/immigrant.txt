@@ -41,6 +41,7 @@ country_event = {
 		name = "Brute force the ports!"
 		ai_chance = {
 		} 
+		country_event = immigrant.3
 		set_state_owner = 736
 		set_state_owner = 162
 		set_state_owner = 156
@@ -54,5 +55,18 @@ country_event = {
 			remove_idea = racewar
 			add_idea = racewar2
 		  }
+	}
+}
+
+news_event = {
+	id = immigrant.3
+	title = "The IRS riots against Italy!"
+	desc = "The swarthy people lead by Pickle Chin ass nigga are rioting against Italy, who knows what will happen next!."
+	major = yes  #makes even global
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "Damn those niggers..."
+
 	}
 }

@@ -12,10 +12,10 @@ leader_traits = {
 		political_power_factor = -0.25
 	}
 
-	stupid = {
+
+	stupid1 = {
 		random = no
-		political_advisor_cost_factor = 0.25
-		stability_weekly = -0.02
+		political_advisor_cost_factor = 0.50
 	}
 
 	dictator = {

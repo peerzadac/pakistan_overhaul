@@ -21,9 +21,6 @@
 
 		cost = 10
 
-		available = {
-			#NOT = { is_in_faction_with = JAP }
-		}
 		
 		bypass = {
 
@@ -49,9 +46,6 @@
 
 		cost = 10
 		prerequisite = { focus = the_1936_riots }
-		available = {
-			#NOT = { is_in_faction_with = JAP }
-		}
 		
 		bypass = {
 
@@ -116,7 +110,10 @@
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = triballands
+			add_idea = triballands2
+			}
 	}
 	}
 
@@ -132,7 +129,7 @@
 	}
 
 	completion_reward = {
-
+		add_ideas = populationboom
 	}
 	}
 
@@ -148,7 +145,10 @@
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+		remove_idea = populationboom
+		add_idea = populationboom2
+		}
 	}
 	}
 
@@ -164,7 +164,10 @@
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = populationboom2
+			add_idea = populationboom3
+			}
 	}
 	}
 
@@ -180,8 +183,8 @@
 	}
 
 	completion_reward = {
-
-	}
+		add_ideas = black_trading
+	    }
 	}
 
 	focus = {
@@ -226,7 +229,11 @@
 	x = 0
 	y = 5
 	cost = 10
-	ai_will_do = {
+	available = {
+		OR = {
+		has_idea = unified
+		has_idea = unified2
+		}
 	}
 
 	completion_reward = {
@@ -243,8 +250,14 @@
 	x = -2
 	y = 4
 	cost = 10
-	ai_will_do = {
+	available = {
+		OR = {
+		has_idea = unified
+		has_idea = unified2
+		}
 	}
+
+
 
 	completion_reward = {
 
@@ -310,7 +323,11 @@
 	x = -4
 	y = 3
 	cost = 10
-	ai_will_do = {
+	available = {
+		OR = {
+		has_idea = unified
+		has_idea = unified2
+		}
 	}
 
 	completion_reward = {
@@ -422,7 +439,11 @@
 	x = -2
 	y = 6
 	cost = 5
-	ai_will_do = {
+	available = {
+		OR = {
+		has_idea = unified
+		has_idea = unified2
+		}
 	}
 
 	completion_reward = {
@@ -439,7 +460,11 @@
 	x = -4
 	y = 7
 	cost = 10
-	ai_will_do = {
+	available = {
+		OR = {
+		has_idea = unified
+		has_idea = unified2
+		}
 	}
 
 	completion_reward = {
@@ -651,7 +676,10 @@ focus = {
 		}
 	
 		completion_reward = {
-	
+			swap_ideas = { 
+				remove_idea = underdeveloped2
+				add_idea = underdeveloped3
+			  }
 		}
 	}
 
@@ -665,9 +693,16 @@ focus = {
 		cost = 10
 		ai_will_do = {
 		}
-	
+		
+		available = {
+			date > 1937.01.01
+		}
+
 		completion_reward = {
-	
+			swap_ideas = { 
+				remove_idea = underdeveloped3
+				add_idea = underdeveloped4
+			  }
 		}
 	}
 
@@ -681,9 +716,16 @@ focus = {
 		cost = 10
 		ai_will_do = {
 		}
-	
+		
+		available = {
+			date > 1938.01.01
+		}
+
 		completion_reward = {
-	
+			swap_ideas = { 
+				remove_idea = underdeveloped4
+				add_idea = underdeveloped5
+			  }
 		}
 	}
 
@@ -697,9 +739,16 @@ focus = {
 		cost = 10
 		ai_will_do = {
 		}
-	
+		
+		available = {
+			date > 1939.01.01
+		}
+
 		completion_reward = {
-	
+			swap_ideas = { 
+				remove_idea = underdeveloped5
+				add_idea = underdeveloped6
+			  }
 		}
 	}
 
@@ -713,9 +762,10 @@ focus = {
 		cost = 5
 		ai_will_do = {
 		}
-	
+		
+
 		completion_reward = {
-	
+			add_research_slot = 1
 		}
 	}
 
@@ -731,7 +781,7 @@ focus = {
 		}
 	
 		completion_reward = {
-	
+			add_research_slot = 1	
 		}
 	}
 
@@ -745,9 +795,9 @@ focus = {
 		cost = 5
 		ai_will_do = {
 		}
-	
+
 		completion_reward = {
-	
+			add_research_slot = 1
 		}
 	}
 
