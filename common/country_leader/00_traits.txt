@@ -12,6 +12,15 @@ leader_traits = {
 		political_power_factor = -0.25
 	}
 
+	representative_of_the_people2 = {
+		random = no
+		communism_acceptance = 100
+		communism_drift = 0.1
+		war_support_weekly = 0.02
+		stability_weekly = 0.02
+		political_power_factor = 0.25
+	}
+
 
 	stupid1 = {
 		random = no

@@ -41,7 +41,9 @@ country_event = {
 		name = "Brute force the ports!"
 		ai_chance = {
 		} 
+		hidden_effect = {
 		country_event = immigrant.3
+		}
 		set_state_owner = 736
 		set_state_owner = 162
 		set_state_owner = 156
@@ -67,6 +69,18 @@ news_event = {
 	is_triggered_only = yes
 	option = {#okay
 		name = "Damn those niggers..."
+
+	}
+}
+
+news_event = {
+	id = immigrant.4
+	title = "Rumors of Fraud"
+	desc = "The integrity of PickleChins authority has come into question as claims of another PickleChin has come into question" 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "Odd"
 
 	}
 }

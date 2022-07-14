@@ -31,14 +31,16 @@ set_popularities = {
 }
 
 create_country_leader = {
+	character = pickle
 	name = "Pickle Chin ass nigga"
 	desc = "after the city was overrun by black poeple, they demanded someone to represent them, he was chosen out of many"
-	picture = "swarthy.dds"
+	picture = "Aryan.dds"
 	ideology = anarchist_communism
 	traits = {
 		representative_of_the_people 
 		stupid1
 	}
 }
+
 
 

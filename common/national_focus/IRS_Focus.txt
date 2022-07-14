@@ -89,13 +89,13 @@
 	relative_position_id = the_1936_riots
 	x = 1
 	y = 2
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
 	completion_reward = {
-
-	}
+		country_event = immigrant.4  
+	}  
 	}
 
 	focus = {
@@ -199,10 +199,15 @@
 	}
 
 	completion_reward = {
-
+		random_owned_controlled_state = {
+			add_resource = {
+				type = oil
+				amount = 30
+			}
+		}
 	}
 	}
-
+ 
 	focus = {
 	id = racewarend
 	icon = GFX_focus_spr_class_war
@@ -216,7 +221,7 @@
 	}
 
 	completion_reward = {
-
+		remove_ideas = racewar
 	}
 	}
 
@@ -288,12 +293,12 @@
 	relative_position_id = conspiracies
 	x = -2
 	y = 1
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
 	completion_reward = {
-
+		add_ideas = unruly
 	}
 	}
 
@@ -303,14 +308,20 @@
 	icon = GFX_focus_SOV_penal_battalions
 	prerequisite = { focus = fraudreports }
 	relative_position_id = conspiracies
+	available = {
+		communism < 0.3
+	}
 	x = -2
 	y = 2
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = unruly
+			add_idea = unruly2
+		}
 	}
 	}
 
@@ -395,9 +406,20 @@
 	}
 
 	completion_reward = {
-
+			remove_country_leader_role = {
+				character = pickle
+				ideology = communism
+			  }
+			  add_country_leader_role = {
+				character = pickle2
+				promote_leader = yes
+				country_leader = {
+				  ideology = communism_type
+				  traits = { war_industrialist }
+				}
+			  }
 	}
-	}
+}
 
 	focus = {
 	id = cementposition
