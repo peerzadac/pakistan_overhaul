@@ -422,4 +422,51 @@ ideas = {
 		  }
 	  }
 	}
+
+	country = {
+		unruly = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				jowism_drift = 0.1
+				fascism_drift = 0.1
+				democratic_drift = 0.1
+		  }
+	  }
+	}
+
+	country = {
+		unruly2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				jowism_drift = 1
+				fascism_drift = 1
+				democratic_drift = 1
+				local_manpower = -1
+		  }
+	  }
+	}
 }

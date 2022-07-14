@@ -10,5 +10,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/poopy.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_riots"
+		texturefile = "gfx/event_pictures/riots.dds"
+	}
+
 
 }
