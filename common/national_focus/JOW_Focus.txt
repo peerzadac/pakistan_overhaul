@@ -1413,7 +1413,13 @@ focus = {
 	}
 
 	completion_reward = {
-
+		hidden_effect = {
+			random_state = {
+				set_state_owner_to = JOW
+				set_state_controller_to = JOW
+			}
+		}
+		
 	}
 
 }

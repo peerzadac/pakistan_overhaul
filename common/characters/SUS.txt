@@ -1,0 +1,194 @@
+characters = {
+	SUS_hog_rider = {
+		advisor = { 
+			cost = 150
+
+			slot = high_command
+			traits = {
+				hog_rider
+			}
+		}
+		name = "Hog Rider"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_e_barbs = {
+		advisor = {
+			cost = 150
+
+			slot = high_command
+			traits = {
+				e_barbs
+			}
+		}
+		name = "Elite Barbarians"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_royal_giant = {
+		advisor = {
+			cost = 150
+
+			slot = high_command
+			traits = {
+				royal_giant
+			}
+		}
+		name = "Royal Giant"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_valkyrie = {
+		advisor = {
+			cost = 150
+
+			slot = high_command
+			traits = {
+				valkyrie
+			}
+		}
+		name = "Valkyrie"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_witch = {
+		advisor = {
+			cost = 150
+
+			slot = high_command
+			traits = {
+				witch
+			}
+		}
+		name = "Witch"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_balloon = {
+		advisor = {
+			cost = 150
+
+			slot = air_chief
+			traits = {
+				balloon
+			}
+		}
+		name = "Balloon"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_electro_dragon = {
+		advisor = {
+			cost = 150
+
+			slot = air_chief
+			traits = {
+				electro_dragon
+			}
+		}
+		name = "Electro-Dragon"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_minion_horde = {
+		advisor = {
+			cost = 150
+
+			slot = air_chief
+			traits = {
+				minion_horde
+			}
+		}
+		name = "Minion Horde"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_princess = {
+		advisor = {
+			cost = 150
+
+			slot = army_chief
+			traits = {
+				princess
+			}
+		}
+		name = "Princess"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_red_king = {
+		advisor = {
+			cost = 150
+
+			slot = army_chief
+			traits = {
+				red_king
+			}
+		}
+		name = "Red King"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+	SUS_blue_king = {
+		advisor = {
+			cost = 150
+
+			slot = army_chief
+			traits = {
+				blue_king
+			}
+		}
+		name = "Blue King"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+
+
+
+
+
+}
