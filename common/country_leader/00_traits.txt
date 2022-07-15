@@ -119,6 +119,9 @@ leader_traits = {
 
 
 
+
+
+	
 	representative_of_the_people = {
 		random = no
 		communism_acceptance = 100
