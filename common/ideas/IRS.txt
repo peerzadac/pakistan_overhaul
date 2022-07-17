@@ -436,7 +436,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_hyper_inflation5
+			picture = por_unstable_republic
 
 			modifier = {
 				jowism_drift = 0.1
@@ -459,13 +459,35 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_hyper_inflation5
+			picture = por_unstable_republic 
 
 			modifier = {
 				jowism_drift = 1
 				fascism_drift = 1
 				democratic_drift = 1
 				local_manpower = -1
+		  }
+	  }
+	}
+
+	country = {
+		revolutions = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPA_disjointed_carlist_juntas
+
+			modifier = {
+				operation_coup_government_outcome = 0.5
+				operation_cost = -0.5
 		  }
 	  }
 	}

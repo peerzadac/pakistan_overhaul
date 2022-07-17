@@ -342,7 +342,7 @@
 	}
 
 	completion_reward = {
-
+		add_ideas = revolutions
 	}
 	}
 
@@ -406,18 +406,18 @@
 	}
 
 	completion_reward = {
-			remove_country_leader_role = {
-				character = pickle
-				ideology = communism
-			  }
-			  add_country_leader_role = {
-				character = pickle2
-				promote_leader = yes
-				country_leader = {
-				  ideology = communism_type
-				  traits = { war_industrialist }
-				}
-			  }
+		remove_ideas = unruly2
+		create_country_leader = {
+			name = "True Pickle Chin Ass Aryan"
+			desc = "I_miss_the_rage.mp3"
+			picture = "Aryan.dds"
+			expire = "1965.1.1"
+			ideology = anarchist_communism
+			traits = {
+				representative_of_the_people2
+				stupid1
+			}
+		}
 	}
 }
 
@@ -433,7 +433,6 @@
 	}
 
 	completion_reward = {
-
 	}
 	}
 
@@ -690,7 +689,7 @@ focus = {
 
 	focus = {
 		id = stupid
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 40
 		y = 0
 		cost = 10
@@ -707,7 +706,7 @@ focus = {
 
 	focus = {
 		id = retarded
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = research1 }
 		relative_position_id = stupid
 		x = 0
@@ -730,7 +729,7 @@ focus = {
 
 	focus = {
 		id = average
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = research2 }
 		relative_position_id = stupid
 		x = 0
@@ -753,7 +752,7 @@ focus = {
 
 	focus = {
 		id = smart
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = research3 }
 		relative_position_id = stupid
 		x = 0
@@ -776,7 +775,7 @@ focus = {
 
 	focus = {
 		id = research1
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_research
 		relative_position_id = stupid
 		prerequisite = { focus = stupid }
 		x = 0
@@ -793,7 +792,7 @@ focus = {
 
 	focus = {
 		id = research2
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_research
 		prerequisite = { focus = retarded }
 		relative_position_id = stupid
 		x = 0
@@ -809,7 +808,7 @@ focus = {
 
 	focus = {
 		id = research3
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_research2
 		prerequisite = { focus = average }
 		relative_position_id = stupid
 		x = 0
