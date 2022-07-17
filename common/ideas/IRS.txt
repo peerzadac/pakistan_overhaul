@@ -1,0 +1,494 @@
+
+ideas = {
+	country = {
+		underdeveloped = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+        			political_power_gain = -2
+		  	}
+	  	}
+	}
+	country = {
+		unified = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+        			political_power_gain = 2
+		  	}
+	  	}
+	}
+	country = {
+		unified2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system
+
+			modifier = {
+        			political_power_gain = 1
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+
+			modifier = {
+				consumer_goods_factor = 1
+        			research_speed_factor = -1
+        			industrial_capacity_factory = -1
+					production_speed_buildings_factor = -1
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+
+			modifier = {
+				consumer_goods_factor = 0.80
+        			research_speed_factor = -0.625
+        			industrial_capacity_factory = -0.625
+					production_speed_buildings_factor = -0.625
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped4 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+
+			modifier = {
+				consumer_goods_factor = 0.60
+        			research_speed_factor = -0.25
+        			industrial_capacity_factory = -0.25
+					production_speed_buildings_factor = -0.25
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped5 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+
+			modifier = {
+				consumer_goods_factor = 0.40
+        			research_speed_factor = 0.125
+        			industrial_capacity_factory = 0.12
+					production_speed_buildings_factor = 0.5
+		  	}
+	  	}
+	}
+	country = {
+		underdeveloped6 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_supremacy_of_will
+
+			modifier = {
+				consumer_goods_factor = -0.1
+        			research_speed_factor = 0.5
+        			industrial_capacity_factory = 0.5
+					production_speed_buildings_factor = 1
+					}
+	  	}
+	}
+  country = {
+		racewar = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+        		stability_weekly = -0.05
+				war_support_weekly = -0.06
+        		justify_war_goal_time = 5
+		  }
+	  }
+	}
+	country = {
+		racewar2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				stability_weekly = -0.05
+				war_support_weekly = -0.06
+        		justify_war_goal_time = 5
+				weekly_manpower = 50000
+		  }
+	  }
+	}
+	country = {
+		populationboom = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption
+
+			modifier = {
+				weekly_manpower = 50000
+		  }
+	  }
+	}
+	country = {
+		populationboom2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption2
+
+			modifier = {
+				weekly_manpower = 100000
+		  }
+	  }
+	}
+	country = {
+		populationboom3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption3
+
+			modifier = {
+				weekly_manpower = 150000 
+		  }
+	  }
+	}
+  country = {
+		triballands = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				army_core_attack_factor = 0.5
+        army_core_defence_factor = 0.5
+        army_speed_factor = 0.05
+        army_defence_factor = 0.05
+        army_attack_factor = 0.05
+		  }
+	  }
+	}
+  country = {
+		triballands2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				army_core_attack_factor = 1
+        army_core_defence_factor = 1
+        army_speed_factor = 0.15
+        army_defence_factor = 0.15
+        army_attack_factor = 0.15
+		  }
+	  }
+	}
+  country = {
+		triballands3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				army_core_attack_factor = 2
+        army_core_defence_factor = 2
+        army_speed_factor = 0.3
+        army_defence_factor = 0.3
+        army_attack_factor = 0.3
+        breakthrough_factor = 0.5
+        terrain_penalty_reduction = 0.5
+		  }
+	  }
+	}
+  country = {
+		sunpeople = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LAT_the_sun_shines_equally
+
+			modifier = {
+				heat_attrition_factor = -1
+		  }
+	  }
+	}
+
+	country = {
+		niggas = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = por_colonial_army
+
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 10
+				send_volunteer_divisions_required = -1
+				set_rule = {
+					can_send_volunteers = yes
+				}
+		  }
+	  }
+	}
+
+	country = {
+		black_trading = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation5
+
+			modifier = {
+				trade_opinion_factor = 1
+				min_export = -1
+		  }
+	  }
+	}
+
+	country = {
+		unruly = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = por_unstable_republic
+
+			modifier = {
+				jowism_drift = 0.1
+				fascism_drift = 0.1
+				democratic_drift = 0.1
+		  }
+	  }
+	}
+
+	country = {
+		unruly2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = por_unstable_republic 
+
+			modifier = {
+				jowism_drift = 1
+				fascism_drift = 1
+				democratic_drift = 1
+				local_manpower = -1
+		  }
+	  }
+	}
+
+	country = {
+		revolutions = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPA_disjointed_carlist_juntas
+
+			modifier = {
+				operation_coup_government_outcome = 0.5
+				operation_cost = -0.5
+		  }
+	  }
+	}
+}
