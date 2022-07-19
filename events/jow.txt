@@ -67,3 +67,90 @@ news_event = {
 
 }
 
+
+country_event = {
+	id = jow.5
+	title = "The Kashmir Crisis"
+	desc = "Seven years ago today, the Z-90s of India were cut off from the world. Following this action, there was a lot of outrage among Indian residents claiming who have A-10s. This population has migrated North and are finally ready to rejoin us."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+		name = "Time to reclaim what is ours!"
+
+		add_stability = -0.20 
+		add_war_support = 0.20
+	}
+}
+
+country_event = {
+	id = jow.6
+	title = "The Kashmir Question"
+	desc = "Now has come the time to decide the fae of our lost Aryan brothers."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Yippee!"
+		
+		add_named_threat = {
+			threat = 3
+			name = "Kashmir Occupied"
+		}
+
+		441 = {
+			set_state_owner_to = JOW
+			set_state_controller_to = JOW
+			set_demilitarized_zone = no
+		}
+		
+		787 = {
+			set_demilitarized_zone = no
+		}
+		
+	}
+}
+
+country_event = {
+	id = jow.7
+	title = "Left Wing Jowism"
+	desc = "Straying from the path normally followed with Jowism, this path takes a more diplomatic route; manipulate your neighbors and take what's yours, without the fighting and blood the other path beholds!"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Okay"
+		
+		
+	}
+}
+
+country_event = {
+	id = jow.8
+	title = "A Mughal Catastrophy"
+	desc = "As the empire to our West crumbles, people have begun to realize their true national identity, and will be moving to Jowland in the future."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Yippee!"
+		
+		410 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+
+		}
+		add_political_power = -25
+		
+	}
+	option = { #no
+
+		name = "No thanks."
+		
+		add_political_power = 10
+		
+	}
+}

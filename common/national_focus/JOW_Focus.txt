@@ -190,6 +190,8 @@ focus = {
 
 	completion_reward = {
 		#add event that gives army xp and pp based on india's response to jow's speech
+		JOW = { country_event = { id = jow.5 } }
+
 	}
 
 }
@@ -298,8 +300,10 @@ focus = {
 	}
 
 	completion_reward = {
-		#add event for kashmir occupation. India will have no choice for now. Include world tension and some negative opinions perhaps.
-		custom_effect_tooltip = "Add event soon lol"
+		
+		JOW = { country_event = { id = jow.6 } }
+
+		
 	}
 
 }
@@ -538,6 +542,13 @@ focus = {
 
 	completion_reward = {
 				#add flavor event + hidden mtth state loss in iran 410 +core same as right wing
+		add_political_power = 20
+		add_stability = 0.10
+		JOW = { country_event = { id = jow.7 }}
+
+		hidden_effect = {
+			JOW = { country_event = { id = jow.8 days = 50 } }
+		}
 	}
 
 }
