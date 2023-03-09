@@ -189,7 +189,7 @@ focus = {
 	}
 
 	completion_reward = {
-		#add event that gives army xp and pp based on india's response to jow's speech
+
 		JOW = { country_event = { id = jow.5 } }
 
 	}
@@ -267,7 +267,6 @@ focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = "Unlocks Remilitarization Focuses."
-		#unlockes remiiltarization tree.
 		army_experience = 50
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
@@ -364,12 +363,17 @@ focus = {
 		factor = 12
 	}
 
+	available = {
+		owns_state = 441
+		controls_state = 441
+	}
 	completion_reward = {
 		add_popularity = {
 			ideology = jowism
 			popularity = 0.10
 		}
 		add_ideas = absolute_jowism
+		set_cosmetic_tag = JOW_L
 		
 	}
 
@@ -392,6 +396,15 @@ focus = {
 
 	completion_reward = {
 		#add flavor event + hidden mtth state loss in iran 410 +core
+		hidden_effect = {
+			JOW = {
+				country_event ={
+					id = jow.8
+					days = 35
+				}
+			}
+		}
+		add_political_power = 25
 	}
 
 }
@@ -807,15 +820,29 @@ focus = {
 	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = jow_jowish_alliance }
 	prerequisite = { focus = jow_right_wing }
+
 	x = 18
 	y = 8
 	cost = 10
 	ai_will_do = {
 		factor = 12
 	}
+	available = {
+		has_government = jowism
+		JUN = { 
+			has_government = jowism
+			is_subject = no
+		}
+	}
+		
 
+	
 	completion_reward = {
-			#event for junch for joining faction
+			JUN = {
+				country_event = {
+					id = jow.10
+				}
+			}
 		}
 	}
 
@@ -1036,7 +1063,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		custom_effect_tooltip = "Unlocks the CEO of Pakistan Political Advisor"
 	}
 
 }
@@ -1057,7 +1084,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		add_ideas = mercantilism_5
 	}
 
 }
@@ -1078,6 +1105,18 @@ focus = {
 	}
 
 	completion_reward = {
+		add_popularity ={
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
+		}
 
 	}
 
@@ -1141,7 +1180,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		remove_ideas = elixir_depression
 	}
 
 }
@@ -1162,7 +1201,7 @@ focus = {
 	}
 
 	completion_reward = {
-
+		
 	}
 
 }

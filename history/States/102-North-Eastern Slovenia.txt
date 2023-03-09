@@ -2,10 +2,10 @@ state=
 {
 	id=102
 	name="STATE_102"
-	manpower = 1144300
-
+	manpower = 811050 # was 1144300 before Ljubljana split
+	
 	state_category = large_town
-
+	
 	history =
 	{
 		owner = GRO
@@ -13,13 +13,14 @@ state=
 			infrastructure = 3
 		}
 		victory_points = {
-			9627 3
+			665 1
 		}
 		add_core_of = GRO
-		add_core_of = GRO
+		add_core_of = SLV
 	}
 	provinces={
-		596 665 3631 3654 6650 6672 9596 9627 }
-
-	local_supplies=5.0
+		596 665 3631 3654 6672 9596
+	}
+	
+	local_supplies=0.0 
 }

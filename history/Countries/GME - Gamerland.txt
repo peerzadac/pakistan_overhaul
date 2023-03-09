@@ -62,6 +62,6 @@ set_politics = {
 set_popularities = {
 democratic = 10
 neutrality = 30
-jowism = 30
+fascism = 30
 alcoholism = 30
 }

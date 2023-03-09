@@ -1,0 +1,33 @@
+technologies = {
+	
+	@1936 = 0
+
+
+	tech_chest_tech = {
+
+		path = {
+			leads_to_tech = tech_silver_chests
+			research_cost_coeff = 1
+
+		}
+		research_cost = 1.0
+
+	}
+
+
+	tech_silver_chests = {
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

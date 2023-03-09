@@ -15,16 +15,13 @@ focus_tree = {
   focus = {
 		id = PIZ_new_empire
 		icon = GFX_goal_generic_major_alliance
-		#text = extra_tech_slot
+
 		#prerequisite = { ideas = squeaky_clean }
 
-		available = {
-
-		}
-		x = 10
+		x = 15
 		y = 0
 		#relative_position_id = ITA_industrial_effort_2
-		cost = 1
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -35,4 +32,163 @@ focus_tree = {
 
 		}
 	}
+
+  focus = {
+		id = PIZ_treaty_of_coomleville
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_new_empire }
+
+		x = -2
+		y = 1
+		relative_position_id = PIZ_new_empire
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_scampis_draft
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_new_empire }
+
+		x = 0
+		y = 1
+		relative_position_id = PIZ_new_empire
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_swamp_antics
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_new_empire }
+
+		x = 2
+		y = 1
+		relative_position_id = PIZ_new_empire
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_pummel_doctrine
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_treaty_of_coomleville }
+		prerequisite = { focus = PIZ_scampis_draft }
+		prerequisite = { focus = PIZ_swamp_antics }
+
+		x = 0
+		y = 2
+		relative_position_id = PIZ_new_empire
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -500
+		}
+	}
+
+	focus = {
+		id = PIZ_integrate_war_economies
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_pummel_doctrine }
+		prerequisite = { not ={
+			idea = poopy
+		}}
+
+		x = 0
+		y = 3
+		relative_position_id = PIZ_new_empire
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = PIZ_anthony_question
+		icon = GFX_goal_generic_major_alliance
+
+	
+		prerequisite = { focus = PIZ_integrate_war_economies }
+		#mutually_exclusive = { focus = PIZ_develope_parlia }
+
+		x = 1
+		y = 4
+		relative_position_id = PIZ_new_empire
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_develope_parlia
+		icon = GFX_goal_generic_major_alliance
+
+	
+		prerequisite = { focus = PIZ_integrate_war_economies }
+		#mutually_exclusive = { focus = PIZ_anthony_question }
+
+		x = -1
+		y = 4
+		relative_position_id = PIZ_new_empire
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
 }

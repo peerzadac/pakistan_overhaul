@@ -1,6 +1,24 @@
 ideas = {
 
+country = {
+	elixir_depression = {
 
+		allowed ={
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = leaking
+
+		modifier = {
+			base_fuel_gain_factor = -0.95
+			max_fuel_factor = -1
+			attrition = 30
+
+		}
+	}
+}
 
 country = {
 		poopy = {

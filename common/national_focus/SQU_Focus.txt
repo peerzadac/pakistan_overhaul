@@ -1,0 +1,66 @@
+focus_tree = {
+	id = squid_focus
+
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = SQU
+		}
+	}
+
+
+focus = {
+	id = squ_embrace_squidward
+	x = 14 
+	y = 1
+	mutually_exclusive = { focus = squ_abandon_squidward }
+	cost = 10
+	ai_will_do = {
+		factor = 12
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = squ_abandon_squidward
+	x = 16
+	y = 1
+	mutually_exclusive = { focus = squ_embrace_squidward } 
+	cost = 10
+	ai_will_do = {
+		factor = 0
+	}
+	completion_reward = {
+		
+	}
+}
+#withward
+
+focus = {
+	id = squ_paradox
+	x = 11
+	y = 2
+	prerequisite = { focus = squ_embrace_squidward}
+	cost = 10
+	ai_will_do = {
+		factor = 0
+	}
+	completion_reward = {
+		
+	}
+}
+
+
+
+
+
+
+}

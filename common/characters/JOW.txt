@@ -12,7 +12,38 @@ characters={
 		}
 	}
 
+	JOW_pac_standard={
+		name="CEO of Pakistan"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_commonwealth_2d"
+			}
+		}
+		advisor={
+			allowed = {
+				tag = JOW
+			}
+			available = {
+				
+				if = { 
+					has_completed_focus = jow_civ1
+				}
+				if = {
+					num_of_civilian_factories > 12
+				}
 
+
+				
+			}
+			idea_token = JOW_pac_standard
+			cost = 100
+			slot = political_advisor
+			traits = {
+				pac_standard
+
+			}
+		}
+	}
 
 
 

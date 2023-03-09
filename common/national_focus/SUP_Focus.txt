@@ -1,0 +1,485 @@
+focus_tree = {
+	id = supercell_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = SUP
+		}
+	}
+
+
+focus = {
+	id = sup_found_game_company
+	icon = GFX_focus_generic_little_entente
+	x = 25
+	y = 0
+	cost = 5
+
+	completion_reward = {
+		add_political_power = 50
+		#news event
+		#national spirit
+	}
+
+
+}
+
+
+focus = {
+	id = sup_clash_of_clans
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_found_game_company }
+	mutually_exclusive = { focus = sup_clash_royale }
+	relative_position_id = sup_found_game_company
+	x = -8
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+
+focus = {
+	id = sup_clash_royale
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_found_game_company }
+	mutually_exclusive = { focus = sup_clash_of_clans }
+	mutually_exclusive = { focus = sup_MIC }
+	relative_position_id = sup_found_game_company
+	
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+
+focus = {
+	id = sup_MIC
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_found_game_company }
+	mutually_exclusive = { focus = sup_clash_royale }
+	relative_position_id = sup_found_game_company
+	x = 8
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+
+###########################
+#Clash of clans
+###########################
+
+focus = {
+	id = sup_th1
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_clash_of_clans }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th2
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th1 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th3
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th2 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th4
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th3 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 4
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th5
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th4 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 5
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th6
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th5 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 6
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th7
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th6 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 7
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th8
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th7 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 8
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th9
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th8 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 9
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_th10
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_th9 }
+	relative_position_id = sup_clash_of_clans
+	x = 0
+	y = 10
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+
+
+
+
+###########################
+#Clash royale
+###########################
+
+focus = {
+	id = sup_elixir1
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_clash_royale  focus = sup_clash_of_clans }
+	relative_position_id = sup_clash_royale 
+	x = -4
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_elixir2
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_elixir1 }
+	relative_position_id = sup_clash_royale 
+	x = -4
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_dark_elixir
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_elixir2 }
+	relative_position_id = sup_clash_royale 
+	x = -4
+	y = 3
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_infinite_elixir
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_dark_elixir }
+	relative_position_id = sup_clash_royale 
+	available = {
+		date > 1941.1.1
+	}
+	x = -4
+	y = 4
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+focus = {
+	id = sup_manifest_destiny
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_clash_royale }
+	relative_position_id = sup_clash_royale 
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+		#elixir gain national spirit
+	}
+
+
+}
+
+focus = {
+	id = sup_brazil_server
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_manifest_destiny }
+	relative_position_id = sup_clash_royale 
+	mutually_exclusive = {focus = sup_brazil_server2}
+	x = -1
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+		#annex brazil, rest pupet
+		#218 227 220 226 259 225 228 221 220 240 222 223 254 258 260 257 + puppt
+		#
+	}
+
+
+}
+
+focus = {
+	id = sup_brazil_server2
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_manifest_destiny }
+	mutually_exclusive = {focus = sup_brazil_server}
+	relative_position_id = sup_clash_royale 
+	x = 1
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+
+	}
+
+
+}
+
+focus = {
+	id = sup_publications_pizza
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = sup_brazil_server focus = sup_brazil_server2 }
+	relative_position_id = sup_clash_royale 
+	available = {
+		country_exists = PIZ
+	}
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+	bypass_if_unavailable = yes
+		
+	
+	completion_reward = {
+		
+	}
+
+
+}
+
+
+
+###########################
+#Boom beach
+###########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

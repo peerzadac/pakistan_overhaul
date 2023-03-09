@@ -9,8 +9,9 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-          democratic_acceptance = ISR.party_popularity_100@democratic
-          democratic_drift = ISR.party_popularity@democratic
+          #TEMPORARY FIX CHRISTIAN
+          #democratic_acceptance = ISR.party_popularity_100@democratic
+          #democratic_drift = ISR.party_popularity@democratic
 		}
       }
     }

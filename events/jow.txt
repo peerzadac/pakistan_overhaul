@@ -78,8 +78,9 @@ country_event = {
 	option = { #okay
 		name = "Time to reclaim what is ours!"
 
-		add_stability = -0.20 
-		add_war_support = 0.20
+		add_war_support = 0.10
+		army_experience = 25
+		add_political_power = 50
 	}
 }
 
@@ -144,6 +145,12 @@ country_event = {
 
 		}
 		add_political_power = -25
+		hidden_effect = {
+			410 = {
+				add_core_of = JOW
+			}
+			
+		}
 		
 	}
 	option = { #no
@@ -153,4 +160,201 @@ country_event = {
 		add_political_power = 10
 		
 	}
+}
+
+country_event = {
+	id = jow.9
+	title = "The India Question"
+	desc = "Given India's weak state, we have found ourselves infirtrating a mojority of their country already, with the rest primed for invasion."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "All of India belongs to the Donk!"
+		create_wargoal = {
+			target = CUR
+			type = take_all_states
+		}
+		add_stability = -0.05
+		custom_effect_tooltip = "Jowland annexes most of India."
+		hidden_effect = {
+			428= {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			433 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			439= {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			} 
+			438= {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			} 
+			437= {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			} 
+			429 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			436 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			435 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+			}
+			431 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			432 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			430 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+			}
+			426 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+			427 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+				add_core_of = JOW
+				set_demilitarized_zone = false
+	
+			}
+		}
+		
+		
+	}
+	option = { #no
+
+		name = "Keep the shit men away from me."
+		
+		add_political_power = 10
+		
+	}
+}
+
+country_event = {
+	id = jow.10
+	title = "Jowland Proposes Alliance"
+	desc = "holy shmoly"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Shore"
+		
+		JOW = {
+			country_event = {
+				id = jow.11
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+		
+	}
+	option = { #no
+
+		name = "No thanks."
+		
+		
+	}
+}
+
+country_event = {
+	id = jow.11
+	title = "Junch Accepts Alliance"
+	desc = "holy shmoly"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Swag"
+		
+		JOW = {
+			add_to_faction = JUN
+		}
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
+}
+
+country_event = {
+	id = jow.12
+	title = "Junch Declines Alliance"
+	desc = "holy shmoly"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = ":("
+		
+		create_wargoal = {
+			target = JUN
+			type = topple_government
+		}
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
 }

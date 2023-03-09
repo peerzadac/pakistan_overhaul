@@ -30,17 +30,19 @@ set_popularities = {
 	neutrality = 20
 }
 
-create_country_leader = {
-	character = pickle
-	name = "Pickle Chin ass nigga"
-	desc = "after the city was overrun by black poeple, they demanded someone to represent them, he was chosen out of many"
-	picture = "swarthy.dds"
-	ideology = anarchist_communism
-	traits = {
-		representative_of_the_people 
-		stupid1
-	}
-}
+#create_country_leader = {
+#	character = pickle
+#	name = "Pickle Chin ass nigga"
+#	desc = "after the city was overrun by black poeple, they demanded someone to represent them, he was chosen out of many"
+#	picture = "swarthy.dds"
+#	ideology = anarchist_communism
+#	traits = {
+#		representative_of_the_people 
+#		stupid1
+#	}
+#}
+
+#^above doesnt work anymore, use recruit_character (see other country history files)
 
 
 
