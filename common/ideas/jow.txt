@@ -1,6 +1,27 @@
 ideas = {
 
 country = {
+	jow_aryanism = {
+		allowed ={
+			tag = JOW
+		}
+
+		removal_cost = -1
+
+		picture = leaking
+
+		modifier = {
+			infantry_attack_modifier = 0.1
+			infantry_defense_modifier = 0.1
+			weekly_stability = 0.05
+		}
+
+	}
+}
+
+
+
+country = {
 	elixir_depression = {
 
 		allowed ={
