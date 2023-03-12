@@ -21,6 +21,25 @@ country = {
 }
 
 country = {
+	two_yeal = {
+
+		allowed ={
+			always = yes
+		}
+
+		removal_cost = -1
+
+		#picture = leaking
+
+		modifier = {
+			justify_war_goal_time = -0.25
+			#division_speed_modifier = 0.2
+		}
+	}
+}
+
+
+country = {
 		poopy = {
 
 			allowed = {

@@ -1,6 +1,6 @@
 1. wsl
 2. git pull
 3. git add *
-4. git commit ""
+4. git commit -m ""
 5. git push
 6. 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

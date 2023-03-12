@@ -425,7 +425,9 @@ focus = {
 	}
 
 	completion_reward = {
-		#idea for 2 years with justify war and attack and speed for  conquring and such
+		JOW = {
+			add_ideas = two_yeal
+		}
 	}
 
 }
@@ -446,9 +448,11 @@ focus = {
 	}
 
 	completion_reward = {
-		#give most states; give event with option to invade the rest
-		#states given 428 433 439 438 437 429 436 435 431 432 430 426 427
-		#other 425 424 321 423 329 423 422
+		JOW = {
+			country_event ={
+				id = jow.9
+			}
+		}
 	}
 
 }
@@ -467,7 +471,11 @@ focus = {
 	}
 
 	completion_reward = {
-		#event partition bhutan. 66% chance for normal, 20 % chance for china want extra, 14% you get all
+		BIG = {
+			country_event ={
+				id = jow.13
+			}
+		}
 	}
 
 }
@@ -554,7 +562,7 @@ focus = {
 	}
 
 	completion_reward = {
-				#add flavor event + hidden mtth state loss in iran 410 +core same as right wing
+
 		add_political_power = 20
 		add_stability = 0.10
 		JOW = { country_event = { id = jow.7 }}
@@ -580,7 +588,100 @@ focus = {
 	}
 
 	completion_reward = {
+		add_political_power = 120
+		428= {
 
+			set_demilitarized_zone = no
+
+		}
+		433 = {
+
+			set_demilitarized_zone = no
+
+		}
+		439= {
+
+			set_demilitarized_zone = no
+
+		} 
+		438= {
+
+			set_demilitarized_zone = no
+
+		} 
+		437= {
+
+			set_demilitarized_zone = no
+
+		} 
+		429 = {
+
+			set_demilitarized_zone = no
+
+		}
+		436 = {
+
+			set_demilitarized_zone = no
+
+		}
+		435 = {
+
+			set_demilitarized_zone = no
+		}
+		431 = {
+
+			set_demilitarized_zone = no
+
+		}
+		432 = {
+
+			set_demilitarized_zone = no
+
+		}
+		430 = {
+
+			set_demilitarized_zone = no
+		}
+		426 = {
+
+			set_demilitarized_zone = no
+
+		}
+		427 = {
+
+			set_demilitarized_zone = no
+
+		}
+		425 = {
+
+			set_demilitarized_zone = no
+
+		}
+		424 = {
+
+			set_demilitarized_zone = no
+
+		}
+		321 = {
+
+			set_demilitarized_zone = no
+
+		}
+		423 = {
+
+			set_demilitarized_zone = no
+
+		}
+		320 = {
+
+			set_demilitarized_zone = no
+
+		}
+		422 = {
+
+			set_demilitarized_zone = no
+
+		}
 	}
 
 }
@@ -599,7 +700,19 @@ focus = {
 	}
 
 	completion_reward = {
-		#colonize indochina event with options: take or puppet, puppeting reaping more benefits as resouces are added to them through random events?
+		288 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		724 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		336 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+
 	}
 
 }
@@ -769,7 +882,12 @@ focus = {
 	}
 
 	completion_reward = {
-		#raise opinion of other major countries, lower world tension by 1
+		add_named_threat = {
+			threat = -5
+			name = "Jow justifies silly actions"
+		}
+		
+
 	}
 
 }
