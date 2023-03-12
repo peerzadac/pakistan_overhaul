@@ -1,0 +1,18 @@
+characters={
+IRS_pickle={
+	name="Pickle Chin ass nigga"
+	portraits={
+		civilian={
+			large="gfx/leaders/IRS/swarthy.dds"
+		}
+	}
+	country_leader={
+		ideology=anarchist_communism
+		expire="1965.1.1"
+		traits = {
+			representative_of_the_people 
+			stupid1
+		}
+	}
+}
+}

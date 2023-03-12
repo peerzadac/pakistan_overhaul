@@ -34,7 +34,7 @@ country_event = {
 country_event = {
 	id = immigrant.2
 	title = "The 1936 Riots"
-	desc = "The influx of immigrants is a very promising start to our newly represented city, how should we go about welcoming our new niggers?"
+	desc = "The influx of immigrants is a very promising start to our newly represented city, how should we go about welcoming our new minorities?"
 	picture = GFX_1936
 	is_triggered_only = yes
 	option = { #Short term
@@ -68,7 +68,7 @@ news_event = {
 	picture = GFX_riots
 	is_triggered_only = yes
 	option = {#okay
-		name = "Damn those niggers..."
+		name = "We Wuz Kangz..."
 
 	}
 }
