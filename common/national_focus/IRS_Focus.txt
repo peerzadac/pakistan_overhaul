@@ -433,17 +433,7 @@
 	}
 
 	completion_reward = {
-		recruit_character = SUS_hog_rider
-recruit_character = SUS_e_barbs
-recruit_character = SUS_royal_giant
-recruit_character = SUS_valkyrie
-recruit_character = SUS_witch
-recruit_character = SUS_balloon
-recruit_character = SUS_electro_dragon
-recruit_character = SUS_minion_horde
-recruit_character = SUS_princess
-recruit_character = SUS_red_king
-recruit_character = SUS_blue_king
+		custom_effect_tooltip = "Unlocks SUPERCELL military advisors"
 	}
 	}
 

@@ -5,8 +5,8 @@ state={
 		7683 7807 7810 10534 10715 12600 
 	}
 	history = {
-		owner = CAN
-		add_core_of = CAN
+		owner = TRU
+		add_core_of = TRU
 	}
 	manpower=110000
 	state_category = rural

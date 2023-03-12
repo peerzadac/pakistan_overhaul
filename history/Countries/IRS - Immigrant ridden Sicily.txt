@@ -19,7 +19,7 @@ add_ideas = {
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
-	election_frequency = 0
+	election_frequency = 48
 	elections_allowed = no
 }
 
@@ -28,10 +28,23 @@ set_popularities = {
 	fascism = 10
 	communism = 50
 	neutrality = 20
+	jowism = 0
+	alcoholism = 0
 }
 
 recruit_character = IRS_pickle
 
+recruit_character = IRS_hog_rider
+recruit_character = IRS_e_barbs
+recruit_character = IRS_royal_giant
+recruit_character = IRS_valkyrie
+recruit_character = IRS_witch
+recruit_character = IRS_balloon
+recruit_character = IRS_electro_dragon
+recruit_character = IRS_minion_horde
+recruit_character = IRS_princess
+recruit_character = IRS_red_king
+recruit_character = IRS_blue_king
 
 
 
