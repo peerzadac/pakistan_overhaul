@@ -121,8 +121,8 @@ if = {
 		early_battleship = 1
 		basic_battleship = 1
 		early_battlecruiser = 1
-		early_carrier = 1
-		basic_carrier = 1
+		#early_carrier = 1
+		#basic_carrier = 1
 		transport = 1
 	}
 	set_naval_oob = "JAP_1936_naval_legacy"
@@ -178,7 +178,7 @@ create_import = {
 	complete_national_focus = JAP_greater_east_asian_co_prosperity_sphere
 	unlock_national_focus = JAP_intervene_in_china
 	complete_national_focus = JAP_fighter_modernization
-	complete_national_focus = JAP_carrier_warfare_experiments
+	#complete_national_focus = JAP_carrier_warfare_experiments
 	complete_national_focus = JAP_supremacy_of_technology
 	complete_national_focus = JAP_national_mobilization_law
 	complete_national_focus = JAP_national_research_policy
@@ -222,8 +222,8 @@ create_import = {
 		grand_battle_plan = 1
 		prepared_defense = 1
 		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
+		#carrier_primacy = 1
+		#carrier_task_forces = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -256,7 +256,7 @@ create_import = {
 			basic_ship_hull_light = 1
 			improved_ship_hull_light = 1
 			improved_ship_hull_cruiser = 1
-			improved_ship_hull_carrier = 1
+			#improved_ship_hull_carrier = 1
 			ship_hull_super_heavy = 1
 		}
 		set_naval_oob = "JAP_1939_naval"
@@ -270,7 +270,7 @@ create_import = {
 			basic_destroyer = 1
 			improved_destroyer = 1
 			improved_heavy_cruiser = 1
-			improved_carrier = 1
+			#improved_carrier = 1
 			heavy_battleship = 1
 		}
 		set_naval_oob = "JAP_1939_naval_legacy"
@@ -502,18 +502,18 @@ if = {
 ### VARIANTS ###
 	# 1936 Start #
 		### Carrier Variants
-		create_equipment_variant = {
-			name = "Akagi Class"
-			type = carrier_1
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 5
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 3
-			}
-			obsolete = yes
-		}
+		#create_equipment_variant = {
+		#	name = "Akagi Class"
+		#	type = carrier_1
+		#	parent_version = 0
+		#	upgrades = {
+		#		ship_deckspace_upgrade = 5
+		#		carrier_armor_upgrade = 2
+		#		ship_engine_upgrade = 2
+		#		ship_reliability_upgrade = 3
+		#	}
+		#	obsolete = yes
+		}#
 		### Battleship Variants	
 		create_equipment_variant = {
 			name = "Ise Class"
@@ -602,104 +602,47 @@ if = {
 			}
 			obsolete = yes
 		}	
-}
+
 if = {
 	limit = { has_dlc = "Man the Guns"}
 	### VARIANTS ###
 	# 1936 Start #
 		### Carrier Variants
-		create_equipment_variant = {
-			name = "Akagi Class"
-			type = ship_hull_carrier_conversion_bb
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = empty
-				mid_1_custom_slot = ship_deck_space
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Kaga Class"
-			type = ship_hull_carrier_conversion_bb
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				mid_1_custom_slot = ship_deck_space
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Soryu Class"
-			type = ship_hull_carrier_1
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_deck_space
-			}
-		}
-		create_equipment_variant = {
-			name = "Zuiho Class"
-			type = ship_hull_carrier_conversion_ca
-			name_group = JAP_CVL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-			}
-		}
-		create_equipment_variant = {
-			name = "Hosho Class"
-			name_group = JAP_CVL_HISTORICAL
-			type = ship_hull_carrier_conversion_ca
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = empty
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Ryujo Class"
-			name_group = JAP_CVL_HISTORICAL
-			type = ship_hull_carrier_1
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = empty
-			}
-			obsolete = yes
-		}
+		#create_equipment_variant = {
+		#	name = "Akagi Class"
+		#	type = ship_hull_carrier_conversion_bb
+		#	name_group = JAP_CV_HISTORICAL
+		#	parent_version = 0
+		#	modules = {
+		#		fixed_ship_deck_slot_1 = ship_deck_space
+		#		fixed_ship_deck_slot_2 = ship_deck_space
+		#		fixed_ship_anti_air_slot = ship_anti_air_1
+		#		fixed_ship_radar_slot = empty
+		#		fixed_ship_engine_slot = heavy_ship_engine_1
+		#		fixed_ship_secondaries_slot = empty
+		#		mid_1_custom_slot = ship_deck_space
+		#	}
+		#	obsolete = yes
+		#}
+		#create_equipment_variant = {
+		#	name = "Kaga Class"
+		#	type = ship_hull_carrier_conversion_bb
+		#	name_group = JAP_CV_HISTORICAL
+		#	parent_version = 0
+		#	modules = {
+		#		fixed_ship_deck_slot_1 = ship_deck_space
+		#		fixed_ship_deck_slot_2 = ship_deck_space
+		#		fixed_ship_anti_air_slot = ship_anti_air_1
+		#		fixed_ship_radar_slot = empty
+		#		fixed_ship_engine_slot = heavy_ship_engine_1
+		#		fixed_ship_secondaries_slot = ship_secondaries_1
+		#		mid_1_custom_slot = ship_deck_space
+		#	}
+		#	obsolete = yes
+		#}
+
+
+
 		### Battleship Variants	
 		create_equipment_variant = {
 			name = "Nagato Class"
@@ -1066,55 +1009,12 @@ if = {
 }
 	# 1939 Start #			
 	1939.1.1 = {
-		if = {
-			limit = {
-				not = { has_dlc = "Man the Guns" }
-			}
-			### Carrier Variants
-			create_equipment_variant = {
-				name = "Hiryu Class"
-				type = carrier_2
-				parent_version = 0
-				upgrades = {
-					ship_deckspace_upgrade = 1
-					carrier_armor_upgrade = 0
-					ship_engine_upgrade = 0
-					ship_reliability_upgrade = 1
-				}
-			}
-			
-			create_equipment_variant = {
-				name = "Kagero Class"
-				type = destroyer_2
-				parent_version = 0
-				upgrades = {
-					ship_torpedo_upgrade = 2
-					destroyer_engine_upgrade = 3
-					ship_ASW_upgrade = 2
-					ship_anti_air_upgrade = 2
-				}
-			}
-		}
+
 		if = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
-			create_equipment_variant = {
-				name = "Shokaku Class"
-				type = ship_hull_carrier_2
-				name_group = JAP_CV_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_deck_slot_1 = ship_deck_space
-					fixed_ship_deck_slot_2 = ship_deck_space
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = carrier_ship_engine_2
-					fixed_ship_secondaries_slot = empty
-					front_1_custom_slot = ship_deck_space
-					mid_1_custom_slot = ship_deck_space
-				}
-			}
+			
 			create_equipment_variant = {
 				name = "Yamato Class"
 				type = ship_hull_super_heavy_1

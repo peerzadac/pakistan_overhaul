@@ -1,5 +1,0 @@
-bookmarks = {
-	bookmark = {
-		default = no
-	}
-}
