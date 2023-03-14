@@ -1298,7 +1298,7 @@ focus = {
 	}
 
 	completion_reward = {
-		remove_ideas = elixir_depression
+		
 	}
 
 }
