@@ -941,16 +941,16 @@ focus = {
 
 	x = 18
 	y = 8
-	cost = 10
+	cost = 3
 	ai_will_do = {
 		factor = 12
 	}
 	available = {
 		has_government = jowism
-		JUN = { 
-			has_government = jowism
-			is_subject = no
-		}
+		#JUN = { 
+		#	has_government = jowism
+		#	is_subject = no
+		#}
 	}
 		
 
