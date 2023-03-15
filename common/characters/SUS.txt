@@ -2,8 +2,10 @@ characters = {
 	SUS_hog_rider = {
 		advisor = { 
 			cost = 150
-
+			
+			idea_token = hog_rider
 			slot = high_command
+			ledger = army
 			traits = {
 				hog_rider
 			}
@@ -20,7 +22,9 @@ characters = {
 		advisor = {
 			cost = 150
 
+			idea_token = e_barbs
 			slot = high_command
+			ledger = army
 			traits = {
 				e_barbs
 			}
@@ -37,7 +41,9 @@ characters = {
 		advisor = {
 			cost = 150
 
+			idea_token = royal_giant
 			slot = high_command
+			ledger = army
 			traits = {
 				royal_giant
 			}
@@ -54,7 +60,9 @@ characters = {
 		advisor = {
 			cost = 150
 
+			idea_token = valkyrie
 			slot = high_command
+			ledger = army
 			traits = {
 				valkyrie
 			}
@@ -71,7 +79,9 @@ characters = {
 		advisor = {
 			cost = 150
 
+			idea_token = witch
 			slot = high_command
+			ledger = army
 			traits = {
 				witch
 			}

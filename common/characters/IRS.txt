@@ -1,0 +1,294 @@
+characters={
+IRS_pickle={
+	name="Pickle Chin ass nigga"
+	portraits={
+		civilian={
+			large="gfx/leaders/IRS/swarthy.dds"
+		}
+	}
+	country_leader={
+		ideology=anarchist_communism
+		expire="1965.1.1"
+		traits = {
+			representative_of_the_people 
+			stupid1
+		}
+	}
+}
+
+
+IRS_hog_rider = {
+	advisor = { 
+		cost = 150
+
+		slot = high_command
+		traits = {
+			hog_rider
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Hog Rider"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_south_america_1"
+		}
+	}
+}
+
+IRS_e_barbs = {
+	advisor = {
+		cost = 150
+
+		slot = high_command
+		traits = {
+			e_barbs
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Elite Barbarians"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_south_america_2"
+		}
+	}
+}
+
+IRS_royal_giant = {
+	advisor = {
+		cost = 150
+
+		slot = high_command
+		traits = {
+			royal_giant
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Royal Giant"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_south_america_3"
+		}
+	}
+}
+
+IRS_valkyrie = {
+	advisor = {
+		cost = 150
+
+		slot = high_command
+		traits = {
+			valkyrie
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Valkyrie"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_south_america_4"
+		}
+	}
+}
+
+IRS_witch = {
+	advisor = {
+		cost = 150
+
+		slot = high_command
+		traits = {
+			witch
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Witch"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_south_america_5"
+		}
+	}
+}
+
+IRS_balloon = {
+	advisor = {
+		cost = 150
+
+		slot = air_chief
+		traits = {
+			balloon
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Balloon"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_1"
+		}
+	}
+}
+
+IRS_electro_dragon = {
+	advisor = {
+		cost = 150
+
+		slot = air_chief
+		traits = {
+			electro_dragon
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Electro-Dragon"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_2"
+		}
+	}
+}
+
+IRS_minion_horde = {
+	advisor = {
+		cost = 150
+
+		slot = air_chief
+		traits = {
+			minion_horde
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Minion Horde"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_3"
+		}
+	}
+}
+
+IRS_princess = {
+	advisor = {
+		cost = 150
+
+		slot = army_chief
+		traits = {
+			princess
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Princess"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_4"
+		}
+	}
+}
+
+IRS_red_king = {
+	advisor = {
+		cost = 150
+
+		slot = army_chief
+		traits = {
+			red_king
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Red King"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_5"
+		}
+	}
+}
+
+IRS_blue_king = {
+	advisor = {
+		cost = 150
+
+		slot = army_chief
+		traits = {
+			blue_king
+		}
+		available = {
+				
+			if = { 
+				has_completed_focus = cementposition
+			}
+
+			
+		}
+	}
+	name = "Blue King"
+	portraits={
+		army={
+			small="GFX_idea_generic_army_europe_6"
+		}
+	}
+}
+}

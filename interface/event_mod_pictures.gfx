@@ -1,0 +1,19 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_blackpeople"
+		texturefile = "gfx/event_pictures/blackpeople.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_poopy"
+		texturefile = "gfx/event_pictures/poopy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_riots"
+		texturefile = "gfx/event_pictures/riots.dds"
+	}
+
+
+}

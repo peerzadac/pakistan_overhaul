@@ -44,7 +44,7 @@
 		y = 1
 		relative_position_id = the_1936_riots
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = the_1936_riots }
 		
 		bypass = {
@@ -94,7 +94,7 @@
 	}
 
 	completion_reward = {
-		country_event = immigrant.4  
+		news_event = immigrant.4  
 	}  
 	}
 
@@ -124,7 +124,7 @@
 	relative_position_id = tribal_heritage
 	x = 1
 	y = 1
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
@@ -140,7 +140,7 @@
 	relative_position_id = tribal_heritage
 	x = 1
 	y = 2
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
@@ -159,7 +159,7 @@
 	relative_position_id = tribal_heritage
 	x = 1
 	y = 3
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
@@ -265,7 +265,10 @@
 
 
 	completion_reward = {
-
+		set_state_owner = 118
+		hidden_effect = {
+		news_event = immigrant.5
+		}
 	}
 	}
 
@@ -281,7 +284,10 @@
 	}
 
 	completion_reward = {
-
+		set_state_owner = 375
+		hidden_effect = {
+		news_event = immigrant.7
+		}
 	}
 	}
 
@@ -390,7 +396,7 @@
 	}
 
 	completion_reward = {
-
+		add_ideas = revolutions2
 	}
 	}
 
@@ -433,6 +439,7 @@
 	}
 
 	completion_reward = {
+		custom_effect_tooltip = "Unlocks SUPERCELL military advisors"
 	}
 	}
 
@@ -468,7 +475,11 @@
 	}
 
 	completion_reward = {
-
+		create_wargoal = {
+			type = take_state_focus
+			target = SQU
+			generator = { 1 114 }
+		}
 	}
 	}
 
@@ -480,7 +491,7 @@
 	relative_position_id = conspiracies
 	x = -4
 	y = 7
-	cost = 10
+	cost = 5
 	available = {
 		OR = {
 		has_idea = unified
@@ -489,7 +500,12 @@
 	}
 
 	completion_reward = {
-
+		create_faction = "Multinational Brown Conglomorate"
+		add_to_faction = GlO
+		add_to_faction = WWK
+		add_to_faction = ETE
+		add_to_faction = MD2
+		add_to_faction = CHK
 	}
 	}
 
@@ -539,7 +555,12 @@
 		}
 	
 		completion_reward = {
-	
+			set_state_owner = 15
+			set_state_owner = 16
+			set_state_owner = 18
+			set_state_owner = 785
+			set_state_owner = 29
+			news_event = immigrant.9
 		}
 		}
 
@@ -566,12 +587,12 @@
 		relative_position_id = conspiracies
 		x = -4
 		y = 8
-		cost = 10
+		cost = 5
 		ai_will_do = {
 		}
 	
 		completion_reward = {
-	
+			add_to_faction = GAN
 		}
 		}
 
@@ -582,12 +603,16 @@
 			relative_position_id = conspiracies
 			x = -4
 			y = 9
-			cost = 10
+			cost = 5
 			ai_will_do = {
 			}
-		
+			available = {
+				NOT = {
+					owns_state = 14
+				}
+			}
 			completion_reward = {
-		
+				
 			}
 			}
 
@@ -598,7 +623,7 @@
 				relative_position_id = conspiracies
 				x = -4
 				y = 10
-				cost = 10
+				cost = 20
 				ai_will_do = {
 				}
 			
@@ -630,12 +655,15 @@
 			relative_position_id = tribal_heritage
 			x = -2
 			y = 6
-			cost = 10
+			cost = 5
 			ai_will_do = {
 			}
 		
 			completion_reward = {
-		
+				swap_ideas = {
+					remove_idea = triballands2
+					add_idea = triballands3
+					}
 			}
 
 			}
@@ -678,12 +706,29 @@ focus = {
 		relative_position_id = tribal_heritage
 		x = -2
 		y = 11
-		cost = 10
+		cost = 52
 		ai_will_do = {
 		}
 	
 		completion_reward = {
-	
+			annex_country = { target = JOW }
+			annex_country = { target = PIZ }
+			annex_country = { target = SQU }
+			annex_country = { target = SUP }
+			annex_country = { target = ISR }
+			annex_country = { target = SP1 }
+			annex_country = { target = SP2 }
+			annex_country = { target = GAN }
+			annex_country = { target = GME }
+			annex_country = { target = HYP }
+			annex_country = { target = TRU }
+			annex_country = { target = SWA }
+			annex_country = { target = NBR }
+			annex_country = { target = TAW }
+			annex_country = { target = BIG }
+			hidden_effect = {
+				news_event = immigrant.8
+			}
 		}
 		}
 
@@ -903,4 +948,5 @@ focus = {
 	
 		}
 	}
+
 }		

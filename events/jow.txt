@@ -174,7 +174,7 @@ country_event = {
 		name = "All of India belongs to the Donk!"
 		create_wargoal = {
 			target = CUR
-			type = take_all_states
+			type = annex_everything
 		}
 		add_stability = -0.05
 		custom_effect_tooltip = "Jowland annexes most of India."
@@ -183,89 +183,89 @@ country_event = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			433 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			439= {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			} 
 			438= {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			} 
 			437= {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			} 
 			429 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			436 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			435 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 			}
 			431 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			432 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			430 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 			}
 			426 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 			427 = {
 				set_state_controller_to = JOW
 				set_state_owner_to = JOW
 				add_core_of = JOW
-				set_demilitarized_zone = false
+				set_demilitarized_zone = no
 	
 			}
 		}
@@ -347,7 +347,230 @@ country_event = {
 		
 		create_wargoal = {
 			target = JUN
-			type = topple_government
+			type = annex_everything
+		}
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
+}
+
+country_event = {
+	id = jow.13
+	title = "Jowland Proposes Partition of Bhutan"
+	desc = "Both of our countries agree they are useless as a soviergn state, thus we have come to the decision that the land shall be given to us as our burden to fix."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "We shall split it evenly."
+		ai_chance = {
+			base = 66
+		}
+
+		JOW = {
+			country_event = {
+				id = jow.14
+			}
+		}
+
+		
+			322 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			758 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			757 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+		
+		}
+	option = { #okay
+
+		name = "We deserve Bhutan ourselves!"
+		ai_chance = {
+			base = 20
+		}
+
+		JOW = {
+			country_event = {
+				id = jow.15
+			}
+		}
+
+
+			323 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			324 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			434 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+
+			322 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			758 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+			757 = {
+				set_state_controller_to = BIG
+				set_state_owner_to = BIG
+			}
+		
+
+		
+	}
+	option = { #okay
+
+		name = "We don't want anything to do with them."
+		ai_chance = {
+			base = 14
+		}
+
+		JOW = {
+			country_event = {
+				id = jow.16
+			}
+		}
+
+
+		hidden_effect = {
+		323 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		324 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		434 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+
+		322 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		758 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		757 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}	
+	}
+	}
+}
+
+country_event = {
+	id = jow.14
+	title = "China Agrees to Split Bhutan"
+	desc = "China has decided it would be best for Bhutan to be split."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Swag"
+		
+		323 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		324 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		434 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
+}
+
+country_event = {
+	id = jow.15
+	title = "China takes Bhutan for themselves"
+	desc = "China has outrageously chosen to take all of Bhutan despite the idea being ours."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Preposterours!"
+		
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
+}
+
+country_event = {
+	id = jow.16
+	title = "China grants us all of Bhutan"
+	desc = "China decided to give all of Bhutan to us in a great act of generosity."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Hip hip, hooray!"
+		
+		323 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		324 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		434 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+
+		322 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		758 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+		}
+		757 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
 		}
 		
 	}

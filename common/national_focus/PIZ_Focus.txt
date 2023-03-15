@@ -124,9 +124,14 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 
 		prerequisite = { focus = PIZ_pummel_doctrine }
-		prerequisite = { not ={
-			idea = poopy
-		}}
+
+	#	available = {
+	#		not = {
+	#			has_idea = {
+	#				id = poopy
+	#			}
+	#		}
+	#	}
 
 		x = 0
 		y = 3
