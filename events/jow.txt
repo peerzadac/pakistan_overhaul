@@ -581,3 +581,171 @@ country_event = {
 		
 	#}
 }
+
+country_event = {
+	id = jow.17
+	title = "The Colonization of India"
+	desc = "Through diplomacy we have struck a deal with India. We can either take what they have offered, or take the more agressive path and take literally all of it."
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Take the slower approach."
+		
+		428 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		429 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		425 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		321 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		423 = {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		320= {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		422= {
+			set_state_controller_to = JOW
+			set_state_owner_to = JOW
+			add_core_of = JOW
+		}
+		
+	}
+	option = { #no
+
+		name = "Take everything!"
+		
+		hidden_effect = {
+			428 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			429 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			425 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			321 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			423 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			320 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			422 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			427 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			} 
+			424 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			426 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			437 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			433 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			439 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			436 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			438 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			435 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			431 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+			430 = {
+				set_state_controller_to = JOW
+				set_state_owner_to = JOW
+			}
+		}
+		custom_effect_tooltip = "Jowland annexes almost all of India."
+		
+	}
+}
+
+country_event = {
+	id = jow.18
+	title = "Jowland Cedes Taiwan"
+	desc = "woah"
+	#picture = GFX_poopy
+
+	is_triggered_only = yes
+	option = { #okay
+
+		name = "Yay"
+		524 = {
+			set_state_controller_to = BIG
+			set_state_owner_to = BIG
+		}
+		
+	}
+	#option = { #no
+
+	#	name = "No thanks."
+		
+		
+	#}
+}
+
+news_event = {
+	id = jow.19
+	title = "Taiwan Despute Solved!"
+	desc = "Jowland has used all the power they have to give China the gift of Taiwan. How they actually did this nobody is sure, however the ramifications are rather silly."
+	major = yes  #makes even global
+	is_triggered_only = yes
+	option = {#okay
+		name = "So much for Chinese neutrality."
+
+	}
+
+}

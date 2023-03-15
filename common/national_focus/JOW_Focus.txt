@@ -777,6 +777,8 @@ focus = {
 		#event to colonize india; take states   
 		#compliant: 428 429 425 321 423 320. create satalite government seperate from t-90 titled Curry Sweatshop in state 426 that can be expanded with decisions.
 		#aggresive: all
+		country_event = jow.17
+
 	}
 
 }
@@ -796,6 +798,17 @@ focus = {
 
 	completion_reward = {
 		#event taiwan dispute, givess china taiwan and gives them heavy jow influence
+		BIG = {
+			country_event = jow.18
+		}
+		hidden_effect = {
+			news_event = {
+			id = jow.19
+			days = 3
+
+			}
+			
+		}
 	}
 
 }
