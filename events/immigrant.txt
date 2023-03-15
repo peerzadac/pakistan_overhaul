@@ -122,7 +122,7 @@ news_event = {
 }
 
 news_event = {
-	id = holocaust.1
+	id = immigrant.8
 	title = "!!!!!!!!!!!ALERT!!!!!!!!!!!!!!"
 	desc = "THE SWARTHY KING PICKLECHIN, WITH THE POWER OF THE SWARTH MOTHER HAS GIVEN GREATLY INCREASED FERTILITY TO ALL SWARTHY PEOPLE, WITHIN A YEAR ALL THESE SWARTH BABIES WILL BE BORN AND WILL TAKE OVER ALL MAJOR COUNTRIES" 
 	picture = GFX_riots
@@ -134,7 +134,7 @@ news_event = {
 }
 
 news_event = {
-	id = holocaust.2
+	id = immigrant.9
 	title = "PizzaTitania and PickleChin split Hell!"
 	desc = "PizzaTitania and PickleChin have agreed to destroy and partition hell from both sides" 
 	picture = GFX_riots
