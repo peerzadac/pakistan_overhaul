@@ -161,7 +161,7 @@ Uprising = {
 		}
 
 		available = {
-            has_manpower > 65000000
+            has_manpower > 6500000
 			owns_state = 460
 		}
 		visible = {

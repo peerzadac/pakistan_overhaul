@@ -301,6 +301,7 @@ ideas = {
         army_speed_factor = 0.05
         army_defence_factor = 0.05
         army_attack_factor = 0.05
+		supply_consumption_factor = -1
 		  }
 	  }
 	}
@@ -325,6 +326,7 @@ ideas = {
         army_speed_factor = 0.15
         army_defence_factor = 0.15
         army_attack_factor = 0.15
+		supply_consumption_factor = -1
 		  }
 	  }
 	}
@@ -351,6 +353,7 @@ ideas = {
         army_attack_factor = 0.3
         breakthrough_factor = 0.5
         terrain_penalty_reduction = 0.5
+		supply_consumption_factor = -1
 		  }
 	  }
 	}
@@ -489,6 +492,28 @@ ideas = {
 			modifier = {
 				operation_coup_government_outcome = 0.5
 				operation_cost = -0.5
+		  }
+	  }
+	}
+
+	country = {
+		revolutions2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPA_disjointed_carlist_juntas
+
+			modifier = {
+				operation_coup_government_outcome = 1
+				operation_cost = -1
 		  }
 	  }
 	}

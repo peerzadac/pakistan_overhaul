@@ -76,11 +76,71 @@ news_event = {
 news_event = {
 	id = immigrant.4
 	title = "Rumors of Fraud"
-	desc = "The integrity of PickleChins authority has come into question as claims of another PickleChin has come into question" 
+	desc = "The integrity of PickleChins authority has come into question as claims of another PickleChin has come into question." 
 	picture = GFX_riots
 	is_triggered_only = yes
 	option = {#okay
 		name = "Odd"
+
+	}
+}
+
+news_event = {
+	id = immigrant.5
+	title = "Gibralter Invaded!"
+	desc = "Gibralter has succumbed to the immigrants pouring in from the Glommer Hole and has been handed over to PickleChin." 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "Get those blacks out of here!"
+
+	}
+}
+
+news_event = {
+	id = immigrant.7
+	title = "Texas Border Overwhelmed!"
+	desc = "Texas has succumbed to the immigrants pouring in from the Mexico and has been handed over to PickleChin. Trump has stated that he will not stand for this!" 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "Seems Like they are working together"
+
+	}
+}
+
+news_event = {
+	id = immigrant.6
+	title = "A Pickle Of a Situation!"
+	desc = "The real PickleChin has taken over control of the swarthy masses, only time will tell how this affects the immigration crisis south of Rome." 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "Fuck he's aryan"
+
+	}
+}
+
+news_event = {
+	id = holocaust.1
+	title = "!!!!!!!!!!!ALERT!!!!!!!!!!!!!!"
+	desc = "THE SWARTHY KING PICKLECHIN, WITH THE POWER OF THE SWARTH MOTHER HAS GIVEN GREATLY INCREASED FERTILITY TO ALL SWARTHY PEOPLE, WITHIN A YEAR ALL THESE SWARTH BABIES WILL BE BORN AND WILL TAKE OVER ALL MAJOR COUNTRIES" 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "WE MUST DESTROY THEM IN LESS THAN A YEAR OR WE ARE DOOMED!!!"
+
+	}
+}
+
+news_event = {
+	id = holocaust.2
+	title = "PizzaTitania and PickleChin split Hell!"
+	desc = "PizzaTitania and PickleChin have agreed to destroy and partition hell from both sides" 
+	picture = GFX_riots
+	is_triggered_only = yes
+	option = {#okay
+		name = "What a dubious affair"
 
 	}
 }
