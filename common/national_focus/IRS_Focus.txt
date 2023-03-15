@@ -560,7 +560,7 @@
 			set_state_owner = 18
 			set_state_owner = 785
 			set_state_owner = 29
-			news_event = holocaust.2
+			news_event = immigrant.9
 		}
 		}
 
@@ -727,7 +727,7 @@ focus = {
 			annex_country = { target = TAW }
 			annex_country = { target = BIG }
 			hidden_effect = {
-				news_event = holocaust.1
+				news_event = immigrant.8
 			}
 		}
 		}
