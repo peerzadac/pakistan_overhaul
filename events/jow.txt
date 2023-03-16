@@ -635,7 +635,7 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = {
-				id = news.2
+				id = jow2.2
 				days = 3
 			}
 		}
