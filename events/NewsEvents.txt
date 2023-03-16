@@ -1,0 +1,32 @@
+add_namespace = news #timed global events
+
+#template
+
+news_event = {
+	id =  news.1
+	title = "Testing! Can everyone hear this?"
+	desc = "teehee hi"
+	#picture = GFX_poopy
+
+	#is_triggered_only = yes
+
+	fire_only_once = yes
+	trigger = {
+		date > 1936.1.1
+		NOT = { has_global_flag = flag } #MUST USE OR ELSE!
+	}
+
+	immediate = {
+		set_global_flag = flag #MUST USE OR ELSE!
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { 
+		name = "WHART!?"
+	}
+}
+
+
