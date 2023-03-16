@@ -1,8 +1,8 @@
 SUP_power_balance = {
-	inital_value = 0
+	initial_value = 0
 	left_side = SUP_community_outrage
 	right_side = SUP_community_happy
-	decision_category = SUP_balance_of_power_category
+	decision_category = ITA_balance_of_power_category #change to sup
 
 
 	### Neutral
