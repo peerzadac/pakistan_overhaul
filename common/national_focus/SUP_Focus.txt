@@ -22,6 +22,13 @@ focus = {
 		add_political_power = 50
 		#news event
 		#national spirit
+
+		#SUP_initiate_balance_of_power_effect = yes
+		set_power_balance = {
+			id = SUP_power_balance
+			left_side = SUP_community_outrage
+			right_side = SUP_community_happy
+		}
 	}
 
 
