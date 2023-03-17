@@ -805,7 +805,6 @@ focus = {
 			news_event = {
 			id = jow.19
 			days = 3
-
 			}
 			
 		}

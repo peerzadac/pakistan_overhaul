@@ -583,7 +583,6 @@ country_event = {
 	#}
 }
 
-<<<<<<< HEAD
 country_event = {
 	id = jow.17
 	title = "The Colonization of India"
@@ -751,7 +750,7 @@ news_event = {
 	}
 
 }
-=======
+
 
 
 
@@ -826,4 +825,3 @@ news_event = {
 
 
 
->>>>>>> f55bc8b9e216eef579152846d9cc6a35f5c0b3ad
