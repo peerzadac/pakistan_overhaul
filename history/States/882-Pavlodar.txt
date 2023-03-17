@@ -4,9 +4,9 @@ state = {
 	
 	state_category = rural
 	
-	resources = {
-		chromium = 6 
-	}
+	#resources = {
+	#	chromium = 6 
+	#}
 
 	history = {
 		owner = TAW

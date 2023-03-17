@@ -6,6 +6,17 @@ state={
 
 	state_category = large_city
 
+	resources = {
+		oil = 10000
+		steel = 10000
+		rubber = 10000
+		tungsten = 10000
+		chromium = 10000
+		aluminium = 10000
+	}
+
+
+
 	history={
 	owner = BIG
 	add_core_of = BIG
