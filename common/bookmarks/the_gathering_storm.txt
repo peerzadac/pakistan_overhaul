@@ -87,8 +87,8 @@ bookmarks = {
       }
     }
 
-    "BIG"={
-      history = "BIG_GATHERING_STORM_DESC"
+    "SQU"={
+      history = "SQU_GATHERING_STORM_DESC"
       ideology = alcoholism
       ideas = {
       }

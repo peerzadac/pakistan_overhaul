@@ -1,0 +1,14 @@
+characters = {
+	JUN_jug={
+		name="Jug"
+		portraits={
+			civilian={
+				large="gfx/leaders/JUG/JUG_jug.dds"
+			}
+		}
+		country_leader={
+			ideology=jowist
+			expire="1965.1.1"
+		}
+	}
+}

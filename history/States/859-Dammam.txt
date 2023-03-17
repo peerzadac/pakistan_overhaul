@@ -4,9 +4,9 @@ state={
 	provinces={
 		1955 10791 10850 12702 
 	}
-	resources={
-		oil=3.000
-	}
+	#resources={
+	#	oil=3.000
+	#}
 	history = {
 		owner = MEC
 		add_core_of = MEC

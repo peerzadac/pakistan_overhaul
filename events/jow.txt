@@ -1,5 +1,6 @@
 add_namespace = jow
 
+
 country_event = {
 	id = jow.1
 	title = "The Poop Crisis"
@@ -582,6 +583,7 @@ country_event = {
 	#}
 }
 
+<<<<<<< HEAD
 country_event = {
 	id = jow.17
 	title = "The Colonization of India"
@@ -749,3 +751,79 @@ news_event = {
 	}
 
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TIMED EVENTS
+
+add_namespace = jow2 #timed events
+
+#template
+
+country_event = {
+	id = jow2.1
+	title = "Jowland Discovers MASSIVE Elixir Reserve"
+	desc = "Some dude was digging a hole in his mom's backyard when he got about 5 feet deep and struck a massive elixir source. The implications are unknown as of yet, however we firmly belive this could spell a new future for Jowland."
+	#picture = GFX_poopy
+	
+	#is_triggered_only = yes
+
+	#fire_only_once = yes
+	trigger = {
+		tag = JOW
+		date > 1936.1.18
+		NOT = { has_global_flag = jowelixir } #MUST USE OR ELSE!
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		set_global_flag = jowelixir #MUST USE OR ELSE!
+	}
+
+
+	option = { 
+		name = "Could this mean a new future for the Jowish people?"
+		add_resource = {
+			type = oil
+			amount = 200
+			state = 787
+		}
+		hidden_effect = {
+			news_event = {
+				id = jow2.2
+				days = 3
+			}
+		}
+	}
+}
+
+news_event = {
+	id = jow2.2
+	title = "Jowland Strikes Massive Elixir Deposit"
+	desc = "Some dude was digging a hole in his mom's backyard when he got about 5 feet deep and struck a massive elixir source. The implications are unknown as of yet, however we firmly belive this could spell a new future for Jowland."
+	major = yes  #makes even global
+	is_triggered_only = yes
+	option = {#okay
+		name = "Concerning."
+
+	}
+
+}
+
+
+
+>>>>>>> f55bc8b9e216eef579152846d9cc6a35f5c0b3ad
