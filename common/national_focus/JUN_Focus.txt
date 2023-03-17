@@ -1,0 +1,41 @@
+focus_tree = {
+	id = junch_focus
+
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 130
+			tag = JUN
+		}
+	}
+
+#expansion
+#reinforce jowism - more jowism support, slight poopy crises effect
+#Albania 805 event
+#chicken conference 1 (1936.6.15) - JUN gets 341 339 340 and 890
+#chicken conference 2 (1936.11.12) - JEW gets 350, 344    ROA gets 352       JUN gets 342
+#chicken conference 3 (1937.4.24) - ISR gets 453, 446, 457, 456, 907, 452, 447,    JUN gets 345 183,    cock ass gets 354
+#after conferences chk loses the political instability spirit, and JUN gets a wargoal to take the rest
+#Elixir for Malta - a deal with IRS that sends them 25 elixir in exchange for Malta; AI says yes (IRS migrates their factories also inn the deal)
+#^ leads to deal between IRS and JUN where they both occupy corsica and sardinia, pissing off quidward
+#Lesser Romanian Independence - grants LES independence from GRO, only requirements are 20 mils and high opinion
+#Lesser Romanian graditude event, they become a puppet
+#Lesser Romanian territorial claims - 105, 804, 104, 103, 163 853, 109, 102, 77
+#Steal Lesser Romania - add -autonomy to LES and annex them
+#The thorn in my side - annex CB on ALB
+
+
+
+
+
+
+
+
+
+
+}

@@ -540,7 +540,8 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 5
 				base_fuel_gain_factor = 3
 				trade_opinion_factor = 0.75
-				political_advisor_cost_factor = 1
+				#political_advisor_cost_factor = 1
+				production_speed_industrial_complex_factor = 0.8
 				
 				
 			}
@@ -556,7 +557,8 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 3
 				base_fuel_gain_factor = 2
 				trade_opinion_factor = 0.50
-				political_advisor_cost_factor = 0.5
+				#political_advisor_cost_factor = 0.5
+				production_speed_industrial_complex_factor = 0.5
 				
 				
 			}	
@@ -571,7 +573,8 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 1.2
 				base_fuel_gain_factor = 1
 				trade_opinion_factor = 0.25
-				political_advisor_cost_factor = 0.25
+				#political_advisor_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
 
 				
 			}
@@ -596,7 +599,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.3
 				production_factory_efficiency_gain_factor = 0.1
 				trade_opinion_factor = -0.25
-				political_advisor_cost_factor = -0.25
+				#political_advisor_cost_factor = -0.25
 				
 			}
 		}
@@ -610,7 +613,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.6
 				production_factory_efficiency_gain_factor = 0.2
 				trade_opinion_factor = -0.50
-				political_advisor_cost_factor = -0.5
+				#political_advisor_cost_factor = -0.5
 				
 			}
 		}
@@ -624,7 +627,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.9
 				production_factory_efficiency_gain_factor = 0.3
 				trade_opinion_factor = -0.90
-				political_advisor_cost_factor = -0.75
+				#political_advisor_cost_factor = -0.75
 				
 			}
 		}

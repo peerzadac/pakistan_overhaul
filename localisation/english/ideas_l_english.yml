@@ -52,9 +52,9 @@
   mercantilism_2:0 "Limited Control"
   mercantilism_3:0 "Neutral"
   mercantilism_4:0 "Increased Control"
-  mercantilism_5:0 "Monopoly"
-  mercantilism_6:0 "Total Monopoly"
-  elixir_depression:0 "Leaking"
+  mercantilism_5:0 "High Government Influence"
+  mercantilism_6:0 "Total Control"
+  #elixir_depression:0 "Leaking"
 
 
 
@@ -449,7 +449,7 @@
  extensive_conscription:0 "Extensive Conscription"
  service_by_requirement:0 "Service by Requirement"
  all_adults_serve:0 "All Adults Serve"
- scraping_the_barrel:0 "Scraping the Barrel"
+ scraping_the_barrel:0 "Scraping my cock"
  #generic_communist_revolutionary:0 "Communist Politician"
  #generic_democratic_reformer:0 "Democratic Politician"
  #generic_fascist_demagogue:0 "Fascist Politician"
