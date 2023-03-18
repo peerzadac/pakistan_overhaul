@@ -19,6 +19,9 @@ set_technology = {
 
 recruit_character = JUN_jug
 
+
+
+
 set_convoys = 20
 
 set_politics = {

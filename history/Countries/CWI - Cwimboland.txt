@@ -17,6 +17,8 @@ set_technology = {
 	naval_bomber1 = 1
 }
 
+
+
 set_convoys = 20
 
 #recruit_character = CWI_fnank

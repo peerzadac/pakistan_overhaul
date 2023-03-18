@@ -7,18 +7,6 @@ set_technology = {
 
 recruit_character = IRS_pickle
 
-recruit_character = IRS_hog_rider
-recruit_character = IRS_e_barbs
-recruit_character = IRS_royal_giant
-recruit_character = IRS_valkyrie
-recruit_character = IRS_witch
-recruit_character = IRS_balloon
-recruit_character = IRS_electro_dragon
-recruit_character = IRS_minion_horde
-recruit_character = IRS_princess
-recruit_character = IRS_red_king
-recruit_character = IRS_blue_king
-
 
 set_convoys = 21
 
@@ -47,6 +35,18 @@ set_popularities = {
 	jowism = 0
 	alcoholism = 0
 }
+
+recruit_character = SUS_hog_rider
+recruit_character = SUS_e_barbs
+recruit_character = SUS_royal_giant
+recruit_character = SUS_valkyrie
+recruit_character = SUS_witch
+recruit_character = SUS_balloon
+recruit_character = SUS_electro_dragon
+recruit_character = SUS_minion_horde
+recruit_character = SUS_princess
+recruit_character = SUS_red_king
+recruit_character = SUS_blue_king
 
 
 

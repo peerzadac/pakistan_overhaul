@@ -20,6 +20,8 @@ set_technology = {
 
 recruit_character = PIZ_jucks
 
+
+
 set_convoys = 20
 
 1939.1.1 = {
