@@ -58,7 +58,7 @@
 
 #buildings
  wallbreakers:0 "Wallbreakers"
- cannon:0 "Cannon"
+ clash_cannon:0 "Cannon"
  tombstone:0 "Tombstone"
  bomb_tower:0 "Bomb Tower"
  tesla:0 "Hidden Tesla"
@@ -72,7 +72,20 @@
 
 #cycle
  skeletons:0 "Skeletons"
+ ice_spirit:0 "Ice Spirit"
+ fire_spirit:0 "Fire Spirit" 
+ e_spirit:0 "Electro Spirit"
+ heal_spirit:0 "Heal Spirit"
 
 
 #spell
+ log:0 "Log"
+ snowball:0 "Snowball"
+ arrows:0 "Arrows"
+ goblin_barrel:0 "Goblin Barrel"
+ tornado:0 "Tornado"
+ clone:0 "Clone"
+ eq:0 "Earthquake"
  fireball:0 "Fireball"
+ rocket:0 "Rocket"
+ lightning:0 "Lightning"

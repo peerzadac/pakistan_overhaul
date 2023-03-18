@@ -8,11 +8,13 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 50
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 2
+				army_speed_factor = 0.05
+				army_attack_speed_factor= 0.10
 			}
 
 		}
@@ -25,7 +27,7 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
@@ -33,6 +35,7 @@ ideas = {
 				army_breakthrough_against_minor_factor = 0.026
 				terrain_penalty_reduction = 0.20
 				org_loss_when_moving = -0.20
+				fuel_cost = 4
 			}
 
 		}
@@ -44,11 +47,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 
 		}
@@ -60,11 +63,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 
 		}
@@ -76,11 +79,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 
 		}
@@ -96,7 +99,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 
 		}
@@ -111,7 +114,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 
 		}
@@ -123,11 +126,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 175
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 7
 			}
 
 		}
@@ -139,11 +142,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 200
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 8
 			}
 
 		}
@@ -162,11 +165,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 50
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 2
 			}
 		}
 
@@ -177,11 +180,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 
@@ -192,11 +195,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 
@@ -207,11 +210,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 
@@ -222,11 +225,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 
@@ -237,11 +240,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 		}
 
@@ -256,7 +259,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 		}
 
@@ -271,7 +274,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 		}
 
@@ -282,11 +285,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 175
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 7
 			}
 		}
 
@@ -297,11 +300,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 175
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 7
 			}
 		}
 	}
@@ -314,11 +317,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		guards = {
@@ -328,11 +331,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		ice_wizard = {
@@ -342,11 +345,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		miner = {
@@ -356,11 +359,13 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
+				dig_in_speed_factor = 3
+				max_dig_in_factor = 2
 			}
 		}
 		firecracker = {
@@ -370,11 +375,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		fisherman = {
@@ -384,11 +389,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
-			modifier = {
-
+			modifier = {	
+				fuel_cost = 3
 			}
 		}
 		musketeer = {
@@ -398,11 +403,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		baby_dragon = {
@@ -412,11 +417,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		inferno_dragon = {
@@ -426,11 +431,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		e_wizard = {
@@ -440,11 +445,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		night_witch = {
@@ -454,11 +459,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		witch = {
@@ -468,11 +473,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 		}
 		wizard = {
@@ -482,11 +487,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 		}
 		e_dragon = {
@@ -500,7 +505,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 		}
 	}
@@ -513,25 +518,25 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 50
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 2
 			}
 		}
-		cannon = {
+		clash_cannon = {
 			allowed = {
 				always = yes
 			}
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		tombstone = {
@@ -541,11 +546,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 75
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 3
 			}
 		}
 		bomb_tower = {
@@ -555,11 +560,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		tesla = {
@@ -569,11 +574,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		furnace = {
@@ -583,11 +588,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		goblin_cage = {
@@ -597,11 +602,11 @@ ideas = {
 			available = {
 				has_government = democratic
 			}
-			cost = 150
+			cost = 100
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 4
 			}
 		}
 		goblin_hut = {
@@ -611,11 +616,11 @@ ideas = {
 			available = {
 				has_government = democratic
 			}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 		}
 		inferno_tower = {
@@ -625,11 +630,11 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 125
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 5
 			}
 		}
 		barbarian_hut = {
@@ -643,7 +648,7 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
 			}
 		}
 		elixir_pump = {
@@ -657,7 +662,9 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-
+				fuel_cost = 6
+				army_fuel_capacity_factor = 0.1
+				army_fuel_consumption_factor = -0.2
 			}
 		}
 	}
@@ -670,17 +677,204 @@ ideas = {
 			#available = {
 				
 			#}
-			cost = 150
+			cost = 25
 			removal_cost = 0
 
 			modifier = {
+				fuel_cost = 1
+				army_fuel_consumption_factor = -0.25
+			}
+		}
+		ice_spirit = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 25
+			removal_cost = 0
 
+			modifier = {
+				fuel_cost = 1
+				winter_attrition_factor = -0.5
+				army_fuel_consumption_factor = -0.2
+			}
+		}
+		fire_spirit = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 25
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 1
+				acclimatization_hot_climate_gain_factor = 0.2
+				army_fuel_consumption_factor = -0.2
+			}
+		}
+		e_spirit = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 25
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 1
+				army_fuel_consumption_factor = -0.2
+				initiative_factor = 0.5
+			}
+		}
+		heal_spirit = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 25
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 1
+				army_fuel_consumption_factor = -0.2
+				army_morale_factor = 0.5
 			}
 		}
 	}
 
 	spell_slot = {
+		log = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 50
+			removal_cost = 0
+
+			modifier = {
+				breakthrough_factor = 0.25
+				army_fuel_consumption_factor = 0.2
+				fuel_cost = 2
+			}
+		}
+		snowball = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 50
+			removal_cost = 0
+
+			modifier = {
+				army_fuel_consumption_factor = 0.2
+				army_core_defence_factor = 0.1
+				fuel_cost = 2
+			}
+		}
+		arrows = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 75
+			removal_cost = 0
+
+			modifier = {
+				justify_war_goal_when_in_major_war_time = -0.4
+				fuel_cost = 3
+			}
+		}
+		goblin_barrel = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = democratic
+			}
+			cost = 75
+			removal_cost = 0
+
+			modifier = {
+				paratrooper_count_per_plane = 3
+				extra_paratrooper_supply_grace = 144
+				modifier_army_sub_unit_paratrooper_attack_factor = 0.5
+				fuel_cost = 3
+			}
+		}
+		tornado = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 75
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 3
+				air_weather_penalty = -0.8
+			}
+		}
+		clone = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 75
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 3
+			}
+		}
+		eq = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 75
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 3
+			}
+		}
+		
 		fireball = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 100
+			removal_cost = 0
+
+			modifier = {
+				fuel_cost = 4
+			}
+		}
+		rocket = {
 			allowed = {
 				always = yes
 			}
@@ -691,7 +885,32 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
+				fuel_cost = 6
+				nuclear_production_factor = 1.5
+				army_fuel_consumption_factor = 0.5
+	
+			}
+			research_bonus = {
+				nuclear = 0.75
+			}
+		}
+		lightning = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
 
+			modifier = {
+				fuel_cost = 6
+				state_production_speed_air_base_factor = 1.5
+				army_fuel_consumption_factor = 0.5
+			}
+			research_bonus = {
+				air_equipment = 0.75
 			}
 		}
 	}
