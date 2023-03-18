@@ -1,0 +1,700 @@
+ideas = {
+	win_condition_slot = {
+
+		e_golem = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+
+		hog_rider = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+				army_speed_factor = 0.10
+				army_breakthrough_against_minor_factor = 0.026
+				terrain_penalty_reduction = 0.20
+				org_loss_when_moving = -0.20
+			}
+
+		}
+
+		ram_rider = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+		giant = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+		balloon = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+		royal_giant = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+		goblin_giant = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = democratic
+			}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+		e_giant = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+		golem = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+
+		}
+
+
+
+
+
+	}
+
+	tank_slot = {
+		ice_golem = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		knight = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		valkyrie = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		mini_pekka = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		battle_healer = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		executioner = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		giant_skeleton = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		bowler = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		pekka = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+
+		megaknight = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+	}
+
+	support_slot = {
+		skarmy = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		guards = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		ice_wizard = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		miner = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		firecracker = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		fisherman = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		musketeer = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		baby_dragon = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		inferno_dragon = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		e_wizard = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		night_witch = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		witch = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		wizard = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		e_dragon = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+	}
+
+	building_slot = {
+		wallbreakers = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		cannon = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		tombstone = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		bomb_tower = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		tesla = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		furnace = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		goblin_cage = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = democratic
+			}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		goblin_hut = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = democratic
+			}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		inferno_tower = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		barbarian_hut = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+		elixir_pump = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+	}
+
+	cycle_slot = {
+		skeletons = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+	}
+
+	spell_slot = {
+		fireball = {
+			allowed = {
+				always = yes
+			}
+			#available = {
+				
+			#}
+			cost = 150
+			removal_cost = 0
+
+			modifier = {
+
+			}
+		}
+	}
+
+
+}

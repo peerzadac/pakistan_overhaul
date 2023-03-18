@@ -1,0 +1,14 @@
+idea_categories = {
+    clash_deck = {
+        slot = win_condition_slot
+        slot = tank_slot
+        slot = support_slot
+        slot = building_slot
+        slot = cycle_slot
+        slot = spell_slot
+        cost = 150
+        removal_cost = -1
+        
+    }
+    
+}

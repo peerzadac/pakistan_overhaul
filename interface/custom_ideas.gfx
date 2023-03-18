@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_hog_rider"
+		texturefile = "gfx/interface/ideas/hog_rider.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_witch"
+		texturefile = "gfx/interface/ideas/witch.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_valkyrie"
+		texturefile = "gfx/interface/ideas/valkyrie.dds"
+	}
+	
+}

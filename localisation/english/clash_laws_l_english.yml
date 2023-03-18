@@ -1,0 +1,78 @@
+﻿l_english:
+ clash_deck:0 "Clash Deck"
+ win_condition_slot:0 "Win Condition"
+ tank_slot:0 "Tank"
+ support_slot:0 "Support"
+ building_slot:0 "Building"
+ cycle_slot:0 "Cycle"
+ spell_slot:0 "Spell"
+
+
+
+
+#win conditions
+ e_golem:0 "Elixir Golem"
+ hog_rider:0 "Hog Rider"
+ ram_rider:0 "Ram Rider"
+ giant:0 "Giant"
+ balloon:0 "Balloon"
+ royal_giant:0 "Royal Giant"
+ goblin_giant:0 "Goblin Giant"
+ e_giant:0 "Electro Giant"
+ golem:0 "Golem"
+
+
+
+#tanks
+ ice_golem:0 "Ice Golem"
+ knight:0 "Knight"
+ valkyrie:0 "Valkyrie"
+ mini_pekka:0 "Mini Pekka"
+ battle_healer:0 "Battle Healer"
+ executioner:0 "Executioner"
+ giant_skeleton:0 "Giant Skeleton"
+ bowler:0 "Bowler"
+ pekka:0 "Pekka"
+ megaknight:0 "Megaknight"
+ 
+
+#support
+ 
+ skarmy:0 "Skeleton Army"
+ guards:0 "Guards"
+ ice_wizard:0 "Ice Wizard"
+ miner:0 "Miner"
+ firecracker:0 "Firecracker"
+ fisherman:0 "Fisherman"
+ musketeer:0 "Musketeer"
+ baby_dragon:0 "Baby Dragon"
+ inferno_dragon:0 "Inferno Dragon"
+ e_wizard:0 "Electro Wizard"
+ night_witch:0 "Night Witch"
+ witch:0 "Witch"
+ wizard:0 "Wizard"
+ e_dragon:0 "Electro Dragon"
+ 
+ 
+
+
+#buildings
+ wallbreakers:0 "Wallbreakers"
+ cannon:0 "Cannon"
+ tombstone:0 "Tombstone"
+ bomb_tower:0 "Bomb Tower"
+ tesla:0 "Hidden Tesla"
+ furnace:0 "Furnace"
+ goblin_cage:0 "Goblin Cage"
+ goblin_hut:0 "Goblin Hut"
+ inferno_tower:0 "Inferno Tower"
+ barbarian_hut:0 "Barbarian Hut"
+ elixir_pump:0 "Elixir Collector"
+ 
+
+#cycle
+ skeletons:0 "Skeletons"
+
+
+#spell
+ fireball:0 "Fireball"
