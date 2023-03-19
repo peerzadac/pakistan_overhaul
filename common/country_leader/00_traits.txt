@@ -170,7 +170,6 @@ leader_traits = {
 		communism_acceptance = 100
 		communism_drift = 1
 		war_support_weekly = 0.04
-		stability_weekly = 0.04
 		political_power_factor = 0.25
 		surrender_limit = 1
 		command_power_gain = 1

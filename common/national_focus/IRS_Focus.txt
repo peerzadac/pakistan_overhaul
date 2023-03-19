@@ -19,7 +19,7 @@
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		
 		bypass = {
@@ -44,7 +44,7 @@
 		y = 1
 		relative_position_id = the_1936_riots
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = the_1936_riots }
 		
 		bypass = {
@@ -212,7 +212,6 @@
 	id = racewarend
 	icon = GFX_focus_spr_class_war
 	prerequisite = { focus = populationgain3 }
-	mutually_exclusive = {focus = demandgibralter}
 	relative_position_id = tribal_heritage
 	x = 2
 	y = 4
@@ -251,7 +250,6 @@
 	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = tribaloil }
 	relative_position_id = tribal_heritage
-	mutually_exclusive = {focus = racewarend}
 	x = -2
 	y = 4
 	cost = 10
@@ -279,7 +277,7 @@
 	relative_position_id = tribal_heritage
 	x = -2
 	y = 5
-	cost = 10
+	cost = 5
 	ai_will_do = {
 	}
 
@@ -319,7 +317,7 @@
 	}
 	x = -2
 	y = 2
-	cost = 5
+	cost = 10
 	ai_will_do = {
 	}
 
@@ -364,7 +362,7 @@
 	}
 
 	completion_reward = {
-
+		add_ideas = whiteknowledge
 	}
 	}
 
@@ -395,8 +393,14 @@
 	ai_will_do = {
 	}
 
+	available = {
+		date > 1941.01.01
+	}
 	completion_reward = {
-		add_ideas = revolutions2
+		swap_ideas = {
+			remove_idea = revolutions
+			add_idea = revolutions2
+		}
 	}
 	}
 
@@ -424,6 +428,7 @@
 				stupid1
 			}
 		}
+		news_event = immigrant.6
 	}
 }
 
@@ -455,12 +460,12 @@
 	}
 
 	completion_reward = {
-
+		add_ideas = corruption
 	}
 	}
 
 	focus = {
-	id = Tikilandclaims
+	id = foreignaffaris
 	icon = GFX_focus_focus_fra_maquis
 	prerequisite = { focus = angry focus = cementposition}
 	relative_position_id = conspiracies
@@ -475,19 +480,16 @@
 	}
 
 	completion_reward = {
-		create_wargoal = {
-			type = take_state_focus
-			target = SQU
-			generator = { 1 114 }
-		}
+		add_political_power = 50
 	}
 	}
 
 	focus = {
 	id = SwarthyAlliance
 	icon = GFX_goal_generic_alliance
-	prerequisite = { focus = minoritysupremacy  focus = Tikilandclaims}
-	mutually_exclusive = { focus = iberiandominance}
+	prerequisite = { focus = foreignaffaris}
+	prerequisite = { focus = minoritysupremacy}
+	mutually_exclusive = { focus = europeanfocus}
 	relative_position_id = conspiracies
 	x = -4
 	y = 7
@@ -510,20 +512,89 @@
 	}
 
 	focus = {
+		id = europeanfocus
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = foreignaffaris}
+		mutually_exclusive = {
+			focus = SwarthyAlliance
+		}
+		relative_position_id = conspiracies
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+			add_ideas = wartime
+			add_political_power = 150
+		}
+		}
+
+		focus = {
+			id = sardiniaclaims
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = europeanfocus}
+			mutually_exclusive = {
+				focus = tikicide
+			}
+			relative_position_id = conspiracies
+			x = 0
+			y = 9
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+				add_ideas = wartime
+				add_political_power = 150
+			}
+			}
+	
+
+		focus = {
+			id = tikicide
+			icon = GFX_focus_attack_france
+			prerequisite = { focus = europeanfocus }
+			mutually_exclusive = {
+				focus = sardiniaclaims
+			}
+			relative_position_id = conspiracies
+			x = 4
+			y = 8
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+				create_wargoal = {
+					target = SQU
+					type = annex_everything
+				}
+			}
+		
+			}
+
+	focus = {
 	id = iberiandominance
 	icon = GFX_focus_focus_fra_intervention_spain
-	prerequisite = { focus = Tikilandclaims }
-	prerequisite = {focus = minoritysupremacy}
-	mutually_exclusive = { focus = SwarthyAlliance}
+	prerequisite = { focus = tikicide }
 	relative_position_id = conspiracies
-	x = -2
-	y = 7
+	x = 4
+	y = 9
 	cost = 10
 	ai_will_do = {
 	}
 
 	completion_reward = {
-
+		create_wargoal = {
+			target = SP1
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = SP2
+			type = annex_everything
+		}
 	}
 
 	}
@@ -532,94 +603,161 @@
 		icon = GFX_focus_AST_squander_bug
 		prerequisite = { focus = iberiandominance}
 		relative_position_id = conspiracies
-		x = -2
-		y = 8
-		cost = 10
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-	
-		}
-
-		}
-	focus = {
-		id = pizzamenace
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = GangloandHellexpulsion}
-		relative_position_id = conspiracies
-		x = -2
-		y = 9
-		cost = 10
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-			set_state_owner = 15
-			set_state_owner = 16
-			set_state_owner = 18
-			set_state_owner = 785
-			set_state_owner = 29
-			news_event = immigrant.9
-		}
-		}
-
-	focus = {
-		id = theUltimateenemy
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		prerequisite = { focus = pizzamenace}
-		relative_position_id = conspiracies
-		x = -2
+		x = 4
 		y = 10
 		cost = 10
 		ai_will_do = {
 		}
 	
 		completion_reward = {
-	
+
+			create_wargoal = {
+				target = GAN
+				type = annex_everything
+			}
 		}
-	}
+		}
+
+		focus = {
+			id = ganglopassage
+			icon = GFX_focus_AST_rats_tobruk
+			prerequisite = { focus = iberiandominance}
+			relative_position_id = conspiracies
+			x = 6
+			y = 10
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+				set_state_owner = 123
+			}
+	
+			}
 
 	focus = {
-		id = Gangloalliance
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = SwarthyAlliance}
+		id = pizzamenace
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = GangloandHellexpulsion}
 		relative_position_id = conspiracies
-		x = -4
-		y = 8
-		cost = 5
+		x = 4
+		y = 11
+		cost = 10
 		ai_will_do = {
 		}
 	
 		completion_reward = {
-			add_to_faction = GAN
+			create_wargoal = {
+				target = PIZ
+				type = annex_everything
+			}
+		}
+		}
+
+		focus = {
+			id = demandvietnam
+			icon = GFX_focus_SWI_abandon_neutrality
+			prerequisite = { focus = GangloandHellexpulsion}
+			relative_position_id = conspiracies
+			x = 6
+			y = 11
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+				annex_country = {
+					target = VEN
+				}
+			}
+			}
+
+	focus = {
+		id = theUltimateenemy
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		prerequisite = { focus = pizzamenace}
+		relative_position_id = conspiracies
+		x = 4
+		y = 12
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+			create_wargoal = {
+				target = SUP
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = isralliance
+		icon = GFX_focus_ETH_adopt_the_lira
+		prerequisite = { focus = SwarthyAlliance}
+		relative_position_id = conspiracies
+		x = -4
+		y = 8
+		cost = 10
+		ai_will_do = {
+		}
+	
+		completion_reward = {
+			add_to_faction = ISR
 		}
 		}
 
 		focus = {
 			id = Splithellforpizza
 			icon = GFX_focus_focus_fra_border
-			prerequisite = { focus = Gangloalliance}
 			relative_position_id = conspiracies
-			x = -4
+			x = 0
 			y = 9
-			cost = 5
+			cost = 10
 			ai_will_do = {
 			}
 			available = {
-				NOT = {
+				OR = {
 					owns_state = 14
 				}
+				OR = {
+					country_exists = HEL
+				}
 			}
-			completion_reward = {
-				
+
+			bypass = {
+				HEL = { exists = no }
 			}
+				completion_reward = {
+					set_state_owner = 15
+					set_state_owner = 16
+					set_state_owner = 18
+					set_state_owner = 785
+					set_state_owner = 29
+					news_event = immigrant.9
+				}
 			}
 
 			focus = {
-				id = coalition
+				id = mecca
+				icon = GFX_focus_ETH_the_heroes_of_ethiopa
+				prerequisite = { focus = isralliance}
+				relative_position_id = conspiracies
+				x = -4
+				y = 9
+				cost = 10
+				ai_will_do = {
+				}
+			
+				completion_reward = {
+						add_to_faction = MEC
+				}
+				}
+
+			focus = {
+				id = puppeteer
 				icon = GFX_focus_POL_complete_april_constitution
-				prerequisite = { focus = Splithellforpizza}
+				prerequisite = { focus = mecca}
 				relative_position_id = conspiracies
 				x = -4
 				y = 10
@@ -637,14 +775,17 @@
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = pizzamenace}
 		relative_position_id = conspiracies
-		x = 0
-		y = 10
+		x = 6
+		y = 12
 		cost = 10
 		ai_will_do = {
 		}
 	
 		completion_reward = {
-	
+			create_wargoal = {
+				target = JUN
+				type = annex_everything
+			}
 		}
 		}
 
@@ -655,7 +796,7 @@
 			relative_position_id = tribal_heritage
 			x = -2
 			y = 6
-			cost = 5
+			cost = 10
 			ai_will_do = {
 			}
 		
@@ -702,15 +843,32 @@ focus = {
 		id = towardsthestars
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		prerequisite = { focus = swarthmotherforever }
-		prerequisite = { focus = coalition }
+		prerequisite = { focus = puppeteer }
 		relative_position_id = tribal_heritage
 		x = -2
 		y = 11
 		cost = 52
 		ai_will_do = {
 		}
-	
-		completion_reward = {
+		available = {
+			date > 1944.01.01
+		}
+			will_lead_to_war_with = JOW
+			will_lead_to_war_with = PIZ
+			will_lead_to_war_with = SQU
+			will_lead_to_war_with = SUP
+			will_lead_to_war_with = ISR
+			will_lead_to_war_with = SP1
+			will_lead_to_war_with = SP2
+			will_lead_to_war_with = GAN
+			will_lead_to_war_with = GME
+			will_lead_to_war_with = HYP
+			will_lead_to_war_with = TRU
+			will_lead_to_war_with = SWA
+			will_lead_to_war_with = NBR
+			will_lead_to_war_with = TAW
+			will_lead_to_war_with = BIG
+			completion_reward = {
 			annex_country = { target = JOW }
 			annex_country = { target = PIZ }
 			annex_country = { target = SQU }
@@ -727,7 +885,7 @@ focus = {
 			annex_country = { target = TAW }
 			annex_country = { target = BIG }
 			hidden_effect = {
-				news_event = immigrant.8
+				news_event = { id = immigrant.8 days = 1}
 			}
 		}
 		}

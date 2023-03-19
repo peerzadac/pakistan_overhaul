@@ -54,7 +54,18 @@
   mercantilism_4:0 "Increased Control"
   mercantilism_5:0 "High Government Influence"
   mercantilism_6:0 "Total Control"
+  revolutions:0 "Total Revolution"
+  revolutions_desc:0 "Revolution is the key to domination"
+  revolutions2:0 "Global Revolution"
+  revolutions2_desc:0 "Revolution EVERYWHERE"
+  whiteknowledge:0 "White peepo"
+  whiteknowledge_desc:0 "Not that white people have accepted black society we can extort their minds for science"
+  corruption:0 "Rooting our Corruption"
+  corruption_desc:0 "The last picklechin bought his way into power, we need to execute those who helped him."
   #elixir_depression:0 "Leaking"
+  wartime:0 "Wartime"
+  wartime_desc:0 "War is coming and we need to be prepared"
+
 
 
 

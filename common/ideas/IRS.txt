@@ -147,7 +147,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.40
         			research_speed_factor = 0.125
-        			industrial_capacity_factory = 0.12
+        			industrial_capacity_factory = 0.125
 					production_speed_buildings_factor = 0.5
 		  	}
 	  	}
@@ -191,7 +191,7 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-        		stability_weekly = -0.05
+        		stability_weekly = -0.03
 				war_support_weekly = -0.06
         		justify_war_goal_time = 5
 		  }
@@ -514,6 +514,69 @@ ideas = {
 			modifier = {
 				operation_coup_government_outcome = 1
 				operation_cost = -1
+		  }
+	  }
+	}
+
+	country = {
+		whiteknowledge = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = 0.125
+		  }
+	  }
+	}
+
+	country = {
+		corruption = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bul_zveno
+
+			modifier = {
+				stability_weekly = 0.2
+		  }
+	  }
+	}
+
+	country = {
+		wartime = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+        		justify_war_goal_time = -0.25
 		  }
 	  }
 	}
