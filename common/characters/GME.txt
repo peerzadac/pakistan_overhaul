@@ -1,9 +1,9 @@
 characters={
-	CWI_frank={
-		name="Frank Henderson"
+	GME_gamermann={
+		name="Gamer Mann"
 		portraits={
 			civilian={
-				large="gfx/leaders/CWI/frank.dds"
+				large="gfx/leaders/GME/gamermann.dds"
 			}
 		}
 		country_leader={

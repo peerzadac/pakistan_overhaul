@@ -163,7 +163,7 @@ ideologies = {
 
     types = {
 
-      drunk_dad = {
+      alcoholism = {
       }
       drunk_driver = {
       }
