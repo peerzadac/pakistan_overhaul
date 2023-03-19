@@ -30,43 +30,43 @@ news_event = {
 }
 
 
-country_event = {
-	id = immigrant.10
-	title = "Peace with the Squids"
-	desc = "hooray!  " 
-	#picture = GFX_riots
-	#is_triggered_only = yes
-
-	trigger = {
-		tag = IRS
-		IRS = {
-			has_full_control_of_state = 114
-			has_full_control_of_state = 1
-		}
-		NOT = { has_global_flag = squidirspeace } #MUST USE OR ELSE!
-
-
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	immediate = {
-		set_global_flag = squidirspeace #MUST USE OR ELSE!
-	}
-
-
-	option = {#okay
-		name = "Too easy"
-		white_peace = SQU
-		114 = {
-			transfer_state_to = IRS
-		}
-		1 = {
-			transfer_state_to = IRS
-		}
-
-
-	}
-}
+#country_event = {
+#	id = immigrant.10
+#	title = "Peace with the Squids"
+#	desc = "hooray!  " 
+#	#picture = GFX_riots
+#	#is_triggered_only = yes
+#
+#	trigger = {
+#		tag = IRS
+#		IRS = {
+#			has_full_control_of_state = 114
+#			has_full_control_of_state = 1
+#		}
+#		NOT = { has_global_flag = squidirspeace } #MUST USE OR ELSE!
+#
+#
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 3
+#	}
+#
+#	immediate = {
+#		set_global_flag = squidirspeace #MUST USE OR ELSE!
+#	}
+#
+#
+#	option = {#okay
+#		name = "Too easy"
+#		white_peace = SQU
+#		114 = {
+#			transfer_state_to = IRS
+#		}
+#		1 = {
+#			transfer_state_to = IRS
+#		}
+#
+#
+#	}
+#}
