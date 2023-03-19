@@ -1,4 +1,5 @@
-﻿focus_tree = {
+﻿##BLACK FOCUS TREE## + RESEARCH TREE
+focus_tree = {
 	id = immigrant_focus
 	
 	country = {
@@ -540,17 +541,121 @@
 			}
 			relative_position_id = conspiracies
 			x = 0
+			y = 8
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = iberianintervention
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = sardiniaclaims}
+			relative_position_id = conspiracies
+			x = 0
 			y = 9
 			cost = 10
 			ai_will_do = {
 			}
-		
 			completion_reward = {
-				add_ideas = wartime
-				add_political_power = 150
+
 			}
+		}
+
+		focus = {
+			id = capturethecoast
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = iberianintervention}
+			relative_position_id = conspiracies
+			x = 0
+			y = 10
+			cost = 10
+			ai_will_do = {
 			}
-	
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = Strikesourthernbelly
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = capturethecoast}
+			relative_position_id = conspiracies
+			x = 0
+			y = 11
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = prepareisrealiinvasion
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = Strikesourthernbelly}
+			relative_position_id = conspiracies
+			x = 2
+			y = 12
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = homelandsretaken
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = Strikesourthernbelly}
+			relative_position_id = conspiracies
+			x = 0
+			y = 12
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = takebacktheAlps
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = sardiniaclaims}
+			relative_position_id = conspiracies
+			x = -2
+			y = 9
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+		focus = {
+			id = allroadsleadtoiran
+			icon = GFX_focus_usa_focus_on_europe
+			prerequisite = { focus = junchsicle}
+			relative_position_id = conspiracies
+			x = 4
+			y = 13
+			cost = 10
+			ai_will_do = {
+			}
+			completion_reward = {
+
+			}
+		}
+
+
 
 		focus = {
 			id = tikicide
@@ -625,7 +730,7 @@
 			relative_position_id = conspiracies
 			x = 6
 			y = 10
-			cost = 10
+			cost = 5
 			ai_will_do = {
 			}
 		
@@ -655,11 +760,26 @@
 		}
 
 		focus = {
+			id = isrealidogs
+			icon = GFX_focus_attack_germany
+			prerequisite = { focus = junchsicle focus = prepareisrealiinvasion}
+			relative_position_id = conspiracies
+			x = 2
+			y = 13
+			cost = 10
+			ai_will_do = {
+			}
+		
+			completion_reward = {
+			}
+			}
+
+		focus = {
 			id = demandvietnam
 			icon = GFX_focus_SWI_abandon_neutrality
-			prerequisite = { focus = GangloandHellexpulsion}
+			prerequisite = { focus = GangloandHellexpulsion focus = capturethecoast }
 			relative_position_id = conspiracies
-			x = 6
+			x = 2
 			y = 11
 			cost = 10
 			ai_will_do = {
@@ -667,10 +787,12 @@
 		
 			completion_reward = {
 				annex_country = {
-					target = VEN
+					target = VIE
 				}
 			}
 			}
+
+			]
 
 	focus = {
 		id = theUltimateenemy
@@ -710,8 +832,9 @@
 		focus = {
 			id = Splithellforpizza
 			icon = GFX_focus_focus_fra_border
+			prerequisite = { focus = tikicide}
 			relative_position_id = conspiracies
-			x = 0
+			x = 6
 			y = 9
 			cost = 10
 			ai_will_do = {
@@ -775,7 +898,7 @@
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = pizzamenace}
 		relative_position_id = conspiracies
-		x = 6
+		x = 4
 		y = 12
 		cost = 10
 		ai_will_do = {
@@ -843,10 +966,10 @@ focus = {
 		id = towardsthestars
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		prerequisite = { focus = swarthmotherforever }
-		prerequisite = { focus = puppeteer }
+		prerequisite = { focus = puppeteer focus = isrealidogs}
 		relative_position_id = tribal_heritage
 		x = -2
-		y = 11
+		y = 15
 		cost = 52
 		ai_will_do = {
 		}
@@ -893,7 +1016,7 @@ focus = {
 	focus = {
 		id = stupid
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 40
+		x = 25
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1024,87 +1147,18 @@ focus = {
 			add_research_slot = 1
 		}
 	}
+	## WHITE FOCUS TREE ##
 
 	focus = {
-		id = barbbarrel
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		prerequisite = { focus = stupid }
-		relative_position_id = stupid
-		x = 2
-		y = 1
-		cost = 5
+		id = mussolinihelp
+		icon = GFX_focus_research2
+		x = 30
+		y = 0
+		cost = 10
 		ai_will_do = {
 		}
-	
+
 		completion_reward = {
-	
 		}
 	}
-
-	focus = {
-		id = archers
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		prerequisite = { focus = barbbarrel }
-		prerequisite = { focus = research1 }
-		relative_position_id = stupid
-		x = 2
-		y = 2
-		cost = 5
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = goblinbarrel
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		prerequisite = { focus = barbbarrel }
-		relative_position_id = stupid
-		x = 4
-		y = 2
-		cost = 5
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = musketeer
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		prerequisite = { focus = retarded }
-		prerequisite = { focus = archers }
-		relative_position_id = stupid
-		x = 2
-		y = 3
-		cost = 5
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = firecracker
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		prerequisite = { focus = archers }
-		relative_position_id = stupid
-		x = 4
-		y = 3
-		cost = 5
-		ai_will_do = {
-		}
-	
-		completion_reward = {
-	
-		}
-	}
-
 }		

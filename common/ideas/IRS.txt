@@ -555,7 +555,7 @@ ideas = {
 			picture = bul_zveno
 
 			modifier = {
-				stability_weekly = 0.2
+				stability_weekly = 0.02
 		  }
 	  }
 	}
