@@ -10,13 +10,13 @@ state={
 	}
 
 	history={
-		owner = TRU
+		owner = HYP
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
 
 		}
-		add_core_of = TRU
+		add_core_of = HYP
 
 	}
 

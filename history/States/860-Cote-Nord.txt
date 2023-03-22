@@ -5,8 +5,8 @@ state={
 		7683 7807 7810 10534 10715 12600 
 	}
 	history = {
-		owner = TRU
-		add_core_of = TRU
+		owner = GAN
+		add_core_of = GAN
 	}
 	manpower=110000
 	state_category = rural

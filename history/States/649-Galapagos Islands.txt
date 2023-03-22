@@ -6,14 +6,13 @@ state=
 	manpower=11532
 	history=
 	{
-		owner = SWA
+		owner = GAN
 		buildings = {
 			infrastructure = 1
 			5023 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = SWA
 	}
 	provinces= { 5023 }
 

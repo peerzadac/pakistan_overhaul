@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TRU
+		owner = GAN
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
@@ -21,7 +21,7 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = TRU
+		add_core_of = GAN
 		victory_points = {
 			1408 15
 		}

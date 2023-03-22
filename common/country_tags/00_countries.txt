@@ -48,7 +48,7 @@ TAI = "countries/Tajikastan.txt"
 TAW = "countries/Tannu What.txt"
 TCA = "countries/Trans Cock Ass Asia.txt"
 WWK = "countries/WeWuzKangs.txt"
-
+BID = "countries/Biden's America.txt"
 
 
 

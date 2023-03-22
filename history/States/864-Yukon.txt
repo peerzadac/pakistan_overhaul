@@ -5,8 +5,8 @@ state={
 		3606 7869 7891 
 	}
 	history = {
-		owner = TRU
-		add_core_of = TRU
+		owner = HYP
+		add_core_of = HYP
 	}
 	manpower=10
 	state_category = wasteland

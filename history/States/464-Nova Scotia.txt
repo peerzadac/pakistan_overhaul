@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = TRU
+		owner = GAN
 		victory_points = {
 			7361 3
 		}
@@ -20,7 +20,7 @@ state={
 
 			}
 		}
-		add_core_of = TRU
+		add_core_of = GAN
 	}
 
 	provinces={

@@ -7,14 +7,14 @@ state={
 	state_category = large_city
 
 	history={
-		owner = TRU
+		owner = GAN
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 5
 		}
-		add_core_of = TRU
+		add_core_of = GAN
 		victory_points = {
 			3778 20
 		}

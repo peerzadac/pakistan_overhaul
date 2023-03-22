@@ -5,7 +5,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = TRU
+		owner = GAN
 		victory_points = {
 			13010 1
 		}
