@@ -111,7 +111,7 @@ focus_tree = {
 		prerequisite = { focus = PIZ_centralization focus = PIZ_decentralization }
 
 
-		x = 7
+		x = 8
 		y = 4
 		relative_position_id = PIZ_federation
 		cost = 10
@@ -126,9 +126,78 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = PIZ_embrace_forest
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_spiritual_guidance }
+		
+		mutually_exclusive = {
+			focus = PIZ_annex_forest
+		}
 
 
+		x = 1
+		y = 1
+		relative_position_id = PIZ_spiritual_guidance
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_annex_forest
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_spiritual_guidance }
+		
+		mutually_exclusive = {
+			focus = PIZ_embrace_forest
+		}
+
+		x = -1
+		y = 1
+		relative_position_id =PIZ_spiritual_guidance
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_total_war
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_annex_forest focus = PIZ_embrace_forest }
+
+
+		x = 0
+		y = 2
+		relative_position_id =PIZ_spiritual_guidance
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
 
 
 #CENTRAlIZE
