@@ -13,13 +13,13 @@ focus_tree = {
 
 
   focus = {
-		id = PIZ_new_empire
+		id = PIZ_federation
 		icon = GFX_goal_generic_major_alliance
 
 		#prerequisite = { ideas = squeaky_clean }
 
 		x = 15
-		y = 0
+		y = 4
 		#relative_position_id = ITA_industrial_effort_2
 		cost = 10
 		#ai_will_do = {
@@ -33,16 +33,16 @@ focus_tree = {
 		}
 	}
 
-  focus = {
-		id = PIZ_treaty_of_coomleville
+	focus = {
+		id = PIZ_invite_parliament
 		icon = GFX_goal_generic_major_alliance
 
-		prerequisite = { focus = PIZ_new_empire }
+		prerequisite = { focus = PIZ_federation }
 
-		x = -2
+		x = 1
 		y = 1
-		relative_position_id = PIZ_new_empire
-		cost = 5
+		relative_position_id = PIZ_federation
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -55,15 +55,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PIZ_scampis_draft
+		id = PIZ_invite_swamp
 		icon = GFX_goal_generic_major_alliance
 
-		prerequisite = { focus = PIZ_new_empire }
+		prerequisite = { focus = PIZ_federation }
 
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = PIZ_new_empire
-		cost = 5
+		relative_position_id = PIZ_federation
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -76,37 +76,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PIZ_swamp_antics
+		id = PIZ_finalize
 		icon = GFX_goal_generic_major_alliance
 
-		prerequisite = { focus = PIZ_new_empire }
-
-		x = 2
-		y = 1
-		relative_position_id = PIZ_new_empire
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = PIZ_pummel_doctrine
-		icon = GFX_goal_generic_major_alliance
-
-		prerequisite = { focus = PIZ_treaty_of_coomleville }
-		prerequisite = { focus = PIZ_scampis_draft }
-		prerequisite = { focus = PIZ_swamp_antics }
+		prerequisite = { focus = PIZ_invite_parliament }
+		prerequisite = { focus = PIZ_invite_swamp }
 
 		x = 0
 		y = 2
-		relative_position_id = PIZ_new_empire
+		relative_position_id = PIZ_federation
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -115,27 +93,163 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = -500
+
+		}
+	}
+
+
+	
+
+
+#THE FOREST
+
+	focus = {
+		id = PIZ_spiritual_guidance
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_finalize }
+		prerequisite = { focus = PIZ_centralization focus = PIZ_decentralization }
+
+
+		x = 7
+		y = 4
+		relative_position_id = PIZ_federation
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+
+#CENTRAlIZE
+
+
+
+	focus = {
+		id = PIZ_centralization
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_finalize }
+		mutually_exclusive = {
+			focus = PIZ_decentralization
+		}
+	
+
+		x = -4
+		y = 3
+		relative_position_id = PIZ_federation
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = PIZ_secure_electors
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_centralization }
+	
+
+		x = -1
+		y = 1
+		relative_position_id = PIZ_centralization
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
 		}
 	}
 
 	focus = {
-		id = PIZ_integrate_war_economies
+		id = PIZ_the_vote
 		icon = GFX_goal_generic_major_alliance
 
-		prerequisite = { focus = PIZ_pummel_doctrine }
+		prerequisite = { focus = PIZ_secure_electors }
+	
 
-	#	available = {
-	#		not = {
-	#			has_idea = {
-	#				id = poopy
-	#			}
-	#		}
-	#	}
+		x = -1
+		y = 2
+		relative_position_id = PIZ_centralization
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_swamp_solution
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_centralization }
+	
+
+		x = 1
+		y = 2
+		relative_position_id = PIZ_centralization
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PIZ_final_centralize
+		icon = GFX_goal_generic_major_alliance
+
+		prerequisite = { focus = PIZ_the_vote }
+		prerequisite = { focus = PIZ_swamp_solution }
+		available = {
+			88 = {
+				owner = {
+					tag = ANT
+				}
+			}
+			72 = {
+				owner = {
+					tag = ANT
+				}
+			}
+		}
+	
 
 		x = 0
 		y = 3
-		relative_position_id = PIZ_new_empire
+		relative_position_id = PIZ_centralization
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -144,55 +258,528 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
-		id = PIZ_anthony_question
-		icon = GFX_goal_generic_major_alliance
-
-	
-		prerequisite = { focus = PIZ_integrate_war_economies }
-		#mutually_exclusive = { focus = PIZ_develope_parlia }
-
-		x = 1
-		y = 4
-		relative_position_id = PIZ_new_empire
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
 
 		}
 	}
 
-	focus = {
-		id = PIZ_develope_parlia
-		icon = GFX_goal_generic_major_alliance
 
-	
-		prerequisite = { focus = PIZ_integrate_war_economies }
-		#mutually_exclusive = { focus = PIZ_anthony_question }
 
-		x = -1
-		y = 4
-		relative_position_id = PIZ_new_empire
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
+#DECENTRAlIZE
 
-		available_if_capitulated = yes
 
-		completion_reward = {
 
-		}
+focus = {
+	id = PIZ_decentralization
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_finalize }
+	mutually_exclusive = {
+		focus = PIZ_centralization
 	}
+
+
+	x = 4
+	y = 3
+	relative_position_id = PIZ_federation
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_develop_pharma_1
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_decentralization }
+
+	x = -1
+	y = 1
+	relative_position_id = PIZ_decentralization
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_develop_pharma_2
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_develop_pharma_1 }
+
+	x = -1
+	y = 2
+	relative_position_id = PIZ_decentralization
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_develop_ant_1
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_decentralization }
+
+	x = 1
+	y = 1
+	relative_position_id = PIZ_decentralization
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_develop_ant_2
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_develop_ant_1 }
+
+	x = 1
+	y = 2
+	relative_position_id = PIZ_decentralization
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_final_decentralize
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_develop_pharma_2 }
+	prerequisite = { focus = PIZ_develop_ant_2 }
+
+	x = 0
+	y = 3
+	relative_position_id = PIZ_decentralization
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+#foreign affairs
+
+
+
+
+focus = {
+	id = PIZ_foreign_affairs_department
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_finalize }
+	prerequisite = { focus = PIZ_final_centralize }
+	prerequisite = { focus = PIZ_final_decentralize }
+	
+
+	x = 0
+	y = 7
+	relative_position_id = PIZ_federation
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_eu_branch
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_foreign_affairs_department }
+
+	x = 0
+	y = 1
+	relative_position_id = PIZ_foreign_affairs_department
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_colonial_branch
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_foreign_affairs_department }
+
+	x = -8
+	y = 1
+	relative_position_id = PIZ_foreign_affairs_department
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_africa_branch
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_foreign_affairs_department }
+
+	x = -4
+	y = 1
+	relative_position_id = PIZ_foreign_affairs_department
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_east_asia_branch
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_foreign_affairs_department }
+
+	x = 8
+	y = 1
+	relative_position_id = PIZ_foreign_affairs_department
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_west_asia_branch
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_foreign_affairs_department }
+
+	x = 4
+	y = 1
+	relative_position_id = PIZ_foreign_affairs_department
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+
+
+
+#EU
+
+focus = {
+	id = PIZ_beat_morrowind
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_eu_branch }
+
+	x = -1
+	y = 1
+	relative_position_id = PIZ_eu_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_hell_protectorate
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_beat_morrowind }
+
+	x = -1
+	y = 2
+	relative_position_id = PIZ_eu_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_gamer_ministers
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_eu_branch }
+
+	x = 1
+	y = 1
+	relative_position_id = PIZ_eu_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_gamer_ministers
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_eu_branch }
+
+	x = 1
+	y = 1
+	relative_position_id = PIZ_eu_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_anti_squid_pact
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_gamer_ministers }
+
+	x = 1
+	y = 2
+	relative_position_id = PIZ_eu_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+
+#EAST ASIA
+
+
+
+
+
+
+
+
+
+#WEST ASIA
+
+
+focus = {
+	id = PIZ_raids_super
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_west_asia_branch }
+
+	x = -1
+	y = 1
+	relative_position_id = PIZ_west_asia_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_raids_super2
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_raids_super }
+
+	x = -1
+	y = 2
+	relative_position_id = PIZ_west_asia_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_raids_super3
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_raids_super2 }
+
+	x = -1
+	y = 3
+	relative_position_id = PIZ_west_asia_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_control_anthony
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_west_asia_branch }
+
+	x = 1
+	y = 1
+	relative_position_id = PIZ_west_asia_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = PIZ_move_anthony
+	icon = GFX_goal_generic_major_alliance
+
+	prerequisite = { focus = PIZ_control_anthony }
+
+	x = 1
+	y = 2
+	relative_position_id = PIZ_west_asia_branch
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+
+	}
+}
+
+#AFRICA
+
+
+
+
+
+
+
+
+#COLONIAL
+
+
+
+
+
+
+
+
 
 
 
