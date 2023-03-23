@@ -21,7 +21,6 @@ set_convoys = 20
 
 
 
-
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -55,10 +54,6 @@ set_convoys = 20
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-}
-
-add_ideas = {
-	jewish_subversion
 }
 
 set_politics = {

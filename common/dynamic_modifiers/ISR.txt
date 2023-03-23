@@ -1,0 +1,11 @@
+jewish_subversion = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	# remove_trigger = {
+	# 	NOT = {
+	# 		has_variable = jewish
+	# 	}
+	# }
+	democratic_acceptance = ROOT.jewishness_200
+	democratic_drift = ROOT.jewishness
+}

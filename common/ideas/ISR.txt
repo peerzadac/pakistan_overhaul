@@ -1,18 +1,18 @@
-ideas = {
-    country = {
-      jewish_subversion = {
+# ideas = {
+#     country = {
+#       jewish_subversion = {
 
-        allowed = {
-          always = no
-        }
+#         allowed = {
+#           always = no
+#         }
 
-        removal_cost = -1
-
-        modifier = {
-          #TEMPORARY FIX CHRISTIAN
-          #democratic_acceptance = ISR.party_popularity_100@democratic
-          #democratic_drift = ISR.party_popularity@democratic
-		}
-      }
-    }
-}
+#         removal_cost = -1
+#         modifier = {
+          
+#           #TEMPORARY FIX CHRISTIAN
+#           democratic_acceptance = @var:ROOT.jewishness_200
+#           democratic_drift = @var:ROOT.jewishness
+# 		}
+#       }
+#     }
+# }
