@@ -23,7 +23,7 @@ scripted_gui = {
 			rocket_button_click_enabled = {
 				ROOT = {
 					has_tech = nukes
-					num_of_nukes > 9
+					num_of_nukes > 99
 				}
 				#NOT = {
 				#	is_fully_controlled_by = ROOT

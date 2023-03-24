@@ -9,8 +9,11 @@ rocket_spell_effect = {
 		}
 	}
 
+	
+
 	damage_units = {
-		damage = 1
+		str_damage = 0.8
+		org_damage = 0.5
 		state = THIS
 		
 	}
