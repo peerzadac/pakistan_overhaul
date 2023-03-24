@@ -1,0 +1,14 @@
+poison_spell_effect = {
+	ROOT = {
+		add_nuclear_bombs = -25
+	}
+
+	damage_units = {
+		state = THIS
+		org_damage = 0.1
+		str_damage = 0.1
+	}
+
+	
+
+}

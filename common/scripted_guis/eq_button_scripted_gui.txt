@@ -1,0 +1,71 @@
+scripted_gui = {
+	eq_spell = {
+		window_name = "eq_button_container" #name of container in gui file
+		context_type = selected_state_context #scoping of gui eg. decisions, stateview, etc
+
+		parent_window_token = selected_state_view #will be tied to this gui
+
+		#visibility of ENTIRE gui
+		visible = {          
+			always = yes
+			
+		}
+		
+		#actions done in gui, must be tied to buttons
+		effects = {
+			eq_button_click = {
+				eq_spell_effect = yes
+			}
+		}
+
+		#control over visibility/clickability of buttons and other elements
+		triggers = {
+			eq_button_click_enabled = {
+				ROOT = {
+					has_tech = nukes
+					num_of_nukes > 9
+				}
+				#NOT = {
+				#	is_fully_controlled_by = ROOT
+				#}
+				controller = {
+					has_war_with = ROOT
+				}
+			}
+
+		}
+
+		#
+		#dynamic_lists = {
+
+		#}
+
+		#properties to use, mostly ingame flags
+		#properties = {
+
+		#}
+
+		#whether ai can use gui
+		ai_enabled = {
+			always = no
+		}
+
+
+		ai_test_interval = 290
+		ai_test_variance = 0.5
+
+		ai_check = {
+
+		}
+
+		ai_check_scope ={
+
+		}
+
+		#ai_weights = {
+
+		#}
+	}
+
+	
+}

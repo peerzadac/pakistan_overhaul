@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rocket_button"
+		textureFile = "gfx/interface/stateview_rocket_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_poison_button"
+		textureFile = "gfx/interface/stateview_poison_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_eq_button"
+		textureFile = "gfx/interface/stateview_eq_button.dds"
+	}
+
+}

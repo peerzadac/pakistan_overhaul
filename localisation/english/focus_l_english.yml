@@ -1,4 +1,26 @@
 ﻿l_english:
+
+#spells
+ spell_eq:0 "Earthquake"
+ spell_eq_delayed:0 "Earthquake will damage all buildings in a state. \n§610§!£topbar_nuke."
+ spell_poison:0 "Poison"
+ spell_poison_delayed:0 "Poison will cause attrition to enemies in a state for 14 days \n§625§!£topbar_nuke."
+ spell_rocket:0 "Rocket"
+ spell_rocket_delayed:0 "Rocket will delete any division it is used on.\n§6100§!£topbar_nuke."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 the_1936_riots:0 "The 1936 Riots"
 the_1936_riots_desc:0 "The ongoing suppression of minorities entering the Sicily is at its breaking point, allah only knows what will happen next..."
 immigration_policies:0 "Swarthoid's prosperity!"

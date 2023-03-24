@@ -383,24 +383,53 @@ guiTypes = {
 				slotsize = { width = 109 height = 54 }
 				max_slots_horizontal = 4
 			}
+
+			#DARK ELIXIR
+
+			#buttonType = {
+			#	name = "rocket_province"
+			#	quadTextureSprite ="GFX_rocket_button"
+			#	position = { x= 13 y = -11 }
+			#}
+
+
+
+
+			#buttonType = {
+			#	name = "poison_province"
+			#	quadTextureSprite ="GFX_poison_button"
+			##	position = { x= 90 y = -11 }
+			#}
+
+
+
+			#buttonType = {
+			#	name = "eq_province"
+			#	quadTextureSprite ="GFX_eq_button"
+			#	position = { x= 167 y = -11 }
+			#}
+
+
+
+
 			
 			buttonType = {
 				name = "nuke_province"
 				quadTextureSprite ="GFX_nuke_button"
-				position = { x= 13 y = -11 }
+				position = { x= -113 y = -11 }
 			}
 			
 			iconType = {
 				name = "nuclear_strike_bar"
 				spriteType = "GFX_nuke_progress"
-				position = { x=23 y= 27 }
+				position = { x=-123 y= 27 }
 				rotation = 1.5708		
 			}	
 			
 			iconType = {
 				name = "nuke_progress_frame"
 				spriteType = "GFX_nuke_progress_frame"
-				position = { x=15 y= -6 }	
+				position = { x=-115 y= -6 }	
 			}				
 			
 		}	

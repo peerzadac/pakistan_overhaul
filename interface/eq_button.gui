@@ -1,0 +1,86 @@
+guiTypes = {
+	containerWindowType = {   #
+		name = "eq_button_container"  #same as gui window name
+		position = { x = 0 y = 0 }
+		size = {width = 116 height = 114}
+		orientation = center
+		origo = center
+		fade_time = 100
+		fade_type = linear
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		#background = {
+		#	name = "Background"
+		#	quadTextureSprite = "GFX_eq_button"
+		#}
+
+		buttonType = {
+			name = "eq_button"
+			spriteType = "GFX_eq_button"
+			position = { x = -130 y = 238 }
+			pdx_tooltip = "spell_eq"
+			pdx_tooltip_delayed = "spell_eq_delayed"
+			scale = 0.9
+		}
+
+	}
+	containerWindowType = {   #
+		name = "poison_button_container"  #same as gui window name
+		position = { x = 0 y = 0 }
+		size = {width = 116 height = 114}
+		orientation = center
+		origo = center
+		fade_time = 100
+		fade_type = linear
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		#background = {
+		#	name = "Background"
+		#	quadTextureSprite = "GFX_eq_button"
+		#}
+
+
+		buttonType = {
+			name = "poison_button"
+			spriteType = "GFX_poison_button"
+			position = { x = -65 y = 238 }
+			pdx_tooltip = "spell_poison"
+			pdx_tooltip_delayed = "spell_poison_delayed"
+			scale = 0.9
+		}
+
+	}
+	containerWindowType = {   #
+		name = "rocket_button_container"  #same as gui window name
+		position = { x = 0 y = 0 }
+		size = {width = 116 height = 114}
+		orientation = center
+		origo = center
+		fade_time = 100
+		fade_type = linear
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		#background = {
+		#	name = "Background"
+		#	quadTextureSprite = "GFX_eq_button"
+		#}
+
+
+		buttonType = {
+			name = "rocket_button"
+			spriteType = "GFX_rocket_button"
+			position = { x = 0 y = 238 }
+			pdx_tooltip = "spell_rocket"
+			pdx_tooltip_delayed = "spell_rocket_delayed"
+			scale = 0.9
+		}
+
+
+	}
+}

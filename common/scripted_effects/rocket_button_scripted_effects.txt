@@ -1,0 +1,19 @@
+rocket_spell_effect = {
+	ROOT = {
+		add_nuclear_bombs = -100
+	}
+	
+	THIS = {
+		controller = {
+			add_war_support = -0.2
+		}
+	}
+
+	damage_units = {
+		damage = 1
+		state = THIS
+		
+	}
+	
+
+}

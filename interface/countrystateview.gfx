@@ -1,5 +1,10 @@
 spriteTypes = {
 
+
+
+
+
+
 	progressbartype = {
 		name = "GFX_nuke_progress"
 		color = { 0.0 0.5 0.0 }
@@ -526,6 +531,8 @@ spriteTypes = {
 		name = "GFX_nuke_button"
 		textureFile = "gfx/interface/stateview_nuke_button.dds"
 	}
+
+
 
 	spriteType = {
 		name = "GFX_modifiers_sabotaged_resource"
