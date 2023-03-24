@@ -882,8 +882,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
-		research_cost = 5
+		start_year = 1933
+		research_cost = 1
 		
 		folder = {
 			name = chests_folder
@@ -902,8 +902,8 @@ technologies = {
 	
 		# can build reactors
 		
-		start_year = 1943
-		research_cost = 5
+		start_year = 1936
+		research_cost = 1.5
 		
 		folder = {
 			name = chests_folder
@@ -928,12 +928,12 @@ technologies = {
 	
 	nukes = {
 	
-		start_year = 1945
-		research_cost = 5
+		start_year = 1937
+		research_cost = 2
 		
 		folder = {
 			name = chests_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 	
 
