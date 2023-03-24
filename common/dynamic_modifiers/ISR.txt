@@ -1,11 +1,26 @@
 jewish_subversion = {
-	icon = GFX_idea_unknown
+	icon = GFX_idea_penny_pinching_spirit
 	enable = { always = yes }
-	# remove_trigger = {
-	# 	NOT = {
-	# 		has_variable = jewish
-	# 	}
-	# }
-	democratic_acceptance = ROOT.jewishness_200
-	democratic_drift = ROOT.jewishness
+	remove_trigger = {
+		has_dynamic_modifier = {
+			modifier = jewish_expulsion 
+		}
+	}
+	democratic_acceptance = ROOT.jewishness_acceptance
+	democratic_drift = ROOT.jewishness_drift
+	consumer_goods_factor = root.jewishness_goods
+}
+
+jewish_gold = {
+	icon = GFX_idea_ger_mefo_bills_payment
+	enable = { always = yes }
+	political_power_gain = global.jewishness_income
+}
+
+jewish_expulsion = {
+	icon = GFX_idea_closed_economy
+	enable = { always = yes}
+	democratic_drift = -0.3
+	consumer_goods_factor = 0.05
+	political_power_gain = -0.2
 }

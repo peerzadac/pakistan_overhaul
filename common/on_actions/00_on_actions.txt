@@ -4,13 +4,30 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {tag = ISR}
+					NOT = 	{has_dynamic_modifier = {
+								modifier = jewish_expulsion
+							}
+					}
+					ISR = {exists = yes}
 				}  
 				set_variable = {ROOT.jewishness = ROOT.party_popularity@democratic}
-				multiply_variable = {ROOT.jewishness = 0.5}
-				add_to_variable = {ROOT.jewishness = .01}
-				set_variable = {ROOT.jewishness_200 = ROOT.party_popularity_100@democratic}
-				multiply_variable = {ROOT.jewishness_200 = 2}
+				set_variable = {ROOT.jewishness_drift = ROOT.party_popularity@democratic}
+				multiply_variable = {ROOT.jewishness_drift = 0.5}
+				add_to_variable = {ROOT.jewishness_drift = .01}
+				set_variable = {ROOT.jewishness_acceptance = ROOT.party_popularity_100@democratic}
+				multiply_variable = {ROOT.jewishness_acceptance = 2}
 				add_dynamic_modifier = { modifier = jewish_subversion }
+				set_variable = {ROOT.jewishness_goods = ROOT.party_popularity@democratic}
+				multiply_variable = {ROOT.jewishness_goods = -0.2}
+	
+			}	
+		}
+		effect = {
+			if = {
+				limit = {
+					ISR = {exists = no}
+				}  
+				remove_dynamic_modifier = { modifier = jewish_subversion }
 	
 			}	
 		}

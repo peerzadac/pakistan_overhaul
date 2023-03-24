@@ -1,0 +1,48 @@
+jewish_spread = {
+	expel = {
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = jewish_expulsion
+				}
+			}
+			check_variable = { jewishness > 0.05 }
+		}
+		cost = 10
+		icon = oppression
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = { jewishness > 0.25 }
+				factor = 0
+			}
+		}
+		days_remove = 180
+		days_re_enable = 360
+		remove_trigger = { 
+			OR = {
+				NOT = { has_dynamic_modifier = {
+						modifier = jewish_expulsion
+					} 
+				}
+			}
+		 }
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = jewish_expulsion
+			}
+			ISR = {add_political_power = 10 }
+			add_to_variable = {
+				global.jewishness_income = 0.2
+			}
+		}
+		remove_effect = {
+			remove_dynamic_modifier = {
+				modifier = jewish_expulsion
+			}
+			subtract_from_variable = {
+				global.jewishness_income = 0.2
+			}
+		}
+	}
+}

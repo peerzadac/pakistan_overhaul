@@ -19,7 +19,12 @@ set_technology = {
 
 set_convoys = 20
 
-
+set_variable = {
+	global.jewishness_income = 0
+}
+add_dynamic_modifier = {
+	modifier = jewish_gold
+}
 
 1939.1.1 = {
 	#generic focuses

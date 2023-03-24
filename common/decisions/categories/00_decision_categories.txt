@@ -25,6 +25,15 @@ uprising = {
 	}
 }
 
+jewish_spread = {
+	icon = GFX_idea_penny_pinching_spirit
+	visible = {
+		NOT = {tag = ISR}
+		ISR = {exists = yes}
+	}
+}
+
+
 
 ###########
 #vanilla
