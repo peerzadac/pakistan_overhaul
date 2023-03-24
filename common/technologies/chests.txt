@@ -895,10 +895,6 @@ technologies = {
 			nuclear
 		}
 
-		enable_building = {
-			building = nuclear_reactor
-			level = 1
-		}
 		
 	}
 	
@@ -939,11 +935,7 @@ technologies = {
 			name = chests_folder
 			position = { x = 0 y = 6 }
 		}
-		
-		path = {
-			leads_to_tech = excavation5
-			research_cost_coeff = 1
-		}
+	
 
 		
 		nuclear_production = 1

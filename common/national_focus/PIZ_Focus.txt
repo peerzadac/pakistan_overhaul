@@ -670,26 +670,8 @@ focus = {
 	}
 }
 
-focus = {
-	id = PIZ_gamer_ministers
-	icon = GFX_goal_generic_major_alliance
 
-	prerequisite = { focus = PIZ_eu_branch }
 
-	x = 1
-	y = 1
-	relative_position_id = PIZ_eu_branch
-	cost = 10
-	#ai_will_do = {
-	#	factor = 1
-	#}
-
-	available_if_capitulated = yes
-
-	completion_reward = {
-
-	}
-}
 
 focus = {
 	id = PIZ_anti_squid_pact
