@@ -1,18 +1,106 @@
-# ideas = {
-#     country = {
-#       jewish_subversion = {
-
-#         allowed = {
-#           always = no
-#         }
-
-#         removal_cost = -1
-#         modifier = {
-          
-#           #TEMPORARY FIX CHRISTIAN
-#           democratic_acceptance = @var:ROOT.jewishness_200
-#           democratic_drift = @var:ROOT.jewishness
-# 		}
-#       }
-#     }
-# }
+ideas = {
+    country = {
+		jewish_master = {
+			rule = { can_create_factions = yes 
+					can_force_government = yes
+					can_send_volunteers = yes
+					can_only_justify_war_on_threat_country = no
+					can_guarantee_other_ideologies = yes
+					can_lower_tension = yes
+					can_declare_war_on_same_ideology = yes
+				}
+		}
+    }
+	country = {
+		expand_mossad_0 = {
+			modifier = {
+				operative_slot = 2
+			}
+ 	   }
+	}
+	country = {
+		expand_mossad_1 = {
+			modifier = {
+				operative_slot = 3
+				intel_network_gain_factor = 0.25
+				intelligence_agency_defense = 1
+				operation_risk = -0.05
+				intel_from_operatives_factor = 0.1
+				decryption_power = 25
+			}
+ 	   }
+	}
+	country = {
+		expand_mossad_2 = {
+			modifier = {
+				operative_slot = 5
+				intel_network_gain_factor = 0.50
+				intelligence_agency_defense = 2
+				operation_risk = -0.10
+				intel_from_operatives_factor = 0.2
+				decryption_power = 50
+				crypto_strength = 1
+			}
+ 	   }
+	}
+	country = {
+		expand_mossad_3 = {
+			modifier = {
+				operative_slot = 10
+				intel_network_gain_factor = 1
+				intelligence_agency_defense = 3
+				operation_risk = -0.15
+				intel_from_operatives_factor = 0.3
+				decryption_power = 80
+				civilian_intel_decryption_bonus = 0.1
+				army_intel_decryption_bonus = 0.1
+				navy_intel_decryption_bonus = 0.1
+				airforce_intel_decryption_bonus = 0.1
+				crypto_strength = 2
+			}
+ 	   }
+	}
+	country = {
+		iron_dome_0 = {
+			modifier = {
+				industry_air_damage_factor = -0.5
+			}
+		}
+    }
+	country = {
+		iron_dome_1 = {
+			modifier = {
+				industry_air_damage_factor = -0.75
+			}
+		}
+    }
+	country = {
+		jewish_volunteers = {
+			modifier = {
+				send_volunteer_factor = 1
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+				air_volunteer_cap = 500
+				lend_lease_tension = -1
+			}
+		}
+    }
+	country = {
+		jewish_neutrality = {
+			modifier = {
+				enemy_declare_war_tension = 0.50
+				enemy_justify_war_goal_time = 0.5
+			}
+		}
+    }
+	country = {
+		jewish_intervention = {
+			modifier = {
+				civil_war_involvement_tension = -0.5
+				generate_wargoal_tension = -1
+				guarantee_cost = -0.5
+				guarantee_tension = -0.5
+			}
+		}
+    }
+}

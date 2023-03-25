@@ -19,6 +19,16 @@ set_technology = {
 
 set_convoys = 20
 
+set_major = yes
+create_faction = "New World Order"
+set_faction_leader = yes
+set_faction_spymaster = yes
+
+create_intelligence_agency = {
+    name = "Mossad"
+    icon = GFX_intelligence_agency_logo_agency
+}
+
 set_variable = {
 	global.jewishness_income = 0
 }

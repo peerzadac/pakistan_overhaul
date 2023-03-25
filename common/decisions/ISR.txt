@@ -13,6 +13,78 @@ jewish_spread = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				check_variable = { jewishness > 0.10 }
+				factor = 10
+			}
+			modifier = {
+				check_variable = { jewishness > 0.25 }
+				factor = 20
+			}
+			modifier = {
+				check_variable = { jewishness > 0.40 }
+				factor = 0
+			}
+			modifier = {
+				AND = {
+					check_variable = { antisemitic > 0 }
+					check_variable = { jewishness > 0.30}
+				}
+				factor = 4000
+			}
+		}
+		days_remove = 180
+		days_re_enable = 360
+		remove_trigger = { 
+			OR = {
+				NOT = { has_dynamic_modifier = {
+						modifier = jewish_expulsion
+					} 
+				}
+			}
+		 }
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = jewish_expulsion
+			}
+			ISR = {add_political_power = 10 }
+			add_to_variable = {
+				global.jewishness_income = 0.2
+			}
+		}
+		remove_effect = {
+			remove_dynamic_modifier = {
+				modifier = jewish_expulsion
+			}
+			subtract_from_variable = {
+				global.jewishness_income = 0.2
+			}
+		}
+	}
+	enslave_0 = {
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = unlocked_enslave_1
+				}
+			}
+		}
+		visible = { 
+			FROM = {
+				has_government = ROOT
+			} 
+		}
+		target_trigger = {
+			FROM = {
+				has_defensive_war = no
+				has_war_with = ISR
+				is_major = no
+			}
+		}
+		cost = 10
+		icon = oppression
+		ai_will_do = {
+			factor = 4000
+			modifier = {
 				check_variable = { jewishness > 0.25 }
 				factor = 0
 			}
