@@ -1,0 +1,46 @@
+add_namespace = supercell
+
+country_event = {
+	id = supercell.0
+	title = "template"
+	desc = "template"
+	is_triggered_only = yes
+
+	option = {
+		name = "Okay"
+	}
+}
+
+
+#HYPERBOREAD EXODUES NOTES
+# SUP = 208 244 195 264 351 879 880 214 146 216 215 262 825 397 400 398 399 581 573 150 149 111
+# GME = 120
+# MRW = 124 145 140 110 142 139 141
+# hyperborean wastes = 666 144 143 38 148 213 722 147
+# supercell gets hyperborean land occupation penalty to make up for op land acquisition
+
+
+
+
+
+
+
+country_event = {
+	id = supercell.1
+	title = "Hyperborean Exodus"
+	desc = "As our troops arrived into the hyperborean territories, we soon realized the aryans have long since fled. Many new maps will be drawn up as the territory is redistibuted."
+	is_triggered_only = yes
+
+	option = {
+		name = "Okay"
+		hidden_effect = {
+			
+		}
+	}
+}
+
+
+
+
+
+
