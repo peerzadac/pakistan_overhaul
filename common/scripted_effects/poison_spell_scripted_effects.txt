@@ -3,21 +3,15 @@ poison_spell_effect = {
 		add_nuclear_bombs = -25
 	}
 
+
 	add_state_modifier = {
 		modifier = {
-			attrition = 0.3
-			days = 14
-			custom_modifier_tooltip = "the_1936_riots"
+		attrition = 0.3
+		days = 14
+		
 		}
 	}
 	
-
-	damage_units = {
-		state = THIS
-		org_damage = 0.1
-		str_damage = 0.1
-	}
-
 
 
 }
