@@ -1,0 +1,8 @@
+poison_effect = {
+	icon = GFX_idea_unknown
+	#enable = { always = no }
+	#remove_trigger = {
+	#	
+	#}
+	attrition = 0.3
+}
