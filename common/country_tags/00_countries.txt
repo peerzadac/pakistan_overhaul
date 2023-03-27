@@ -49,6 +49,11 @@ TAW = "countries/Tannu What.txt"
 TCA = "countries/Trans Cock Ass Asia.txt"
 WWK = "countries/WeWuzKangs.txt"
 BID = "countries/Biden's America.txt"
+DWA = "countries/Dwarf Fortress.txt"
+GHU = "countries/Goblin Hut.txt"
+SNE = "countries/Chuck's Seed and Feed.txt"
+
+
 
 
 

@@ -8,14 +8,14 @@ state=
 
 	history=
 	{
-		owner = HYP
+		owner = MRW
 		buildings = {
 			infrastructure = 3 #was: 5
 			9228 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = HYP
+		add_core_of = MRW
 	}
 
 	provinces=	{

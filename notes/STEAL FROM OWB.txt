@@ -1,2 +1,0 @@
-coring_button_scripted_trigger
-var = corestates

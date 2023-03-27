@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = HYP
+		owner = DWA
 		victory_points = {
 			6050 20
 		}
@@ -27,7 +27,7 @@ state={
 			}
 
 		}
-		add_core_of = HYP
+		add_core_of = DWA
 	}
 
 	provinces={

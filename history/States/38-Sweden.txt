@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		owner = HYP
+		owner = DWA
 		victory_points = {
 			156 1
 		}
@@ -23,7 +23,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = HYP
+		add_core_of = DWA
 	}
 
 	provinces={
