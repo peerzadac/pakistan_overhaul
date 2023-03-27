@@ -1,15 +1,4 @@
-#USA_congress = {
-#	icon = usa_congress
-#	allowed = {
-#		original_tag = USA
-#		#original_tag = IRS
-#	}
-#
-#	scripted_gui = usa_congress_decision_ui	
-#
-#	priority = 85
-#}
-#TEMPORARY FIX CHRISTIAN
+
 Formable_Nation = {
 	icon = generic_political_actions
 	visible = {
@@ -28,7 +17,6 @@ uprising = {
 jewish_spread = {
 	icon = GFX_idea_penny_pinching_spirit
 	visible = {
-		NOT = {tag = ISR}
 		ISR = {exists = yes}
 	}
 }

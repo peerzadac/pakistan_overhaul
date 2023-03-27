@@ -1,24 +1,35 @@
 jewish_spread = {
 	expel = {
+		visible = {
+			NOT = {
+				tag = ISR
+			}
+			ISR = {exists = yes}
+		}
 		available = {
 			NOT = {
 				has_dynamic_modifier = {
 					modifier = jewish_expulsion
 				}
+				is_subject_of = ISR
+				has_country_flag = jewish_infiltration
 			}
-			check_variable = { jewishness > 0.05 }
 		}
 		cost = 10
 		icon = oppression
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				check_variable = { jewishness < 0.10 }
+				factor = 0
+			}
 			modifier = {
 				check_variable = { jewishness > 0.10 }
-				factor = 10
+				factor = 20
 			}
 			modifier = {
 				check_variable = { jewishness > 0.25 }
-				factor = 20
+				factor = 2
 			}
 			modifier = {
 				check_variable = { jewishness > 0.40 }
@@ -61,59 +72,89 @@ jewish_spread = {
 		}
 	}
 	enslave_0 = {
-		available = {
-			NOT = {
-				has_country_flag = {
-					flag = unlocked_enslave_1
-				}
-			}
-		}
 		visible = { 
+			tag = ISR
 			FROM = {
 				has_government = ROOT
+				NOT = {
+					is_subject_of = ISR
+					has_country_flag = unlocked_enslave_1
+				}
 			} 
 		}
 		target_trigger = {
 			FROM = {
+				has_civil_war = no
 				has_defensive_war = no
-				has_war_with = ISR
+				NOT = { has_war_with = ISR }
 				is_major = no
 			}
 		}
-		cost = 10
+		cost = 50
 		icon = oppression
 		ai_will_do = {
-			factor = 4000
+			base = 4000
 			modifier = {
-				check_variable = { jewishness > 0.25 }
-				factor = 0
-			}
-		}
-		days_remove = 180
-		days_re_enable = 360
-		remove_trigger = { 
-			OR = {
-				NOT = { has_dynamic_modifier = {
-						modifier = jewish_expulsion
-					} 
+				FROM = {
+					has_offensive_war = yes
 				}
-			}
-		 }
-		complete_effect = {
-			add_dynamic_modifier = {
-				modifier = jewish_expulsion
-			}
-			ISR = {add_political_power = 10 }
-			add_to_variable = {
-				global.jewishness_income = 0.2
+				factor = 0.05
 			}
 		}
-		remove_effect = {
-			remove_dynamic_modifier = {
-				modifier = jewish_expulsion
+		complete_effect = {
+			puppet = {
+				target = FROM
+				end_wars = no
 			}
-			subtract_from_variable = {
-				global.jewishness_income = 0.2
+			set_autonomy = {
+				target = FROM
+				autonomy_state = infiltrated_state
+			}
+			reverse_add_opinion_modifier = {
+				target = FROM
+    			modifier = jewish_enslavement
+			}
+		}
+	}
+	enslave_1 = {
+		visible = { 
+			has_country_flag = unlocked_enslave_1
+			tag = ISR
+			FROM = {
+				has_government = ROOT
+				NOT = {
+					is_subject_of = ISR
+				}
+			} 
+		}
+		target_trigger = {
+			FROM = {
+				NOT = { has_war_with = ISR }
+			}
+		}
+		cost = 50
+		icon = oppression
+		ai_will_do = {
+			base = 4000
+			modifier = {
+				FROM = {
+					has_offensive_war = yes
+				}
+				factor = 0.05
+			}
+		}
+		complete_effect = {
+			puppet = {
+				target = FROM
+				end_wars = no
+			}
+			set_autonomy = {
+				target = FROM
+				autonomy_state = goyim_economic_zone
+			}
+			reverse_add_opinion_modifier = {
+				target = FROM
+    			modifier = jewish_enslavement
 			}
 		}
 	}
